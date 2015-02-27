@@ -1,0 +1,102 @@
+// OIL DETAILS VIEW
+
+#od-chart-cont {
+  .panel-header {
+    @extend .visually-hidden;
+  }
+
+  // Data Charts
+  .chart-item {
+    @include span(12/12);
+    margin-bottom: 16px;
+    h3 {
+      @extend .hd-label;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .data-charts {
+    .value {
+      @extend .hd-label;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 0;
+      .raw {
+        color: $base-color;
+        position: relative;
+        bottom: 0.34em;
+        vertical-align: bottom;
+        opacity: 0.32;
+        font-size: 50%;
+      }
+    }
+  }
+  .bar-processed {
+    height: 20px;
+    background: $primary-color;
+    @include border-radius($global-radius);
+    margin-bottom: 5px;
+  }
+
+  .bar-raw {
+    height: 10px;
+    background: $primary-color;
+    @include border-radius($global-radius);
+    @include opacity(0.4);
+  }
+}
+
+#key-stats-cont {
+  @include col(6/12);
+  .panel-header {
+    @extend .visually-hidden;
+  }
+  .panel-body {
+    @include span(12/12);
+  }
+  @include bp(tablet-long) {
+    @include span(12/12);
+  }
+}
+
+#map-locations-cont {
+  @include col(6/12);
+  .panel-header {
+    @extend .visually-hidden;
+  }
+  .panel-body {
+    @include span(12/12);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include bp(tablet-long) {
+    @include span(12/12);
+  }
+}
+
+#map {
+  min-height: 328px;
+  width: 100%;
+  z-index: 1;
+  cursor: default !important;
+
+   div {
+     cursor: default !important;
+   }
+
+  .non-active path {
+    fill: #555 !important;
+    opacity: 0.8 !important;
+  }
+  .active {
+    z-index: 1000 !important;
+
+    path {
+      fill: orange !important;
+    }
+  }
+}

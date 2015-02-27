@@ -1,0 +1,106 @@
+// COMPARE OILS VIEW
+
+#co-chart-cont {
+  .panel-header {
+    @extend .visually-hidden;
+  }
+}
+
+#compare-oils {
+  .y.axis path,
+  .y.axis line {
+    fill: none;
+    stroke: white;
+    shape-rendering: crispEdges;
+    display: none;
+  }
+  .y.axis text {
+    fill: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    @extend .antialiased;
+    font-weight: bold;
+    @include transform(translateZ(0));
+    @include transition(opacity 0.16s ease 0);
+    &:hover {
+      @include opacity(0.64);
+    }
+  }
+  .y.axis text {
+    &:after {
+      @extend .icon-arr-right;
+      font-size: 16px;
+      vertical-align: middle;
+      margin-left: 2px;
+      @include opacity(0.48);
+    }
+  }
+}
+
+.key-item.extraction:before {
+  background: $step-color;
+  fill: $step-color;
+  opacity: $extraction-opacity;
+}
+
+.key-item.refining:before {
+  background: $step-color;
+  fill: $step-color;
+  opacity: $refining-opacity;
+}
+
+.key-item.transport:before {
+  background: $step-color;
+  fill: $step-color;
+  opacity: $transport-opacity;
+}
+
+.key-item.combustion:before {
+  background: $step-color;
+  fill: $step-color;
+  opacity: $combustion-opacity;
+}
+
+.chart-legend {
+  position: relative;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  text-align: center;
+  &:after {
+    position: absolute;
+    top: 100%;
+    height: 1px;
+    width: 64px;
+    left: 50%;
+    margin-left: -32px;
+    content: "";
+    background: tint($base-color, 92%);
+  }
+  .key {
+    @extend .clearfix;
+    font-size: 16px;
+    line-height: 1.5;
+    display: inline-block;
+  }
+  .key-title {
+    @extend .visually-hidden;
+  }
+  .key-item {
+    position: relative;
+    padding: 0 0 0 20px;
+    float: left;
+    margin: 0 8px;
+    font-size: 14px;
+    line-height: 20px;
+    &:before {
+      position: absolute;
+      border-radius: $global-radius/2;
+      content: "";
+      height: 14px;
+      width: 14px;
+      top: 50%;
+      left: 0;
+      margin-top: -7px;
+    }
+  }
+}

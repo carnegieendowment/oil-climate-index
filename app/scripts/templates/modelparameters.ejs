@@ -1,0 +1,47 @@
+<h3 class="control-title"><a href="#" class="toggle" title="Show model parameters">Model parameters</a></h3>
+<div class="mp-summary">
+  <dl class="mp-list">
+    <dt class="key">Flaring-to-Oil Ratio</dt>
+    <dd class="value flare" title="Flaring-to-Oil Ratio"><span></span></dd>
+    <dt class="key">Steam-to-Oil Ratio</dt>
+    <dd class="value steam" title="Steam-to-Oil Ratio"><span></span></dd>
+    <dt class="key">Water Intensity</dt>
+    <dd class="value water" title="Water Intensity"><span></span></dd>
+    <dt class="key">Refinery Configuration</dt>
+    <dd class="value refinery" title="Refinery Configuration"><span></span></dd>
+    <dt class="key">Petcoke Combustion</dt>
+    <dd class="value petcoke" title="Petcoke Combustion"><span></span></dd>
+  </dl>
+</div>
+<div class="mp-edit">
+  <div class="param-control flare">
+    <strong class="param-title">Flaring-to-Oil Ratio</strong>
+    <div class="slider" id="slider-flaring"></div>
+  </div>
+  <div class="param-control steam">
+    <strong class="param-title">Steam-to-Oil Ratio</strong>
+    <div class="slider" id="slider-steam"></div>
+  </div>
+  <div class="param-control water">
+    <strong class="param-title">Water Intensity</strong>
+    <div class="slider" id="slider-water"></div>
+  </div>
+  <div class="param-control refinery">
+    <strong class="param-title">Refinery Configuration</strong>
+    <select class="config-dropdown form-control" id="dropdown-refinery">
+      <option value="0 = Default">Default</option>
+      <option value="1 = Hydroskimming">Hydroskimming</option>
+      <option value="2 = Medium Conversion">Medium Conversion</option>
+      <option value="3 = Deep Coking">Deep Conversion: Coking</option>
+      <option value="4 = Deep Hydrotreating">Deep Conversion: Hydrocracking</option>
+    </select>
+  </div>
+  <div class="param-control petcoke">
+    <strong class="param-title">Petcoke Combustion</strong>
+    <label class="switch" for="toggle-petcoke">
+      <input id="toggle-petcoke" type="checkbox" checked />
+      <span class="swtich-text">Petcoke combustion</span>
+      <span class="switch-ui"></span>
+    </label>
+  </div>
+</div>

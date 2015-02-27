@@ -1,0 +1,26 @@
+{
+      "gasoline": {
+            "name": "Gasoline",
+            "price": 4.65
+      },
+      "jetFuel": {
+            "name": "Jet Fuel",
+            "price": 2.06
+      },
+      "diesel": {
+            "name": "Diesel",
+            "price": 7.30
+      },
+      "bunkerFuel": {
+            "name": "Bunker Fuel",
+            "price": 1.20
+      },
+      "fuelOil": {
+            "name": "Fuel Oil",
+            "price": 4.30
+      },
+      "coke": {
+            "name": "Coke",
+            "price": 2.34
+      }
+}

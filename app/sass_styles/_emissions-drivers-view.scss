@@ -1,0 +1,21 @@
+// EMISSIONS DRIVERS VIEW
+
+#ed-chart-cont {
+  .panel-header {
+    @extend .visually-hidden;
+  }
+}
+
+#emissions-drivers {
+  .trend {
+    stroke: $base-color;
+    stroke-width: 1;
+    stroke-dasharray: 8 4;
+  }
+}
+
+.trend {
+  stroke: #555;
+  stroke-width: 1;
+  stroke-dasharray: 10 5;
+}

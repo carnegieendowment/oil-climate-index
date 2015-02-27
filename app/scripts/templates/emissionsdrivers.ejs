@@ -1,0 +1,110 @@
+<section id="emissions-drivers-view" class="view">
+
+  <!-- intro -->
+  <div class="intro">
+    <div class="prose">
+      <h1 class="prose-prime-title">Explore Emissions Drivers</h1>
+      <p>Total greenhouse gas emissions are affected by a number of upstream and downstream factors. Select different options to see the effects of processing choices on supply chain emissions.</p>
+    </div>
+    <div class="actions">
+      <ul class="actions-list">
+        <li class="dropdown">
+          <a href="#" title="Share" class="bttn bttn-m bttn-base-light share" data-toggle="dropdown">Share</a>
+          <div class="dropdown-content right">
+            <ul class="dropdown-menu" role="menu">
+              <li class="sep has-icon-before twitter"><a href="https://twitter.com/share?url=[urlEncoded]" target="_blank" title="Share on Twitter">Twitter</a></li>
+              <li class="sep has-icon-before facebook"><a href="http://facebook.com/sharer.php?u=[urlEncoded]&amp;t=[title]" target="_blank" title="Share on Facebook">Facebook</a></li>
+            </ul>
+            <div class="input-group dropdown-footer">
+              <input class="form-control input-s" type="text" name="jetFuel" id="some-value" value="http://google.com" readonly />
+              <a href="#" title="Copy to clipboard" class="bttn bttn-s bttn-base-light copy hide-txt" id="emissions-drivers-share" data-title="Copy to clipboard"><span>Copy to clipboard</span></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--/ intro -->
+
+  <!-- chart-section -->
+  <div class="row">
+    <section class="panel has-aside" id="ed-chart-cont">
+      <header class="panel-header">
+        <div class="panel-headline">
+          <h1 class="panel-title">Chart</h1>
+        </div>
+      </header>
+      <div class="panel-body">
+        <div id="emissions-drivers" class="data-charts"></div>
+      </div>
+      <div class="panel-aside">
+        <div class="data-controls">
+
+          <!-- model-parameters -->
+          <div id="model-parameters" class="control-section"></div>
+          <!--/ model-parameters -->
+
+          <form>
+            <div class="control-section">
+              <fieldset id="ratio-select">
+                <legend class="control-title">Sort by Ratio</legend>
+                <div class="radio">
+                  <label><input type="radio" name="ratio-select" value="perBarrel" checked> GHGs/Barrel</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="ratio-select" value="perMJ"> GHGs/MJ</label>
+                </div>
+                <div class="radio has-button">
+                  <label><input type="radio" name="ratio-select" value="perDollar"> GHGs/$</label>
+                  <a href="#" id="price-button" title="Adjust values" class="bttn bttn-base-light bttn-xs edit">Values</a>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="control-section">
+              <fieldset id="x-select">
+                <legend class="control-title">X Axis</legend>
+                <div class="radio">
+                  <label><input type="radio" name="x-select" value="apiGravity" checked> API Gravity</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="x-select" value="oilDepth"> Oil Depth</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="x-select" value="waterToOilRatio"> Water-to-Oil Ratio</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="x-select" value="gasToOilRatio"> Gas-to-Oil Ratio</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="control-section">
+              <fieldset id="y-select">
+                <legend class="control-title">Y Axis</legend>
+                <div class="radio">
+                  <label><input type="radio" name="y-select" value="ghgTotal" checked> Total GHGs</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="y-select" value="extraction"> Extraction</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="y-select" value="refining"> Refining</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="y-select" value="transport"> Transport</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="y-select" value="combustion"> Combustion</label>
+                </div>
+              </fieldset>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--/ chart-section -->
+
+</section>

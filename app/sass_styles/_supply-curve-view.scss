@@ -1,0 +1,33 @@
+// SUPPLY CURVE VIEW
+
+#sc-chart-cont {
+  .panel-header {
+    @extend .visually-hidden;
+  }
+  .panel-body {
+    @include col(12/12);
+    position: relative;
+    z-index: 1;
+    @include bp(tablet-long) {
+      z-index: 2;
+      margin-top: -64px;
+    }
+  }
+}
+
+#supply-curve {
+  rect {
+    // @include transform(translateZ(0));
+    // @include transition(all 0.16s ease 0);
+    // cursor: pointer;
+    stroke: #fff;
+    stroke-width: 0.5;
+    shape-rendering: crispEdges;
+    // &.active {
+    //   fill: tint($base-color, 20%);
+    // }
+    // &:hover {
+    //   @include opacity(0.64);
+    // }
+  }
+}

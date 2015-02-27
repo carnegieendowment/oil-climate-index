@@ -1,0 +1,111 @@
+<section id="oil-details-view" class="view">
+
+  <!-- intro -->
+  <div class="intro">
+    <div class="prose">
+      <p class="prose-meta">Oil details</p>
+      <h1 class="prose-prime-title" id="oil-name"><!-- oil name --></h1>
+      <div id="oil-details-description" class="prose-body"><!-- oil description --></div>
+    </div>
+    <div class="actions">
+      <ul class="actions-list">
+        <li><a href="#" title="Download" class="bttn bttn-m bttn-base-light download">Download</a></li>
+        <li class="dropdown">
+          <a href="#" title="Share" class="bttn bttn-m bttn-base-light share" data-toggle="dropdown">Share</a>
+          <div class="dropdown-content right">
+            <ul class="dropdown-menu" role="menu">
+              <li class="sep has-icon-before twitter"><a href="https://twitter.com/share?url=[urlEncoded]" target="_blank" title="Share on Twitter">Twitter</a></li>
+              <li class="sep has-icon-before facebook"><a href="http://facebook.com/sharer.php?u=[urlEncoded]&amp;t=[title]" target="_blank" title="Share on Facebook">Facebook</a></li>
+            </ul>
+            <div class="input-group dropdown-footer">
+              <input class="form-control input-s" type="text" name="jetFuel" id="some-value" value="http://google.com" readonly />
+              <a href="#" title="Copy to clipboard" class="bttn bttn-s bttn-base-light copy hide-txt" id="oil-details-share" data-title="Copy to clipboard"><span>Copy to clipboard</span></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--/ intro -->
+
+  <!-- chart-section -->
+  <div class="row">
+    <section class="panel has-aside" id="od-chart-cont">
+      <header class="panel-header">
+        <div class="panel-headline">
+          <h1 class="panel-title">Chart</h1>
+        </div>
+      </header>
+      <div class="panel-body">
+        <div class="data-charts">
+          <div class="chart-item">
+            <h3>TOTAL GREENHOUSE GAS EMISSIONS PER BARREL</h3>
+            <p class="value"><span id="model-total"></span> <sub class="raw" id="default-total"></sub></p>
+          </div>
+          <div class="chart-item">
+            <h3>Extraction</h3>
+            <div class="bar" id="extraction-bar"></div>
+          </div>
+          <div class="chart-item">
+            <h3>Refining</h3>
+            <div class="bar" id="refining-bar"></div>
+          </div>
+          <div class="chart-item">
+            <h3>Transportation</h3>
+            <div class="bar" id="transportation-bar"></div>
+          </div>
+          <div class="chart-item">
+            <h3>Combustion</h3>
+            <div class="bar" id="combustion-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-aside">
+        <div class="data-controls">
+
+          <!-- model-parameters -->
+          <div id="model-parameters" class="control-section static"></div>
+          <!--/ model-parameters -->
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--/ chart-section -->
+
+  <!-- details -->
+  <div class="row details">
+
+    <% if (oil.keyStats.length) { %>
+    <section id="key-stats-cont" class="panel panel-m">
+      <header class="panel-header">
+        <div class="panel-headline">
+          <h1 class="panel-title">Key Stats</h1>
+        </div>
+      </header>
+      <div class="panel-body">
+        <dl class="stats-list">
+          <% _.each(oil.keyStats, function(stat) { %>
+          <dt><%= stat.key %></dt>
+          <dd title='<%= stat.title %>'><%= stat.value %></dd>
+          <% }) %>
+        </dl>
+      </div>
+    </section>
+    <% } %>
+
+    <section id="map-locations-cont" class="panel panel-m">
+      <header class="panel-header">
+        <div class="panel-headline">
+          <h1 class="panel-title">Map locations</h1>
+        </div>
+      </header>
+      <div class="panel-body">
+        <div id="map"></div>
+      </div>
+    </section>
+  </div>
+  <!--/ details -->
+
+</section>
