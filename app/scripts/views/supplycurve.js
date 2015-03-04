@@ -322,7 +322,23 @@ Oci.Views = Oci.Views || {};
 
         shareOpen: function () {
           var url = utils.buildShareURLFromParameters({});
-          $('#some-value').attr('value', url)
+
+          var pageURL = encodeURIComponent(utils.buildShareURLFromParameters({}));
+          var links = utils.generateSocialLinks(pageURL);
+
+          // Twitter share
+          $('li.twitter a').attr('href', links.twitter);
+
+          // Facebook handled by meta tags
+
+          // LinkedIn
+          $('li.linkedin a').attr('href', links.linkedIn);
+
+          // Mail
+          $('li.email a').attr('href', links.mail);
+
+          // Readonly input field
+          $('#share-copy').attr('value', url);
         }
     });
 })();

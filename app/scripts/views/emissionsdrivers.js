@@ -58,15 +58,15 @@ Oci.Views = Oci.Views || {};
           self.tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
             var values = [{
               name: utils.getDatasetName(xProperty),
-              value: d[xProperty].toFixed(2)
+              value: d[xProperty].toFixed(0)
             },
             {
               name: utils.getDatasetName(yProperty).split(' ').pop(),
-              value: d[yProperty].toFixed(2)
+              value: d[yProperty].toFixed(0)
             },
             {
               name: "Production Volume",
-              value: d.productionVolume
+              value: utils.numberWithCommas(d.productionVolume)
             }]
             return utils.createTooltipHtml(d.name, d.type, values, d.id);
           }).offset([-10,0]);
@@ -340,19 +340,19 @@ Oci.Views = Oci.Views || {};
             var info = modelData.info[oils[i]];
             var opgee = modelData.opgee[oils[i]];
             var prelim = modelData.prelim[oils[i]];
-            var extraction = +opgee['Net lifecycle emissions'];
-            var refining = utils.getRefiningTotal(prelim);
+            var upstream = +opgee['Net lifecycle emissions'];
+            var midstream = utils.getRefiningTotal(prelim);
             var transport = +info[utils.getDatasetKey('transport')];
             var combustion = utils.getCombustionTotal(prelim, params.showCoke);
 
             // Adjust for any ratio
-            extraction = utils.getValueForRatio(extraction, sortRatio, prelim);
-            refining = utils.getValueForRatio(refining, sortRatio, prelim);
-            transport = utils.getValueForRatio(transport, sortRatio, prelim);
-            combustion = utils.getValueForRatio(combustion, sortRatio, prelim);
+            upstream = +utils.getValueForRatio(upstream, sortRatio, prelim);
+            midstream = +utils.getValueForRatio(midstream, sortRatio, prelim);
+            transport = +utils.getValueForRatio(transport, sortRatio, prelim);
+            combustion = +utils.getValueForRatio(combustion, sortRatio, prelim);
 
             // Sum up for total
-            var ghgTotal = d3.sum([extraction, refining, transport, combustion]);
+            var ghgTotal = d3.sum([upstream, midstream, transport, combustion]);
 
             // Create oil object
             var obj = {
@@ -362,10 +362,9 @@ Oci.Views = Oci.Views || {};
               'oilDepth': +info[utils.getDatasetKey('oilDepth')],
               'ghgTotal': ghgTotal,
               'productionVolume': +info[utils.getDatasetKey('productionVolume')],
-              'extraction': +extraction,
-              'refining': +refining,
-              'combustion': +combustion,
-              'transport': +transport,
+              'upstream': upstream,
+              'midstream': midstream,
+              'downstream': combustion + transport,
               'waterToOilRatio': +opgee[utils.getDatasetKey('waterToOilRatio')],
               'gasToOilRatio': +opgee[utils.getDatasetKey('gasToOilRatio')],
               'type': info['Overall Crude Emissions Category'].trim()
@@ -539,7 +538,23 @@ Oci.Views = Oci.Views || {};
             prelim: utils.getPRELIMModel(params.refinery),
             showCoke: params.showCoke
           });
-          $('#some-value').attr('value', url)
+
+          var pageURL = encodeURIComponent(utils.buildShareURLFromParameters({}));
+          var links = utils.generateSocialLinks(pageURL);
+
+          // Twitter share
+          $('li.twitter a').attr('href', links.twitter);
+
+          // Facebook handled by meta tags
+
+          // LinkedIn
+          $('li.linkedin a').attr('href', links.linkedIn);
+
+          // Mail
+          $('li.email a').attr('href', links.mail);
+
+          // Readonly input field
+          $('#share-copy').attr('value', url);
         }
     });
 

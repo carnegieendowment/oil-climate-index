@@ -6,23 +6,20 @@ Oci.Views = Oci.Views || {};
     'use strict';
 
     var self;
-    var geojson;
     var margin = {top: 0, right: 10, bottom: 0, left: 0};
     var container;
     var width;
-    var height = 50 - margin.top - margin.bottom;
+    var height = 60 - margin.top - margin.bottom;
     var barBuffer = 2;
     var defaultModelHeight;
     var modelHeight;
     var defaultColor = '#ccc';
     var xScale;
-    var extractionSvg;
-    var transportationSvg;
-    var combustionSvg;
-    var refinementSvg;
+    var upstreamSvg;
+    var midstreamSvg;
+    var downstreamSvg;
     var dataset;
     var chartData;
-    var selectedModel;
     var oilKey;
 
     Oci.Views.OilDetails = Backbone.View.extend({
@@ -99,9 +96,6 @@ Oci.Views = Oci.Views || {};
 
           this.render();
 
-          // TODO stop faking this
-          $('#oil-details-description').html('A shallow, heavy, and sweet oil located off the California shore.');
-
           $(window).on('resize', self.handleResize);
         },
 
@@ -114,6 +108,9 @@ Oci.Views = Oci.Views || {};
           // Determine bar heights
           defaultModelHeight = height * (1/3) - barBuffer;
           modelHeight = height - defaultModelHeight;
+
+          // TODO stop faking this
+          $('#oil-details-description').html('A shallow, heavy, and sweet oil located off the California shore.');
 
           L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
 
@@ -266,13 +263,13 @@ Oci.Views = Oci.Views || {};
             var info = modelData.info[oilKey];
             var opgee = modelData.opgee[oilKey];
             var prelim = modelData.prelim[oilKey];
-            var extraction = +opgee['Net lifecycle emissions'];
-            var refining = utils.getRefiningTotal(prelim);
+            var upstream = +opgee['Net lifecycle emissions'];
+            var midstream = +utils.getRefiningTotal(prelim);
             var transport = +info[utils.getDatasetKey('transport')];
-            var combustion = utils.getCombustionTotal(prelim, showCoke);
+            var combustion = +utils.getCombustionTotal(prelim, showCoke);
 
             // Sum up for total
-            var ghgTotal = d3.sum([extraction, refining, transport, combustion]);
+            var ghgTotal = d3.sum([upstream, midstream, transport, combustion]);
 
             // Create oil object
             var obj = {
@@ -282,18 +279,16 @@ Oci.Views = Oci.Views || {};
               'apiGravity': +info[utils.getDatasetKey('apiGravity')],
               'oilDepth': +info[utils.getDatasetKey('oilDepth')],
               'ghgTotal': ghgTotal,
-              'extraction': +extraction,
-              'refining': +refining,
-              'combustion': +combustion,
-              'transport': +transport,
+              'upstream': upstream,
+              'midstream': midstream,
+              'downstream': combustion + transport,
               'waterToOilRatio': +opgee[utils.getDatasetKey('waterToOilRatio')],
               'gasToOilRatio': +opgee[utils.getDatasetKey('gasToOilRatio')],
               'type': info['Overall Crude Emissions Category'].trim(),
               'components': {
-                'combustion': utils.getCombustionComponents(prelim, showCoke),
-                'transportation': [{name: 'Transport to Refinery', value: +transport }],
-                'refining': utils.getRefiningComponents(prelim, showCoke),
-                'extraction': utils.getExtractionComponents(opgee)
+                'downstream': utils.getDownstreamComponents(prelim, showCoke, transport),
+                'midstream': utils.getRefiningComponents(prelim),
+                'upstream': utils.getExtractionComponents(opgee)
               }
             };
 
@@ -320,14 +315,12 @@ Oci.Views = Oci.Views || {};
         },
 
         dataForSvg: function (svg, data) {
-          if (svg === extractionSvg) {
-            return data.extraction;
-          } else if (svg === transportationSvg) {
-            return data.transport;
-          } else if (svg === combustionSvg) {
-            return data.combustion;
-          } else if (svg === refinementSvg) {
-            return data.refining;
+          if (svg === upstreamSvg) {
+            return data.upstream;
+          } else if (svg === downstreamSvg) {
+            return data.downstream;
+          } else if (svg === midstreamSvg) {
+            return data.midstream;
           } else {
             console.warn('oops!');
           }
@@ -336,10 +329,9 @@ Oci.Views = Oci.Views || {};
         handleParametersChange: function () {
           self.createChartData();
           $('#model-total').html(chartData[1].ghgTotal.toFixed(0));
-          self.updateSvg(extractionSvg);
-          self.updateSvg(transportationSvg);
-          self.updateSvg(refinementSvg);
-          self.updateSvg(combustionSvg);
+          self.updateSvg(upstreamSvg);
+          self.updateSvg(downstreamSvg);
+          self.updateSvg(midstreamSvg);
         },
 
         chartInit: function () {
@@ -348,8 +340,8 @@ Oci.Views = Oci.Views || {};
             xScale = d3.scale.linear()
                             .domain([0, d3.max(chartData,
                               function (d) {
-                                return d3.max([d.extraction, d.transport,
-                                               d.refining, d.combustion]);
+                                return d3.max([d.upstream, d.midstream,
+                                               d.downstream]);
                               })])
                             .range([0, width]);
 
@@ -426,7 +418,7 @@ Oci.Views = Oci.Views || {};
           width = container.width() - margin.left - margin.right;
 
           //Create SVG element
-          extractionSvg = d3.select('#extraction-bar')
+          upstreamSvg = d3.select('#upstream-bar')
                       .append('svg')
                       .attr('width', width + margin.left + margin.right)
                       .attr('height', height + margin.top + margin.bottom)
@@ -434,7 +426,7 @@ Oci.Views = Oci.Views || {};
                       .attr('transform',
                             'translate(' + margin.left + ',' + margin.top + ')');
 
-          transportationSvg = d3.select('#transportation-bar')
+          downstreamSvg = d3.select('#downstream-bar')
                       .append('svg')
                       .attr('width', width + margin.left + margin.right)
                       .attr('height', height + margin.top + margin.bottom)
@@ -442,15 +434,7 @@ Oci.Views = Oci.Views || {};
                       .attr('transform',
                             'translate(' + margin.left + ',' + margin.top + ')');
 
-          combustionSvg = d3.select('#combustion-bar')
-                      .append('svg')
-                      .attr('width', width + margin.left + margin.right)
-                      .attr('height', height + margin.top + margin.bottom)
-                    .append('g')
-                      .attr('transform',
-                            'translate(' + margin.left + ',' + margin.top + ')');
-
-          refinementSvg = d3.select('#refining-bar')
+          midstreamSvg = d3.select('#midstream-bar')
                       .append('svg')
                       .attr('width', width + margin.left + margin.right)
                       .attr('height', height + margin.top + margin.bottom)
@@ -459,10 +443,9 @@ Oci.Views = Oci.Views || {};
                             'translate(' + margin.left + ',' + margin.top + ')');
 
           // Invoke the tooltip
-          extractionSvg.call(self.tip);
-          refinementSvg.call(self.tip);
-          transportationSvg.call(self.tip);
-          combustionSvg.call(self.tip);
+          upstreamSvg.call(self.tip);
+          midstreamSvg.call(self.tip);
+          downstreamSvg.call(self.tip);
 
 
           // Keep this around to grab values from for display if needed
@@ -470,10 +453,9 @@ Oci.Views = Oci.Views || {};
 
           self.createChartData();
           createScales();
-          createData(extractionSvg);
-          createData(transportationSvg);
-          createData(combustionSvg);
-          createData(refinementSvg);
+          createData(upstreamSvg);
+          createData(midstreamSvg);
+          createData(downstreamSvg);
         },
 
         handleDropdown: function () {
@@ -498,7 +480,23 @@ Oci.Views = Oci.Views || {};
             prelim: utils.getPRELIMModel(params.refinery),
             showCoke: params.showCoke
           });
-          $('#some-value').attr('value', url)
+
+          var pageURL = encodeURIComponent(utils.buildShareURLFromParameters({}));
+          var links = utils.generateSocialLinks(pageURL);
+
+          // Twitter share
+          $('li.twitter a').attr('href', links.twitter);
+
+          // Facebook handled by meta tags
+
+          // LinkedIn
+          $('li.linkedin a').attr('href', links.linkedIn);
+
+          // Mail
+          $('li.email a').attr('href', links.mail);
+
+          // Readonly input field
+          $('#share-copy').attr('value', url);
         }
 
     });

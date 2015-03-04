@@ -13,7 +13,7 @@ Oci.Views = Oci.Views || {};
     var width;
     var height;
     var barHeight = 40;
-    var metrics = ['extraction', 'refining', 'transport', 'combustion'];
+    var metrics = ['upstream', 'midstream', 'downstream'];
 
     // Defaults
     var sortOrderDescending;
@@ -56,10 +56,12 @@ Oci.Views = Oci.Views || {};
             .html(function(d) {
               var values = chartData.map(function(step){
                 var match = _.find(step, function(oil){
-                  return oil.y === d.y
-                })
-                return { name: utils.capitalize(match.step), value: match.x.toFixed(2) }
-              })
+                  return oil.y === d.y;
+                });
+                return { name: utils.capitalize(match.step), value: match.x.toFixed(0) };
+              });
+              // Add total value to tooltip
+              values.push({ name: 'Total', value: utils.numberWithCommas(d.ghgTotal) });
               return utils.createTooltipHtml(d.y, d.type, values, utils.makeId(d.y));
             })
             .offset([0,0]);
@@ -154,19 +156,19 @@ Oci.Views = Oci.Views || {};
             var info = modelData.info[oils[i]];
             var opgee = modelData.opgee[oils[i]];
             var prelim = modelData.prelim[oils[i]];
-            var extraction = +opgee['Net lifecycle emissions'];
-            var refining = utils.getRefiningTotal(prelim);
+            var upstream = +opgee['Net lifecycle emissions'];
+            var midstream = utils.getRefiningTotal(prelim);
             var transport = +info[utils.getDatasetKey('transport')];
             var combustion = utils.getCombustionTotal(prelim, params.showCoke);
 
             // Adjust for any ratio
-            extraction = utils.getValueForRatio(extraction, sortRatio, prelim);
-            refining = utils.getValueForRatio(refining, sortRatio, prelim);
-            transport = utils.getValueForRatio(transport, sortRatio, prelim);
-            combustion = utils.getValueForRatio(combustion, sortRatio, prelim);
+            upstream = +utils.getValueForRatio(upstream, sortRatio, prelim);
+            midstream = +utils.getValueForRatio(midstream, sortRatio, prelim);
+            transport = +utils.getValueForRatio(transport, sortRatio, prelim);
+            combustion = +utils.getValueForRatio(combustion, sortRatio, prelim);
 
             // Sum up for total
-            var ghgTotal = d3.sum([extraction, refining, transport, combustion]);
+            var ghgTotal = d3.sum([upstream, midstream, transport, combustion]);
 
             // Create oil object
             var obj = {
@@ -175,10 +177,9 @@ Oci.Views = Oci.Views || {};
               'apiGravity': +info[utils.getDatasetKey('apiGravity')],
               'oilDepth': +info[utils.getDatasetKey('oilDepth')],
               'ghgTotal': ghgTotal,
-              'extraction': +extraction,
-              'refining': +refining,
-              'combustion': +combustion,
-              'transport': +transport,
+              'upstream': upstream,
+              'midstream': midstream,
+              'downstream': combustion + transport,
               'waterToOilRatio': +opgee[utils.getDatasetKey('waterToOilRatio')],
               'gasToOilRatio': +opgee[utils.getDatasetKey('gasToOilRatio')],
               'type': info['Overall Crude Emissions Category'].trim()
@@ -195,7 +196,8 @@ Oci.Views = Oci.Views || {};
               return {
                 x: d.name,
                 y: d[metric],
-                type: d.type
+                type: d.type,
+                ghgTotal: d.ghgTotal
               };
             });
           });
@@ -205,18 +207,9 @@ Oci.Views = Oci.Views || {};
           chartData = chartData.map(function (group) {
             return group.map(function (d) {
               // Invert the x and y values, and y0 becomes x0
-              return { x: d.y, y: d.x, x0: d.y0 , type: d.type}; });
+              return { x: d.y, y: d.x, x0: d.y0 ,
+                        type: d.type, ghgTotal: d.ghgTotal }; });
           });
-
-          // Handle any ratios
-          for (var j = 0; j < chartData.length; j++) {
-            var oil = chartData[j];
-            var props = ['ghgTotal', 'extraction', 'transport',
-                          'refining', 'combustion'];
-            for (var i = 0; i < props.length; i++) {
-              oil[props[i]] = utils.getValueForRatio(oil[props[i]], sortRatio, oil);
-            }
-          }
         },
 
         sortByField: function(data, field, descending) {
@@ -251,7 +244,7 @@ Oci.Views = Oci.Views || {};
 
             // The opacity scale for process step
             processScale = d3.scale.ordinal()
-                       .domain(['extraction', 'refining', 'transport', 'combustion'])
+                       .domain(['upstream', 'midstream', 'downstream'])
                        .rangePoints([1, 0.4]);
           };
 
@@ -298,8 +291,10 @@ Oci.Views = Oci.Views || {};
                 .on('mouseover', function(d){
                   self.tip.show(d);
                   $('.swatch').css('background',utils.categoryColorForType(d.type));
-                  $('.stats-list dt:contains("' + utils.capitalize(d.step) + '")').css('color','orange')
-                  $('.stats-list dt:contains("' + utils.capitalize(d.step) + '")').next().css('color','orange')
+                  $('.stats-list dt:contains("' + utils.capitalize(d.step) + '")').css('color','orange');
+                  $('.stats-list dt:contains("' + utils.capitalize(d.step) + '")').next().css('color','orange');
+                  $('.stats-list dt:contains("Total")').addClass('total');
+                  $('.stats-list dt:contains("Total")').next().addClass('total');
                 })
                 .on('mouseleave', function(){
                   if (utils.insideTooltip(d3.event.clientX, d3.event.clientY)) {
@@ -523,7 +518,23 @@ Oci.Views = Oci.Views || {};
             prelim: utils.getPRELIMModel(params.refinery),
             showCoke: params.showCoke
           });
-          $('#some-value').attr('value', url)
+
+          var pageURL = encodeURIComponent(utils.buildShareURLFromParameters({}));
+          var links = utils.generateSocialLinks(pageURL);
+
+          // Twitter share
+          $('li.twitter a').attr('href', links.twitter);
+
+          // Facebook handled by meta tags
+
+          // LinkedIn
+          $('li.linkedin a').attr('href', links.linkedIn);
+
+          // Mail
+          $('li.email a').attr('href', links.mail);
+
+          // Readonly input field
+          $('#share-copy').attr('value', url);
         }
 
     });

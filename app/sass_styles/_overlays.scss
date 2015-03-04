@@ -258,6 +258,8 @@
     }
     &.twitter a:before { @extend .icon-twitter; }
     &.facebook a:before { @extend .icon-facebook; }
+    &.linkedin a:before { @extend .icon-linkedin; }
+    &.email a:before { @extend .icon-email; }
   }
 
   .dropdown-menu > li > a {

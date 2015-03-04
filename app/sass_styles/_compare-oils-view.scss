@@ -37,28 +37,22 @@
   }
 }
 
-.key-item.extraction:before {
+.key-item.upstream:before {
   background: $step-color;
   fill: $step-color;
-  opacity: $extraction-opacity;
+  opacity: $upstream-opacity;
 }
 
-.key-item.refining:before {
+.key-item.midstream:before {
   background: $step-color;
   fill: $step-color;
-  opacity: $refining-opacity;
+  opacity: $midstream-opacity;
 }
 
-.key-item.transport:before {
+.key-item.downstream:before {
   background: $step-color;
   fill: $step-color;
-  opacity: $transport-opacity;
-}
-
-.key-item.combustion:before {
-  background: $step-color;
-  fill: $step-color;
-  opacity: $combustion-opacity;
+  opacity: $downstream-opacity;
 }
 
 .chart-legend {

@@ -82,11 +82,11 @@ Oci.Views = Oci.Views || {};
 
         updateSummary: function () {
           var flaring = parseInt($('#slider-flaring').val());
-          $('.value.flare span').html(flaring);
+          $('.value.flare span').html(flaring + '%');
           var water = parseInt($('#slider-water').val());
-          $('.value.water span').html(water);
+          $('.value.water span').html(water + '%');
           var steam = parseInt($('#slider-steam').val());
-          $('.value.steam span').html(steam);
+          $('.value.steam span').html(steam + '%');
           var petcoke = $('#toggle-petcoke').is(':checked') ? 'On' : 'Off';
           $('.value.petcoke span').html(petcoke);
           var refinery = $('#dropdown-refinery').val();

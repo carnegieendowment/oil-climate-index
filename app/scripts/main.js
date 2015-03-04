@@ -20,7 +20,7 @@ window.Oci = {
       // technically we could start rending other things first and have the d3 trigger on load
       $.ajax({
         type: 'GET',
-        url: './data/new_data.json',
+        url: './data/oils.json',
         dataType: 'json',
         success: function(data) {
           Oci.data = data;

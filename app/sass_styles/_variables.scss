@@ -15,10 +15,9 @@ $refining-color: tint($oil-comp-bar, 25%);
 $transport-color: tint($oil-comp-bar, 50%);
 $combustion-color: tint($oil-comp-bar, 75%);
 $step-color: black;
-$extraction-opacity: 1.0;
-$refining-opacity: 0.8;
-$transport-opacity: 0.6;
-$combustion-opacity: 0.4;
+$upstream-opacity: 1.0;
+$midstream-opacity: 0.6;
+$downstream-opacity: 0.4;
 
 // We use these to control various font styles
 // $base-* refers to the base styles when there's nothing else to override them.

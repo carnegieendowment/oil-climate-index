@@ -5,6 +5,33 @@ var utils;
   'use strict';
 
   utils = {
+    // Generate social sharing links
+    generateSocialLinks: function(pageURL) {
+      var summary = 'Explore the true cost of technological advancements across the complete oil supply chain.';
+      var title = 'The Oil-Climate Index';
+
+      // Twitter
+      var twitter = 'https://twitter.com/share?' +
+        'text=' + summary + '&' +
+        'url=' + pageURL;
+
+      // LinkedIn
+      var linkedIn = 'http://www.linkedin.com/shareArticle?mini=true&' +
+      'summary=' + summary + '&' +
+      'title=' + title + '&' +
+      'url=' + pageURL;
+
+      // Mail
+      var mail = 'mailto:?subject=' + title + '&' +
+      'body=' + summary + '\n\n' + pageURL;
+
+      return {
+        twitter: twitter,
+        linkedIn: linkedIn,
+        mail: mail
+      };
+    },
+
     // Make a pretty oil name
     prettyOilName: function (oil) {
       return oil.Unique;
@@ -151,8 +178,9 @@ var utils;
     },
 
     // Add commas to a number string
+    // If we need commas, we probably don't need decimals
     numberWithCommas: function (x) {
-      return x.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      return x.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     },
 
     // Find and set option for a radio button input field
@@ -216,10 +244,9 @@ var utils;
         case 'productionVolume':
           return 'bbl crude';
         case 'ghgTotal':
-        case 'refining':
-        case 'extraction':
-        case 'transport':
-        case 'combustion':
+        case 'upstream':
+        case 'midstream':
+        case 'downstream':
           return getGHGUnits(sortRatio);
       }
     },
@@ -255,15 +282,10 @@ var utils;
         case 'productionVolume':
           return 'Production Volume';
         case 'ghgTotal':
+        case 'midstream':
+        case 'upstream':
+        case 'downstream':
           return addRatioString('Total Greenhouse Gas Emissions', sortRatio);
-        case 'refining':
-          return addRatioString('Greenhouse Gas Emissions from Refining', sortRatio);
-        case 'extraction':
-          return addRatioString('Greenhouse Gas Emissions from Extraction', sortRatio);
-        case 'transport':
-          return addRatioString('Greenhouse Gas Emissions from Transport', sortRatio);
-        case 'combustion':
-          return addRatioString('Greenhouse Gas Emissions from Combustion', sortRatio);
         default:
           console.warn('Unknown key');
           return '';
@@ -333,26 +355,29 @@ var utils;
     },
 
     // Return combustion components
-    getCombustionComponents: function (prelim, showCoke) {
-      var outList = ['Heat','Steam','Electricty','Hydrogen','FCC','Excess','Portion','Total','Unique','MJperbbl'];
+    getDownstreamComponents: function (prelim, showCoke, transport) {
+      var outList = ['Heat','Steam','Electricity','Hydrogen','FCC','Excess','Portion','Total','Unique','MJperbbl'];
       if (showCoke === true){
-        outList.push('Coke')
-        outList.push('Pet')
+        outList.push('Coke');
+        outList.push('Pet');
       }
       var objArray = _.map(prelim, function(el, key){
         return {
           name: key,
           value: el
-        }
-      })
+        };
+      });
+
+      // Add transport since we're combining it and combustion for downstream
+      objArray.push({ name: 'Transport to Refinery', value: transport });
       return _.filter(objArray, function(el){
-        return (!(_.contains(outList,el.name.split(' ')[0])) && Number(el.value) > 0.001)
-      })
+        return (!(_.contains(outList,el.name.split(' ')[0])) && Number(el.value) > 0.001);
+      });
     },
 
     // Return refining components
     getRefiningComponents: function (prelim) {
-      var inList = ['Heat','Steam','Electricty','Hydrogen','FCC','Excess'];
+      var inList = ['Heat','Steam','Electricity','Hydrogen','FCC','Excess'];
       var objArray = _.map(prelim, function(el, key){
         return {
           name: key,
@@ -391,7 +416,7 @@ var utils;
     },
 
     // Create the tooltip html given a title, a type, an array
-    // of values like [{key: foo, value: 12}, {key: bar, value: 123}],
+    // of values like [{name: foo, value: 12}, {name: bar, value: 123}],
     // an oil name, and a link
     createTooltipHtml: function (title, type, values, link, text) {
       var valuesString = '';
