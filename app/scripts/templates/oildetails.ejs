@@ -5,11 +5,11 @@
     <div class="prose">
       <p class="prose-meta">Oil details</p>
       <h1 class="prose-prime-title" id="oil-name"><!-- oil name --></h1>
-      <div id="oil-details-description" class="prose-body"><!-- oil description --></div>
+      <p id="oil-details-description"><!-- oil description --></p>
+      <p>Hover over each bar for the breakout of upstream, midstream, and downstream emissions. Use the controls on the right to see how operating decisions change an oil’s estimated GHG emissions.</p>
     </div>
     <div class="actions">
       <ul class="actions-list">
-        <li><a href="#" title="Download" class="bttn bttn-m bttn-base-light download">Download</a></li>
         <li class="dropdown">
           <a href="#" title="Share" class="bttn bttn-m bttn-base-light share" data-toggle="dropdown">Share</a>
           <div class="dropdown-content right">
@@ -25,6 +25,7 @@
             </div>
           </div>
         </li>
+        <li><a href="#" title="Download" class="bttn bttn-m bttn-base-light download">Download</a></li>
       </ul>
     </div>
   </div>
@@ -41,19 +42,20 @@
       <div class="panel-body">
         <div class="data-charts">
           <div class="chart-item">
-            <h3>TOTAL GREENHOUSE GAS EMISSIONS PER BARREL</h3>
+            <h3>TOTAL GREENHOUSE GAS EMISSIONS PER BARREL <span class="raw">(DEFAULT)</span></h3>
+            <p class="units"><%= totalUnits %></p>
             <p class="value"><span id="model-total"></span> <sub class="raw" id="default-total"></sub></p>
           </div>
           <div class="chart-item">
-            <h3>Upstream</h3>
+            <h3>Upstream Emissions</h3>
             <div class="bar" id="upstream-bar"></div>
           </div>
           <div class="chart-item">
-            <h3>Midstream</h3>
+            <h3>Midstream Emissions</h3>
             <div class="bar" id="midstream-bar"></div>
           </div>
           <div class="chart-item">
-            <h3>Downstream</h3>
+            <h3>Downstream Emissions</h3>
             <div class="bar" id="downstream-bar"></div>
           </div>
         </div>
@@ -86,7 +88,9 @@
         <dl class="stats-list">
           <% _.each(oil.keyStats, function(stat) { %>
           <dt><%= stat.key %></dt>
-          <dd title='<%= stat.title %>'><%= stat.value %></dd>
+          <dd>
+            <span class="stat-title" data-toggle="tooltip" title='<%= stat.title %>'><%= stat.value %></span>
+          </dd>
           <% }) %>
         </dl>
       </div>

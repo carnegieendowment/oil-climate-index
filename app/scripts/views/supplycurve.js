@@ -7,12 +7,12 @@ Oci.Views = Oci.Views || {};
 
     var self;
     var chartElement = '#supply-curve';
-    var margin = {top: 8, right: 8, bottom: 52, left: 64};
+    var margin = {top: 38, right: 8, bottom: 72, left: 84};
     var container;
     var width;
     var height;
     var aspectRatio = 2.5;
-    var minProductionDisplayWidth = 40000;
+    var minProductionDisplayWidth = 20000;
     var xScale;
     var yScale;
     var xAxis;
@@ -49,19 +49,24 @@ Oci.Views = Oci.Views || {};
               var productionVolume = utils.numberWithCommas(d.productionVolume);
               var total = utils.numberWithCommas(d.ghgTotal * d.productionVolume);
               var values = [{
-                name: 'Total GHG per barrel',
-                value: ghgTotal
+                name: 'GHG Emissions',
+                value: ghgTotal,
+                units: utils.getUnits('ghgTotal', 'perBarrel')
               },
               {
-                name: 'Production Volume',
-                value: productionVolume
+                name: 'Current Production',
+                value: productionVolume,
+                units: utils.getUnits('productionVolume')
               },
               {
-                name: 'Total GHG',
-                value: total
+                name: 'Estimated GHG Emission Rate',
+                value: total,
+                units: utils.getUnits('emissionRate')
               }
               ];
-              return utils.createTooltipHtml(d.name, d.type, values, d.id, 'A shallow, heavy, and sweet oil located off the California shore.');
+
+              var description = '';
+              return utils.createTooltipHtml(d.name, d.type, values, d.id, description);
             })
             .offset([-10,0]);
 
@@ -101,7 +106,7 @@ Oci.Views = Oci.Views || {};
         formatStackedData: function () {
           stackedTotal = 0;
           dataset.sort(function(a,b) {
-            return b.ghgTotal - a.ghgTotal;
+            return a.ghgTotal - b.ghgTotal;
           });
 
           // Build a kind of stacked map data structure, also applying a min width
@@ -133,7 +138,11 @@ Oci.Views = Oci.Views || {};
               'name': utils.prettyOilName(oilInfo),
               'productionVolume': +oilInfo['Oil Production Volume'],
               'ghgTotal': +oilInfo['Total Emissions'],
-              'type': oilInfo['Overall Crude Emissions Category'].trim()
+              'type': oilInfo['Overall Crude Emissions Category'].trim(),
+              'category': oilInfo['Sulfur Category'],
+              'productionVolumeCategory': oilInfo['Production Volume'],
+              'country': oilInfo.Country,
+              'onshore': oilInfo['Onshore/Offshore']
             };
             arr.push(obj);
           }
@@ -156,11 +165,12 @@ Oci.Views = Oci.Views || {};
           };
 
           var createAxes = function () {
-            //Define Y axis
+            //Define X axis
             xAxis = d3.svg.axis()
                       .scale(xScale)
                       .orient('bottom')
-                      .ticks(5);
+                      .ticks(10)
+                      .tickFormat(function(d) { return d / 1000000; });
 
             //Define Y axis
             yAxis = d3.svg.axis()
@@ -182,21 +192,21 @@ Oci.Views = Oci.Views || {};
 
             // X axis title
             var g = svg.append('g');
-            g.append('title')
-              .text(utils.getUnits('productionVolume'))
-              .attr('class', 'x axis pop');
+            g.append('text')
+              .attr('transform', 'translate(' + (width / 2) + ',' +
+                (height + margin.bottom - 25) + ')')
+              .style('text-anchor', 'middle')
+              .attr('class', 'x axis title')
+              .text(utils.getDatasetName('productionVolume'));
             g.append('text')
               .attr('transform', 'translate(' + (width / 2) + ',' +
                 (height + margin.bottom - 5) + ')')
               .style('text-anchor', 'middle')
-              .attr('class', 'x axis title')
-              .text(utils.getDatasetName('productionVolume'));
+              .attr('class', 'x axis title subtitle')
+              .text('Million barrels per day');
 
             // Y axis title
             g = svg.append('g');
-            g.append('title')
-              .text(utils.getUnits('ghgTotal', 'perBarrel'))
-              .attr('class', 'y axis pop');
             g.append('text')
               .attr('transform', 'rotate(-90)')
               .attr('y', -margin.left)
@@ -205,6 +215,23 @@ Oci.Views = Oci.Views || {};
               .style('text-anchor', 'middle')
               .attr('class', 'y axis title')
               .text(utils.getDatasetName('ghgTotal', 'perBarrel'));
+            g.append('text')
+              .attr('transform', 'rotate(-90)')
+              .attr('y', -margin.left + 20)
+              .attr('x', -(height / 2))
+              .attr('dy', '1em')
+              .style('text-anchor', 'middle')
+              .attr('class', 'y axis title subtitle')
+              .text(utils.getUnits('ghgTotal', 'perBarrel'));
+
+            // Graph title
+            svg.append('text')
+            .attr('y', -20)
+            .attr('x', width / 2)
+            .style('text-anchor', 'middle')
+            .attr('class', 'title main-title')
+            .text('Total Estimated GHG Emissions and Production Volumes for 30 OCI Test Oils')
+
           };
 
           var createData = function() {

@@ -3,8 +3,9 @@
   <!-- intro -->
   <div class="intro">
     <div class="prose">
-      <h1 class="prose-prime-title">Explore Emissions Drivers</h1>
-      <p>Total greenhouse gas emissions are affected by a number of upstream and downstream factors. Select different options to see the effects of processing choices on supply chain emissions.</p>
+      <h1 class="prose-prime-title">See the relationships that an oil’s unique physical properties have on the climate.</h1>
+      <p>An oil’s characteristics have different effects on its GHG emissions. Some factors, like an oil’s sulfur content, appear to have little impact on its midstream refining emissions. Meanwhile other factors, like an oil’s API gravity (or weight), appear to correlate with downstream end-use emissions.</p>
+      <p>Use the sorting tools on the right to plot oils’ estimated GHG emissions according to their various properties.</p>
     </div>
     <div class="actions">
       <ul class="actions-list">
@@ -49,12 +50,12 @@
           <form>
             <div class="control-section">
               <fieldset id="ratio-select">
-                <legend class="control-title">Sort by Ratio</legend>
+                <legend class="control-title">Sort by Units</legend>
                 <div class="radio">
                   <label><input type="radio" name="ratio-select" value="perBarrel" checked> GHGs/Barrel</label>
                 </div>
                 <div class="radio">
-                  <label><input type="radio" name="ratio-select" value="perMJ"> GHGs/MJ</label>
+                  <label><input type="radio" name="ratio-select" value="perMJ"> GHGs/Megajoule</label>
                 </div>
                 <div class="radio has-button">
                   <label><input type="radio" name="ratio-select" value="perDollar"> GHGs/$</label>
@@ -65,12 +66,9 @@
 
             <div class="control-section">
               <fieldset id="x-select">
-                <legend class="control-title">X Axis</legend>
+                <legend class="control-title">Select Oil Characteristic (X axis)</legend>
                 <div class="radio">
                   <label><input type="radio" name="x-select" value="apiGravity" checked> API Gravity</label>
-                </div>
-                <div class="radio">
-                  <label><input type="radio" name="x-select" value="oilDepth"> Oil Depth</label>
                 </div>
                 <div class="radio">
                   <label><input type="radio" name="x-select" value="waterToOilRatio"> Water-to-Oil Ratio</label>
@@ -78,12 +76,27 @@
                 <div class="radio">
                   <label><input type="radio" name="x-select" value="gasToOilRatio"> Gas-to-Oil Ratio</label>
                 </div>
+                <div class="radio">
+                  <label><input type="radio" name="x-select" value="sulfurContent"> Sulfur Content</label>
+                </div>
+                <!--<div class="radio">
+                  <label><input type="radio" name="x-select" value="yearsProduction"> Years in Production</label>
+                </div>-->
+                <div class="radio">
+                  <label><input type="radio" name="x-select" value="ghgGasoline"> Gasoline Production</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="x-select" value="ghgDiesel"> Diesel Production</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="x-select" value="ghgBunker"> Bunker Fuel Production</label>
+                </div>
               </fieldset>
             </div>
 
             <div class="control-section">
               <fieldset id="y-select">
-                <legend class="control-title">Y Axis</legend>
+                <legend class="control-title">Select Emissions Component (Y axis)</legend>
                 <div class="radio">
                   <label><input type="radio" name="y-select" value="ghgTotal" checked> Total GHGs</label>
                 </div>

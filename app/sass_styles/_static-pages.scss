@@ -1,0 +1,48 @@
+// GLOSSARY
+
+.glossary-def {
+  padding: 24px 0 0 0;
+  margin-top: 24px;
+  border-top: 1px solid rgba($base-color, 0.08);
+  > *:last-child {
+    margin-bottom: 0;
+  }
+  .glossary-term {
+    @extend .hd-label;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+// METHODOLOGY
+
+ul.oiltype-legend {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  li {
+    position: relative;
+    padding: 0 0 0 24px;
+  }
+}
+
+[class^='ot-'] {
+  position: absolute;
+  border-radius: $global-radius/2;
+  content: "";
+  height: 14px;
+  width: 14px;
+  top: 50%;
+  left: 0;
+  margin-top: -7px;
+}
+
+.ot-ultra-deep { background-color: $ot-ultra-deep; }
+.ot-conventional { background-color: $ot-conventional; }
+.ot-extra-heavy { background-color: $ot-extra-heavy; }
+.ot-heavy { background-color: $ot-heavy; }
+.ot-high-flare { background-color: $ot-high-flare; }
+.ot-high-steam { background-color: $ot-high-steam; }
+.ot-high-gas { background-color: $ot-high-gas; }
+.ot-light { background-color: $ot-light; }
+.ot-depleted-oil { background-color: $ot-depleted-oil; }

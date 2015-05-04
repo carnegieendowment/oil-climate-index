@@ -1,4 +1,4 @@
-/*global Oci*/
+/*global Oci, utils*/
 
 Oci.Views = Oci.Views || {};
 
@@ -16,7 +16,8 @@ Oci.Views = Oci.Views || {};
         events: {
           'click .apply': 'handleApply',
           'click [data-modal-dismiss]': 'handleDismissClick',
-          'keyup .price-input': 'verifyPrice'
+          'keyup .price-input': 'verifyPrice',
+          'click .reset': 'handleReset'
         },
 
         initialize: function () {
@@ -80,6 +81,14 @@ Oci.Views = Oci.Views || {};
 
             input.value = newValue;
           }
+        },
+
+        // Reset the prices to original values
+        handleReset: function (e) {
+          e.preventDefault();
+
+          Oci.prices = utils.cloneObject(Oci.origPrices);
+          self.loadPrices();
         }
     });
 

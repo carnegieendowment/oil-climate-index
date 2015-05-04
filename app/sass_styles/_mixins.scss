@@ -105,6 +105,9 @@
   @else if $point == ipad-portrait {
     @media (max-width: $bp-ipad-port) and (orientation: portrait) { @content; }
   }
+  @else if $point == tablet-full {
+    @media (max-width: $bp-tablet) { @content; }
+  }
   @else if $point == tablet-long {
     @media (max-width: $bp-tablet-long) { @content; }
   }

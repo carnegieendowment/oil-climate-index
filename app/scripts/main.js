@@ -1,4 +1,4 @@
-/*global Oci, $*/
+/*global Oci, utils*/
 
 window.Oci = {
     Models: {},
@@ -10,6 +10,7 @@ window.Oci = {
 
         Oci.getData();
         Oci.getPrices();
+        Oci.getBlurbs();
         Oci.router = new Oci.Routers.Router();
         Backbone.history.start();
 
@@ -24,6 +25,21 @@ window.Oci = {
         dataType: 'json',
         success: function(data) {
           Oci.data = data;
+          Oci.data.globalExtents = {};
+        },
+        async: false
+      });
+    },
+    getBlurbs: function () {
+      'use strict';
+      // synchronous AJAX call because the file is small and we need it to render all the graphs
+      // technically we could start rending other things first and have the d3 trigger on load
+      $.ajax({
+        type: 'GET',
+        url: './data/blurbs.json',
+        dataType: 'json',
+        success: function(data) {
+          Oci.blurbs = data;
         },
         async: false
       });
@@ -37,6 +53,7 @@ window.Oci = {
         dataType: 'json',
         success: function(data) {
           Oci.prices = data;
+          Oci.origPrices = utils.cloneObject(data);
         },
         async: false
       });
@@ -51,7 +68,11 @@ window.Oci = {
       }
     },
     prices: {},
-    data: {}
+    data: {},
+    order: {
+      upstream: ['Exploration','Drilling','Production','Processing','Upgrading','Maintenance','Waste','Venting, Flaring, and Fugitive Emissions','Diluent','Miscellaneous','Transport to Refinery','Offsite emissions'],
+      downstream: ['Transport to Consumers','Gasoline', 'Jet Fuel', 'Diesel', 'Fuel Oil', 'Petroleum Coke', 'Bunker Fuel', 'Light Ends (RFG)']
+    }
 };
 
 $(document).ready(function () {

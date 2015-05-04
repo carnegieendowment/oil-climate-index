@@ -6,6 +6,12 @@ Oci.Views = Oci.Views || {};
     'use strict';
 
     var self;
+    var flaringValues;
+    var flaringLabels;
+    var steamValues;
+    var steamLabels;
+    var waterValues;
+    var waterLabels
 
     Oci.Views.ModelParameters = Backbone.View.extend({
 
@@ -22,12 +28,14 @@ Oci.Views = Oci.Views || {};
 
         initialize: function () {
           self = this;
+          this.setSliders();
         },
 
         render: function () {
           this.$el.html(this.template());
           this.addSliders();
           this.updateSummary();
+          this.$('[data-toggle="tooltip"]').tooltip();
         },
 
         getModelValues: function () {
@@ -116,16 +124,15 @@ Oci.Views = Oci.Views || {};
             start: 100,
             connect: 'lower',
             snap: true,
-            range: {
-              'min': 10,
-              '72%': 75,
-              'max': 100
-            }
+            range: _.object(flaringLabels, flaringValues)
           });
           $('#slider-flaring').noUiSlider_pips({
             mode: 'values',
-            values: [10, 75, 100],
+            values: flaringValues,
             density: 10,
+            format: wNumb({
+		            postfix: '%'
+	          }),
             stepped: true
           });
 
@@ -133,16 +140,15 @@ Oci.Views = Oci.Views || {};
             start: 100,
             connect: 'lower',
             snap: true,
-            range: {
-              'min': 75,
-              '50%': 100,
-              'max': 125
-            }
+            range: _.object(steamLabels, steamValues)
           });
           $('#slider-steam').noUiSlider_pips({
             mode: 'values',
-            values: [75, 100, 125],
+            values: steamValues,
             density: 10,
+            format: wNumb({
+		            postfix: '%'
+	          }),
             stepped: true
           });
 
@@ -150,18 +156,15 @@ Oci.Views = Oci.Views || {};
             start: 100,
             connect: 'lower',
             snap: true,
-            range: {
-              'min': 50,
-              '25%': 75,
-              '50%': 100,
-              '75%': 125,
-              'max': 150
-            }
+            range: _.object(waterLabels, waterValues)
           });
           $('#slider-water').noUiSlider_pips({
             mode: 'values',
-            values: [50, 75, 100, 125, 150],
+            values: waterValues,
             density: 10,
+            format: wNumb({
+		            postfix: '%'
+	          }),
             stepped: true
           });
         },
@@ -169,6 +172,34 @@ Oci.Views = Oci.Views || {};
         toggleModelParameters: function (e) {
           e.preventDefault();
           $('#model-parameters').toggleClass('open');
+        },
+
+        // set the slider options based on the metadata
+        setSliders: function () {
+          var m = Oci.data.metadata;
+
+          flaringValues = m.flare.split(',').map(function(val) { return Number(val) * 100; });
+          steamValues = m.steam.split(',').map(function(val) { return Number(val) * 100; });
+          waterValues = m.water.split(',').map(function(val) { return Number(val) * 100; });
+
+          flaringLabels = this.sliderHelper(flaringValues);
+          steamLabels = this.sliderHelper(steamValues);
+          waterLabels = this.sliderHelper(waterValues);
+        },
+
+        // helper function for setSliders
+        sliderHelper: function(array) {
+          var min = d3.min(array);
+          var max = d3.max(array);
+          var tempArray = array.map(function(val){
+            return ((val - min) / ((max - min) / 100)).toFixed(0) + '%';
+          });
+          tempArray.sort(function(a, b) {
+            return a - b;
+          });
+          tempArray[0] = 'min';
+          tempArray[tempArray.length - 1] = 'max';
+          return tempArray;
         }
     });
 

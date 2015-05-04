@@ -3,8 +3,9 @@
   <!-- intro -->
   <div class="intro">
     <div class="prose">
-      <h1 class="prose-prime-title">Compare Oils across Supply Chain</h1>
-      <p>The only way to determine the true cost of these resources is to assess the environmental impact of the complete oil supply chain, including extraction, refining, transportation, and combustion.</p>
+      <h1 class="prose-prime-title">Compare and sort oils by their estimated greenhouse gas emissions from each part of the supply chain.</h1>
+      <p>The global oil market is made up of complex resources, thousands of extraction sites, evolving production methods, different refinery configurations, vast distribution and logistics networks, and varying end uses of the numerous petroleum products. All of these factors contribute to an oil’s climate impact.</p>
+      <p>Use the sorting tools on the right to compare the GHG impact of specific parts of the oil supply chain. Edit certain model parameters to estimate how upstream, midstream, and downstream decisions change GHG emissions.</p>
     </div>
     <div class="actions">
       <ul class="actions-list">
@@ -57,12 +58,12 @@
           <form>
             <div class="control-section">
               <fieldset id="ratio-select">
-                <legend class="control-title">Sort by Ratio</legend>
+                <legend class="control-title">Sort by Emissions Units</legend>
                 <div class="radio">
                   <label><input type="radio" name="ratio-select" value="perBarrel" checked> GHGs/Barrel</label>
                 </div>
                 <div class="radio">
-                  <label><input type="radio" name="ratio-select" value="perMJ"> GHGs/MJ</label>
+                  <label><input type="radio" name="ratio-select" value="perMJ"> GHGs/Megajoule</label>
                 </div>
                 <div class="radio has-button">
                   <label><input type="radio" name="ratio-select" value="perDollar"> GHGs/$</label>
@@ -73,7 +74,7 @@
 
             <div class="control-section">
               <fieldset id="step-select">
-                <legend class="control-title">Sort by Step</legend>
+                <legend class="control-title">Sort by Emissions Components</legend>
                 <div class="radio">
                   <label><input type="radio" name="step-select" value="ghgTotal" checked> Total GHGs</label>
                 </div>
@@ -86,12 +87,15 @@
                 <div class="radio">
                   <label><input type="radio" name="step-select" value="downstream"> Downstream</label>
                 </div>
+                <div class="radio">
+                  <label><input type="radio" name="step-select" value="type"> Oil Type</label>
+                </div>
               </fieldset>
             </div>
 
             <div class="control-section">
               <fieldset id="sort-select">
-                <legend class="control-title">Sort order</legend>
+                <legend class="control-title">Sort by Emissions Order</legend>
                 <div class="radio">
                   <label><input type="radio" name="sort-select" value="true" checked> High-to-Low</label>
                 </div>

@@ -21,7 +21,7 @@
     @extend .antialiased;
     font-weight: bold;
     @include transform(translateZ(0));
-    @include transition(opacity 0.16s ease 0);
+    @include transition(opacity 0.16s ease 0s);
     &:hover {
       @include opacity(0.64);
     }

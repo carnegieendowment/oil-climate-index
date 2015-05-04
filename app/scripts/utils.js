@@ -5,6 +5,108 @@ var utils;
   'use strict';
 
   utils = {
+    // Get global extents for dataset
+    // send ratio, min/max
+    // optional component and oil
+    // store them and return so we only have to calculate once per session
+    getGlobalExtent: function (ratio, minMax, component, selectedOil) {
+
+      // handle this one input differently
+      if (component === 'ghgTotal') {
+        component = null;
+      }
+
+      // check if this already exists and return if so
+      var oilLookup = (selectedOil) ? selectedOil : 'global';
+      var componentLookup = (component) ? component : 'total';
+      if (Oci.data.globalExtents[ratio] &&
+          Oci.data.globalExtents[ratio][oilLookup] &&
+          Oci.data.globalExtents[ratio][oilLookup][componentLookup] &&
+          Oci.data.globalExtents[ratio][oilLookup][componentLookup][minMax]) {
+        return Oci.data.globalExtents[ratio][oilLookup][componentLookup][minMax];
+      }
+
+      var data = Oci.data;
+
+      // filter data if only one oil is selected
+      var oils = data.info;
+      if (selectedOil) {
+        oils = _.object([selectedOil], _.filter(oils, function(obj, key) { return key === selectedOil; }));
+      }
+
+      // figure out whether to calculate mins or maxs
+      var minMaxMultiplier = (minMax === 'min') ? -1 : 1;
+      var extent = null;
+
+      // make a components object for easier summing later
+      var components = {};
+
+      // Loop
+      for (var key in oils) {
+        var opgeeExtent = null;
+        var transport = +oils[key]['Transport Emissions'];  // Transport total
+        for (var i = 0; i < data.metadata.water.split(',').length; i++) {
+          for (var j = 0; j < data.metadata.steam.split(',').length; j++) {
+            for (var k = 0; k < data.metadata.flare.split(',').length; k++) {
+              var opgee = data.opgee['run' + i + j + k][key];
+              var extraction = +opgee['Net lifecycle emissions'];
+
+              if (!opgeeExtent || (extraction * minMaxMultiplier > opgeeExtent * minMaxMultiplier)) {
+                opgeeExtent = extraction;
+              }
+            }
+          }
+        }
+        for (var l = 0; l < data.metadata.refinery.split(',').length; l++) {
+          [true, false].forEach(function(showCoke) {
+
+            var prelim = data.prelim['run' + l][key];
+
+            var refining = +utils.getRefiningTotal(prelim);
+            var combustion = +utils.getCombustionTotal(prelim, showCoke);
+
+            // Sum it up! (conditionally based on whether component is selected)
+            var total;
+            components.upstream = opgeeExtent;
+            components.midstream = refining;
+            components.downstream = combustion + transport;
+            if (component) {
+              total = components[component];
+            }
+            else {
+              total = _.reduce(components, function(a, b){ return a + b; }, 0);
+            }
+
+            // Handle ratio
+            total = utils.getValueForRatio(total, ratio, prelim);
+
+            // Check which is bigger (or smaller)
+            if (!opgeeExtent || (extraction * minMaxMultiplier > opgeeExtent * minMaxMultiplier)) {
+              opgeeExtent = extraction;
+            }
+            if (!extent || (total * minMaxMultiplier > extent * minMaxMultiplier)) {
+              extent = total;
+            }
+          });
+        }
+      }
+
+      // store for later (unless it's perDollar)
+      if (ratio !== 'perDollar') {
+        if (!Oci.data.globalExtents[ratio]){
+          Oci.data.globalExtents[ratio] = {};
+        }
+        if (!Oci.data.globalExtents[ratio][oilLookup]) {
+          Oci.data.globalExtents[ratio][oilLookup] = {};
+        }
+        if (!Oci.data.globalExtents[ratio][oilLookup][componentLookup]) {
+          Oci.data.globalExtents[ratio][oilLookup][componentLookup] = {};
+        }
+        Oci.data.globalExtents[ratio][oilLookup][componentLookup][minMax] = extent;
+      }
+      return extent;
+    },
+
     // Generate social sharing links
     generateSocialLinks: function(pageURL) {
       var summary = 'Explore the true cost of technological advancements across the complete oil supply chain.';
@@ -52,7 +154,7 @@ var utils;
     },
 
     // Convert the original value to a new value based on desired ratio type
-    getValueForRatio: function (originalValue, ratio, prelim) {
+    getValueForRatio: function (originalValue, ratio, prelim, showCoke) {
       switch(ratio) {
         case 'perBarrel':
           return originalValue;
@@ -61,27 +163,31 @@ var utils;
           return originalValue * (1 / prelim.MJperbbl);
         case 'perDollar':
           // GHG / barrel * barrel / $
-          return originalValue * (1 / this.getPricePerBarrel(prelim));
+          return originalValue * (1.0 / this.getPricePerBarrel(prelim, showCoke));
         default:
           return originalValue;
       }
     },
 
     // Use prelim data and pricing info to determing blended price per barrel
-    getPricePerBarrel: function (prelim) {
-      var numerator = prelim['Portion Blended Gasoline'] * Oci.prices.gasoline.price +
-        prelim['Portion Jet-A/AVTUR'] * Oci.prices.jetFuel.price +
-        prelim['Portion ULSD'] * Oci.prices.diesel.price +
+    getPricePerBarrel: function (prelim, showCoke) {
+      // Sum up price * portion in barrel
+      var sum = prelim['Portion Gasoline'] * Oci.prices.gasoline.price +
+        prelim['Portion Jet Fuel'] * Oci.prices.jetFuel.price +
+        prelim['Portion Diesel'] * Oci.prices.diesel.price +
         prelim['Portion Fuel Oil'] * Oci.prices.fuelOil.price +
-        prelim['Portion Coke'] * Oci.prices.coke.price +
-        prelim['Portion Bunker C'] * Oci.prices.bunkerFuel.price;
+        prelim['Portion Bunker Fuel'] * Oci.prices.bunkerFuel.price;
 
-      var denominator = d3.sum([prelim['Portion Blended Gasoline'],
-        prelim['Portion Jet-A/AVTUR'], prelim['Portion ULSD'],
-        prelim['Portion Fuel Oil'], prelim['Portion Coke'],
-        prelim['Portion Bunker C']]);
+      // Special conversion to get to per barrel
+      sum = sum * 42 / 100000;
 
-      return numerator / denominator;
+      // Add extra if we're including petcoke, formulas are provided by Carnegie
+      if (showCoke) {
+       sum += (((prelim['Portion Petroleum Coke'] / 5) * Oci.prices.coke.price) / 100000);
+       sum += prelim['Net Upstream Petcoke'] * Oci.prices.coke.price;
+      }
+
+      return sum;
     },
 
     categoryColorForType: function (oilType) {
@@ -94,21 +200,21 @@ var utils;
       switch (oilType) {
         case 'Ultra-Deep':
           return colors(0);
-        case 'Light':
+        case 'Conventional':
           return colors(1);
         case 'Extra-Heavy':
           return colors(2);
-        case 'High Flare':
-          return colors(3);
         case 'Heavy':
+          return colors(3);
+        case 'High Flare':
           return colors(4);
         case 'High Steam':
           return colors(5);
         case 'High Gas':
           return colors(6);
-        case 'Conventional':
+        case 'Light':
           return colors(7);
-        case 'Depleted Oil':
+        case 'Depleted/Watery Oil':
           return colors(8);
         default:
           console.warn('Invalid oil type for color', oilType);
@@ -178,9 +284,10 @@ var utils;
     },
 
     // Add commas to a number string
-    // If we need commas, we probably don't need decimals
+    // If it's greater than one, round to int
     numberWithCommas: function (x) {
-      return x.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      x = x > 1 ? x.toFixed(0) : x.toFixed(1);
+      return x.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     },
 
     // Find and set option for a radio button input field
@@ -211,6 +318,16 @@ var utils;
           return 'Transport Emissions';
         case 'productionVolume':
           return 'Oil Production Volume';
+        case 'sulfurContent':
+          return 'Sulfur %wt';
+        case 'ghgBunker':
+          return 'Bunker Fuel';
+        case 'ghgGasoline':
+          return 'Gasoline';
+        case 'ghgDiesel':
+          return 'Diesel';
+        case 'yearsProduction':
+          return 'Years';
         default:
           return console.warn('Unknown key');
       }
@@ -221,11 +338,11 @@ var utils;
       var getGHGUnits = function (sortRatio) {
         switch(sortRatio) {
           case 'perBarrel':
-            return 'kgCO2eq/bbl';
+            return 'kg CO\u2082 eq./barrel crude';
           case 'perMJ':
-            return 'kgCO2eq/MJ';
+            return 'kg CO\u2082 eq./MJ products';
           case 'perDollar':
-            return 'kgCO2eq/$';
+            return 'kg CO\u2082 eq./$ products';
           default:
             console.warn('unknown sort ratio');
             return '';
@@ -238,11 +355,23 @@ var utils;
         case 'oilDepth':
           return 'feet';
         case 'waterToOilRatio':
-          return 'bbl water/bbl oil';
+          return 'bbl water/bbl crude';
         case 'gasToOilRatio':
-          return 'scf/bbl oil';
+          return 'scf/bbl crude';
         case 'productionVolume':
-          return 'bbl crude';
+          return 'barrels per day';
+        case 'emissionRate':
+          return 'kg CO<sub>2</sub> eq./day';
+        case 'yearsProduction':
+          return 'Years';
+        case 'sulfurContent':
+          return '% weight';
+        case 'type':
+        case 'ghgHeat':
+        case 'ghgElectricity':
+        case 'ghgGasoline':
+        case 'ghgDiesel':
+        case 'ghgBunker':
         case 'ghgTotal':
         case 'upstream':
         case 'midstream':
@@ -251,8 +380,8 @@ var utils;
       }
     },
 
-    // Get a nice name for a key
-    getDatasetName: function (key, sortRatio) {
+    // Get a nice name for a key, with a special case for Emissions Drivers
+    getDatasetName: function (key, sortRatio, isDrivers) {
       var addRatioString = function (title, sortRatio) {
         if (!sortRatio) {
           return title;
@@ -260,7 +389,7 @@ var utils;
 
         switch(sortRatio) {
           case 'perBarrel':
-            return title += ' Per Barrel';
+            return title += '';
           case 'perMJ':
             return title += ' Per Megajoule';
           case 'perDollar':
@@ -280,12 +409,32 @@ var utils;
         case 'gasToOilRatio':
           return 'Gas-to-Oil Ratio';
         case 'productionVolume':
-          return 'Production Volume';
+          return 'Current Estimated Oil Production';
+        case 'ghgElectricity':
+          return 'GHGs from Electricity';
+        case 'ghgHeat':
+          return 'GHGs from Heat';
+        case 'ghgGasoline':
+          return 'GHGs from Gasoline Consumption';
+        case 'ghgDiesel':
+          return 'GHGs from Diesel Consumption';
+        case 'ghgBunker':
+          return 'GHGs from Bunker Fuel Consumption';
+        case 'yearsProduction':
+          return 'Years in Production';
+        case 'sulfurContent':
+          return 'Sulfur Content';
+        case 'type':
         case 'ghgTotal':
         case 'midstream':
         case 'upstream':
         case 'downstream':
-          return addRatioString('Total Greenhouse Gas Emissions', sortRatio);
+          if (isDrivers === true && key !== 'ghgTotal') {
+            return addRatioString(key + ' Greenhouse Gas Emissions', sortRatio);
+          } else {
+            return addRatioString('Total Greenhouse Gas Emissions', sortRatio);
+          }
+          break;
         default:
           console.warn('Unknown key');
           return '';
@@ -341,66 +490,92 @@ var utils;
 
     // Sum up combustion fields
     getCombustionTotal: function (prelim, showCoke) {
-      var cokeArray = [prelim['Blended Gasoline'], prelim['Jet-A/AVTUR'],
-        prelim['ULSD'], prelim['Fuel Oil'], prelim['Coke'], prelim['Bunker C'],
-        prelim['Light Ends (RFG)'],
-        prelim['Pet Coke (Upgrading) - Net Upstream Use)']];
 
-      var noCokeArray = [prelim['Blended Gasoline'], prelim['Jet-A/AVTUR'],
-        prelim['ULSD'], prelim['Fuel Oil'], prelim['Bunker C'],
+      var combustionArray = [prelim['Gasoline'], prelim['Jet Fuel'],
+        prelim['Diesel'], prelim['Fuel Oil'], prelim['Bunker Fuel'],
         prelim['Light Ends (RFG)']];
 
-      var sumArray = showCoke ? cokeArray : noCokeArray;
-      return d3.sum(sumArray);
+      if (showCoke) {
+        combustionArray.push(prelim['Petroleum Coke']);
+        combustionArray.push(prelim['Net Upstream Petcoke']);
+      }
+
+      return d3.sum(combustionArray);
     },
 
     // Return combustion components
     getDownstreamComponents: function (prelim, showCoke, transport) {
-      var outList = ['Heat','Steam','Electricity','Hydrogen','FCC','Excess','Portion','Total','Unique','MJperbbl'];
-      if (showCoke === true){
-        outList.push('Coke');
-        outList.push('Pet');
-      }
-      var objArray = _.map(prelim, function(el, key){
-        return {
-          name: key,
-          value: el
-        };
+      var outList = ['Heat','Steam','Electricity','Hydrogen','Fluid','Excess','Portion','Total','Unique','MJperbbl'];
+
+      var objArray = _.filter(_.map(prelim, function(el, key){
+        return { name: key, value: el };
+      }), function(el) {
+        return !_.contains(['Petroleum Coke','Net Upstream Petcoke'],el.name);
       });
 
+      // add a combined petcoke object
+      if (showCoke === true) {
+        objArray.push({
+          name: 'Petroleum Coke',
+          value: (Number(prelim['Petroleum Coke']) || 0) + (Number(prelim['Net Upstream Petcoke']) || 0)
+        });
+      }
       // Add transport since we're combining it and combustion for downstream
-      objArray.push({ name: 'Transport to Refinery', value: transport });
-      return _.filter(objArray, function(el){
-        return (!(_.contains(outList,el.name.split(' ')[0])) && Number(el.value) > 0.001);
+      objArray.push({ name: 'Transport to Consumers', value: transport });
+      var unsorted =  _.filter(objArray, function(el) {
+        return (!(_.contains(outList,el.name.split(' ')[0])) && Number(el.value) > 0.005);
       });
+      return this.preorderedSort(unsorted, 'downstream');
     },
 
     // Return refining components
     getRefiningComponents: function (prelim) {
-      var inList = ['Heat','Steam','Electricity','Hydrogen','FCC','Excess'];
-      var objArray = _.map(prelim, function(el, key){
-        return {
-          name: key,
-          value: el
-        }
-      })
-      return _.filter(objArray, function(el){
-        return (_.contains(inList,el.name.split(' ')[0]) && Number(el.value) > 0.001)
-      })
+      var refining = [{
+        name: 'Heat',
+        value: this.aggregatePrelim(prelim, 'Heat')
+      },
+      {
+        name: 'Electricity',
+        value: +prelim['Electricity']
+      },
+      {
+        name: 'Steam',
+        value: this.aggregatePrelim(prelim, 'Steam')
+      },
+      {
+        name: 'Hydrogen (via Steam Methane Reformer)',
+        value: this.aggregatePrelim(prelim, 'Hydrogen')
+      },
+      {
+        name: 'Catalyst Regeneration (Fluid Catalytic Cracking)',
+        value: +prelim['Fluid Catalytic Cracking Regeneration']
+      }];
+      return _.filter(refining, function(el){
+        return el.value > 0.005;
+      });
     },
 
     // Return extraction components
     getExtractionComponents: function (opgee) {
       var outList = ['Water-to-Oil-Ratio','Net','API','Gas-to-Oil-Ratio','Unique'];
-      var objArray = _.map(opgee, function(el, key){
+      var objArray = _.map(opgee, function(el, key) {
         return {
           name: key,
           value: el
         }
       })
-      return _.filter(objArray, function(el){
-        return (!(_.contains(outList,el.name.split(' ')[0])) && Number(el.value) > 0.001)
-      })
+      var unsorted = _.filter(objArray, function(el){
+        return (!(_.contains(outList,el.name.split(' ')[0])) && Number(el.value).toFixed(0) !== '0')
+      });
+      return this.preorderedSort(unsorted, 'upstream');
+    },
+
+    // Aggregates prelim components according to a string
+    // String matches against first word of prelim properties
+    aggregatePrelim: function(prelim, string) {
+      return _.reduce(prelim, function(a,b,key){
+        return a + ((key.split(' ')[0] === string) ? Number(b) : 0)
+      },0)
     },
 
     // Sum up refining fields
@@ -416,13 +591,14 @@ var utils;
     },
 
     // Create the tooltip html given a title, a type, an array
-    // of values like [{name: foo, value: 12}, {name: bar, value: 123}],
+    // of values like [{name: foo, value: 12, units: bbl}, {name: bar, value: 123, units: bbl}],
     // an oil name, and a link
     createTooltipHtml: function (title, type, values, link, text) {
       var valuesString = '';
       for (var i = 0; i < values.length; i++) {
-        valuesString += '<dt>' + values[i].name + '</dt>';
-        valuesString += '<dd>' + values[i].value + '</dd>';
+        var v = values[i];
+        valuesString += '<dt>' + v.name + '<small class="units">' + v.units + '</small></dt>';
+        valuesString += '<dd>' + v.value + '</dd>';
       }
       var html = '<div class="popover top in">' +
         '<div class="popover-inner">' +
@@ -467,6 +643,28 @@ var utils;
         $('.dropdown.open').not(parent).removeClass('open');
       });
 
+    },
+
+    preorderedSort: function (array, step) {
+      return _.sortBy(array, function(sort){
+        return Oci.order[step].indexOf(sort.name);
+      })
+    },
+
+    refineryNameToDropdown: function (refinery) {
+      var dropdown;
+      switch(refinery) {
+        case 'Hydroskimming Configuration':
+          dropdown = 1;
+          break;
+        case 'Medium Conversion: FCC & GO-HC ':
+          dropdown = 2;
+          break;
+        case 'Deep Conversion: FCC & GO-HC':
+          dropdown = 3;
+          break;
+      }
+      return dropdown;
     }
   };
 })();

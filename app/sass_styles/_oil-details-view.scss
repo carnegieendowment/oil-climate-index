@@ -14,9 +14,24 @@
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 8px;
+      .raw {
+        color: #302C26;
+        opacity: 0.32;
+        font-size: 85%;
+      }
     }
     &:last-child {
       margin-bottom: 0;
+    }
+    .units {
+      @extend .hd-label;
+      font-size: 12px;
+      color: tint($base-color, 56%);
+      line-height: 16px;
+      font-family: $base-font-family;
+      font-weight: $base-font-weight;
+      font-stretch: normal;
+      margin: -10px 0 0;
     }
   }
   .data-charts {
@@ -86,6 +101,7 @@
 
    div {
      cursor: default !important;
+     outline: none;
    }
 
   .non-active path {

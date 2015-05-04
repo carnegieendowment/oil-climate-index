@@ -8,17 +8,13 @@
     @include col(12/12);
     position: relative;
     z-index: 1;
-    @include bp(tablet-long) {
-      z-index: 2;
-      margin-top: -64px;
-    }
   }
 }
 
 #supply-curve {
   rect {
     // @include transform(translateZ(0));
-    // @include transition(all 0.16s ease 0);
+    // @include transition(all 0.16s ease 0s);
     // cursor: pointer;
     stroke: #fff;
     stroke-width: 1;
@@ -29,5 +25,11 @@
     // &:hover {
     //   @include opacity(0.64);
     // }
+  }
+}
+
+.main-title {
+  @include bp(ipad) {
+    display: none;
   }
 }

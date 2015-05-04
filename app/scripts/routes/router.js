@@ -87,6 +87,8 @@ Oci.Routers = Oci.Routers || {};
           $('#menu-block li').removeClass('active');
           $('#menu-supply').removeClass('active');
         }
+        // sends page information to google analytics
+        ga('send','pageview', window.location.hash);
       }
 
     });

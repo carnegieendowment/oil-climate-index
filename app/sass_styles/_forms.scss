@@ -1,114 +1,94 @@
-// FORMS
+// GLOBAL
 
+button, input, select, textarea {
+  font: inherit;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
 
-.page {
+.form-horizontal {
+  @extend .clearfix;
+}
 
-  // GLOBAL
-
-  button, input, select, textarea {
-    font: inherit;
-    height: auto;
-    width: auto;
-    margin: 0;
+.form-control {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 4px 9px;
+  font-size: 14px;
+  line-height: 22px;
+  color: $base-font-color;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid tint($base-color, 80%);
+  border-radius: $global-radius;
+  font-family: inherit;
+  @include transform(translateZ(0));
+  @include transition(all 0.24s ease 0s);
+  box-shadow: inset 0 2px 0 0 rgba($base-color, 0.08);
+  @include input-placeholder {
+    color: tint($base-color, 64%);
   }
+  &:focus {
+    outline: 0;
+    border-color: tint($base-color, 48%);
+  }
+}
 
-  .form-control {
-    display: block;
-    width: 100%;
-    height: 32px;
-    padding: 4px 9px;
-    font-size: 14px;
-    line-height: 22px;
-    color: $base-font-color;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid tint($base-color, 80%);
-    border-radius: $global-radius;
-    font-family: inherit;
-    @include transform(translateZ(0));
-    @include transition(all 0.24s ease 0);
-    box-shadow: inset 0 2px 0 0 rgba($base-color, 0.08);
-    @include input-placeholder {
-      color: tint($base-color, 64%);
-    }
-    &:focus {
-      outline: 0;
-      border-color: tint($base-color, 48%);
-    }
-  }
+select.form-control {
+  box-shadow: inset 0 -2px 0 0 rgba($base-color, 0.08);
+  cursor: pointer;
+}
 
-  select.form-control {
-    box-shadow: inset 0 -2px 0 0 rgba($base-color, 0.08);
-    cursor: pointer;
-  }
+.form-control[disabled]
+fieldset[disabled] .form-control {
+  @extend .disabled;
+}
+.form-control[readonly] {
+  cursor: text;
+  @include opacity(0.48);
+}
+textarea.form-control {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
 
-  .form-control[disabled]
-  fieldset[disabled] .form-control {
-    @extend .disabled;
-  }
-  .form-control[readonly] {
-    cursor: text;
-    @include opacity(0.48);
-  }
-  textarea.form-control {
-    height: auto;
-  }
-  input[type="search"] {
-    -webkit-appearance: none;
-  }
+.input-s {
+  height: 24px;
+  padding: 2px 7px;
+  font-size: 14px;
+  line-height: 22px;
+}
 
-  .input-s {
-    height: 24px;
-    padding: 2px 7px;
-    font-size: 14px;
-    line-height: 22px;
-  }
+.form-group {
+  margin-bottom: 16px;
+  @extend .clearfix;
+}
 
-  .form-group {
-    margin-bottom: 16px;
-    @extend .clearfix;
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  width: 100%;
+  > * {
+    display: table-cell;
+    vertical-align: top;
   }
-
-  .input-group {
-    position: relative;
-    display: table;
-    border-collapse: separate;
-    > * {
-      display: table-cell;
-      vertical-align: top;
-    }
-    > *:first-child:not(:last-child) {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-    > *:last-child:not(:first-child) {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-    > *:not(:first-child):not(:last-child) {
-      border-radius: 0;
-    }
-    .bttn {
-      &:first-child {
-        border-right: 0;
-      }
-      &:last-child {
-        border-left: 0;
-      }
-    }
+  > *:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
-
-  .input-group-addon {
-    border: 1px solid tint($base-color, 80%);
-    border-radius: $global-radius;
-    background: tint($base-color, 96%);
-    height: 32px;
-    min-width: 32px;
-    padding: 4px 8px;
-    font-size: 14px;
-    line-height: 22px;
-    white-space: nowrap;
-    text-align: center;
+  > *:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  > *:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  .bttn {
     &:first-child {
       border-right: 0;
     }
@@ -116,152 +96,171 @@
       border-left: 0;
     }
   }
+}
 
-  legend,
+.input-group-addon {
+  border: 1px solid tint($base-color, 80%);
+  border-radius: $global-radius;
+  background: tint($base-color, 96%);
+  height: 32px;
+  min-width: 32px;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: nowrap;
+  text-align: center;
+  &:first-child {
+    border-right: 0;
+  }
+  &:last-child {
+    border-left: 0;
+  }
+}
+
+legend,
+label {
+  font: inherit;
+  color: inherit;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+
+legend {
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  line-height: inherit;
+  border: 0;
+}
+
+label {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  font-family: $base-font-family;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+
+.checkbox,
+.radio {
+  position: relative;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
   label {
-    font: inherit;
-    color: inherit;
-  }
-
-  fieldset {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    min-width: 0;
-  }
-
-  legend {
-    margin: 0 0 16px 0;
-    padding: 0;
-    font-size: 16px;
-    display: block;
-    width: 100%;
-    line-height: inherit;
-    border: 0;
-  }
-
-  label {
-    display: inline-block;
-    width: auto;
-    max-width: 100%;
-    margin-bottom: 6px;
-    font-weight: bold;
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 20px;
-    padding: 0;
-    font-family: $base-font-family;
+    font-weight: inherit;
   }
+}
 
-  input[type=checkbox],
-  input[type=radio] {
-    margin: 4px 0 0;
-    margin-top: 1px \9;
-    line-height: normal;
-  }
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio],
+.radio-inline input[type=radio] {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: -20px;
+}
 
-  .checkbox,
-  .radio {
-    position: relative;
-    display: block;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    label {
-      min-height: 20px;
-      padding-left: 20px;
-      margin-bottom: 0;
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: inherit;
+
+// SWITCHES
+
+.switch {
+  @include transform(translate3d(0, 0, 0));
+  position: relative;
+  width: 56px;
+  height: 24px;
+}
+.switch input,
+.swtich-text {
+  @extend .visually-hidden;
+}
+.switch-ui {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: tint($base-color, 96%);
+  border-radius: $global-radius;
+  box-shadow: inset 0 3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
+  @include transition(background-color 0.16s ease 0s);
+  &:hover {
+    &:before {
+      background: tint($base-color, 96%);
     }
   }
-
-  .checkbox input[type=checkbox],
-  .checkbox-inline input[type=checkbox],
-  .radio input[type=radio],
-  .radio-inline input[type=radio] {
-    position: absolute;
-    margin-top: 4px;
-    margin-left: -20px;
-  }
-
-
-  // SWITCHES
-
-  .switch {
-    @include transform(translate3d(0, 0, 0));
-    position: relative;
-    width: 56px;
-    height: 24px;
-  }
-  .switch input,
-  .swtich-text {
-    @extend .visually-hidden;
-  }
-  .switch-ui {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: tint($base-color, 96%);
-    border-radius: $global-radius;
-    box-shadow: inset 0 3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
-    @include transition(background-color 0.16s ease);
-    &:hover {
-      &:before {
-        background: tint($base-color, 96%);
-      }
-    }
-    &:active,
-    &:active:hover {
-      &:before {
-       background: tint($base-color, 88%);
-       box-shadow: inset 0 3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
-      }
+  &:active,
+  &:active:hover {
+    &:before {
+     background: tint($base-color, 88%);
+     box-shadow: inset 0 3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
     }
   }
-  .switch-ui:before {
-    border-radius: $global-radius/2;
-    background: #fff;
-    box-shadow: inset 0 -3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    min-height: 16px;
-    min-width: 16px;
-    margin: 4px;
-    content: "";
-    @include transition(left 0.16s ease 0);
-  }
-  .switch-ui:after {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    content: "Off";
-    color: inherit;
-    font-size: 12px;
-    line-height: 16px;
-    margin: 4px 0;
-    padding: 0 8px;
-    text-transform: uppercase;
-    font-weight: normal;
-    width: 100%;
-    text-align: right;
-  }
-  .switch input:checked ~ .switch-ui {
-    background: tint($base-color, 20%);
-  }
-  .switch input:checked ~ .switch-ui:before {
-    left: calc(100% - 24px);
-  }
-  .switch input:checked ~ .switch-ui:after {
-    @extend .antialiased;
-    text-align: left;
-    color: #fff;
-    content: "On";
-  }
+}
+.switch-ui:before {
+  border-radius: $global-radius/2;
+  background: #fff;
+  box-shadow: inset 0 -3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  min-height: 16px;
+  min-width: 16px;
+  margin: 4px;
+  content: "";
+  @include transition(left 0.16s ease 0s);
+}
+.switch-ui:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  content: "Off";
+  color: inherit;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 4px 0;
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-weight: normal;
+  width: 100%;
+  text-align: right;
+}
+.switch input:checked ~ .switch-ui {
+  background: tint($base-color, 20%);
+}
+.switch input:checked ~ .switch-ui:before {
+  left: calc(100% - 24px);
+}
+.switch input:checked ~ .switch-ui:after {
+  @extend .antialiased;
+  text-align: left;
+  color: #fff;
+  content: "On";
 }
 
 
@@ -364,7 +363,7 @@
   border-radius: $global-radius/2;
   background: #fff;
   box-shadow: inset 0 -3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
-  @include transition(background-color 0.16s ease);
+  @include transition(background-color 0.16s ease 0s);
   &:hover {
     background: tint($base-color, 96%);
   }

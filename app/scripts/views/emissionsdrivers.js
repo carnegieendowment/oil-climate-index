@@ -7,7 +7,7 @@ Oci.Views = Oci.Views || {};
 
     var self;
     var chartElement = '#emissions-drivers';
-    var margin = {top: 8, right: 8, bottom: 52, left: 64};
+    var margin = {top: 38, right: 18, bottom: 72, left: 84};
     var container;
     var width;
     var height;
@@ -43,7 +43,8 @@ Oci.Views = Oci.Views || {};
           'click #price-button': 'showPrices',
           'change #toggle-petcoke': 'handleParametersChange',
           'change .slider': 'handleParametersChange',
-          'change .config-dropdown': 'handleDropdown'
+          'change .config-dropdown': 'handleDropdown',
+          'click .mp-summary': 'handleParametersToggle'
         },
 
         hideTip: function() {
@@ -58,18 +59,21 @@ Oci.Views = Oci.Views || {};
           self.tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
             var values = [{
               name: utils.getDatasetName(xProperty),
-              value: d[xProperty].toFixed(0)
+              value: utils.numberWithCommas(+d[xProperty]),
+              units: utils.getUnits(xProperty, sortRatio)
             },
             {
               name: utils.getDatasetName(yProperty).split(' ').pop(),
-              value: d[yProperty].toFixed(0)
+              value: utils.numberWithCommas(+d[yProperty]),
+              units: utils.getUnits(yProperty, sortRatio)
             },
             {
-              name: "Production Volume",
-              value: utils.numberWithCommas(d.productionVolume)
-            }]
+              name: utils.getDatasetName('productionVolume'),
+              value: utils.numberWithCommas(d.productionVolume),
+              units: utils.getUnits('productionVolume', sortRatio)
+            }];
             return utils.createTooltipHtml(d.name, d.type, values, d.id);
-          }).offset([-10,0]);
+          }).offset([0,0]);
 
           xProperty = 'apiGravity';
           yProperty = 'ghgTotal';
@@ -162,8 +166,10 @@ Oci.Views = Oci.Views || {};
                        .domain([0, xMax])
                        .range([0, width]);
 
-            var yExtent =
-              self.addExtentBuffer(d3.extent(chartData, function(d) { return d[yProperty]; }));
+            var yMin = utils.getGlobalExtent(sortRatio, 'min', yProperty);
+            var yMax = utils.getGlobalExtent(sortRatio, 'max', yProperty);
+            var yExtent = self.addExtentBuffer([yMin, yMax]);
+
             yScale = d3.scale.linear()
                        .domain(yExtent)
                        .range([height, 0]);
@@ -173,6 +179,8 @@ Oci.Views = Oci.Views || {};
             rScale = d3.scale.sqrt()
                           .domain(rExtent)
                           .range([4, 42]);
+
+            self.rScale = rScale;
           };
 
           var createAxes = function () {
@@ -196,15 +204,18 @@ Oci.Views = Oci.Views || {};
 
             // X axis title
             var g = svg.append('g');
-            g.append('title')
-              .text(utils.getUnits(xProperty, sortRatio))
-              .attr('class', 'x axis pop');
+            g.append('text')
+              .attr('transform', 'translate(' + (width / 2) + ',' +
+                (height + margin.bottom - 25) + ')')
+              .style('text-anchor', 'middle')
+              .attr('class', 'x axis title')
+              .text(utils.getDatasetName(xProperty));
             g.append('text')
               .attr('transform', 'translate(' + (width / 2) + ',' +
                 (height + margin.bottom - 5) + ')')
               .style('text-anchor', 'middle')
-              .attr('class', 'x axis title')
-              .text(utils.getDatasetName(xProperty));
+              .attr('class', 'x axis title subtitle')
+              .text(utils.getUnits(xProperty));
 
             //Create Y axis
             svg.append('g')
@@ -214,9 +225,6 @@ Oci.Views = Oci.Views || {};
 
             // Y axis title
             g = svg.append('g');
-            g.append('title')
-              .text(utils.getUnits(yProperty, sortRatio))
-              .attr('class', 'y axis pop');
             g.append('text')
               .attr('transform', 'rotate(-90)')
               .attr('y', -margin.left)
@@ -224,7 +232,15 @@ Oci.Views = Oci.Views || {};
               .attr('dy', '1em')
               .style('text-anchor', 'middle')
               .attr('class', 'y axis title')
-              .text(utils.getDatasetName(yProperty, sortRatio));
+              .text(utils.getDatasetName(yProperty, sortRatio, true));
+            g.append('text')
+              .attr('transform', 'rotate(-90)')
+              .attr('y', -margin.left + 20)
+              .attr('x', -(height / 2))
+              .attr('dy', '1em')
+              .style('text-anchor', 'middle')
+              .attr('class', 'y axis title subtitle')
+              .text(utils.getUnits(yProperty, sortRatio));
           };
 
 
@@ -261,7 +277,56 @@ Oci.Views = Oci.Views || {};
                  else {
                    self.tip.hide();
                  }
+               });
+
+            // The circle legend
+            d3.select('svg').selectAll('.circle-legend')
+               .data([50,68,81])
+               .enter()
+               .append('circle')
+               .classed('circle-legend', true)
+               .attr('fill-opacity', '0')
+               .attr('stroke', '#777')
+               .attr('cx', function(d) {
+                return width + margin.left + margin.right - 40;
                })
+               .attr('cy', function(d) { return d; })
+               .attr('r', function(d, i) {
+                return rScale([500000, 100000, 1000][i]);
+               });
+
+              d3.select('svg').selectAll('.circle-text')
+                .data([{ text: '500k', y: 11}, { text: '100k', y: 48}, { text: '10k', y: 74}])
+                .enter()
+                .append('text')
+                .classed('circle-text', true)
+                .attr('x', function(d) {
+                 return width + margin.left + margin.right - 40;
+                })
+                .attr('y', function(d) { return d.y; })
+                .attr('text-anchor','middle')
+                .style('fill','#777')
+                .text(function(d){ return d.text; })
+
+              d3.select('svg').append('text')
+                .attr('x', function(d) {
+                 return width + margin.left + margin.right - 90;
+                })
+                .attr('y', 30)
+                .attr('text-anchor','end')
+                .classed('circle-text', true)
+                .style('fill','#777')
+                .text('Production Volume')
+
+              d3.select('svg').append('text')
+                .attr('x', function(d) {
+                 return width + margin.left + margin.right - 90;
+                })
+                .attr('y', 45)
+                .attr('text-anchor','end')
+                .classed('circle-text', true)
+                .style('fill','#777')
+                .text('Barrels per Day')
           };
 
           var createLine = function () {
@@ -346,13 +411,18 @@ Oci.Views = Oci.Views || {};
             var combustion = utils.getCombustionTotal(prelim, params.showCoke);
 
             // Adjust for any ratio
-            upstream = +utils.getValueForRatio(upstream, sortRatio, prelim);
-            midstream = +utils.getValueForRatio(midstream, sortRatio, prelim);
-            transport = +utils.getValueForRatio(transport, sortRatio, prelim);
-            combustion = +utils.getValueForRatio(combustion, sortRatio, prelim);
+            upstream = +utils.getValueForRatio(upstream, sortRatio, prelim, params.showCoke);
+            midstream = +utils.getValueForRatio(midstream, sortRatio, prelim, params.showCoke);
+            transport = +utils.getValueForRatio(transport, sortRatio, prelim, params.showCoke);
+            combustion = +utils.getValueForRatio(combustion, sortRatio, prelim, params.showCoke);
 
             // Sum up for total
             var ghgTotal = d3.sum([upstream, midstream, transport, combustion]);
+
+            // Other sums
+            var ghgElectricity = +prelim.Electricity;
+
+            var ghgHeat = utils.aggregatePrelim(prelim, 'Heat');
 
             // Create oil object
             var obj = {
@@ -367,6 +437,11 @@ Oci.Views = Oci.Views || {};
               'downstream': combustion + transport,
               'waterToOilRatio': +opgee[utils.getDatasetKey('waterToOilRatio')],
               'gasToOilRatio': +opgee[utils.getDatasetKey('gasToOilRatio')],
+              'ghgGasoline': +prelim[utils.getDatasetKey('ghgGasoline')],
+              'ghgDiesel': +prelim[utils.getDatasetKey('ghgDiesel')],
+              'ghgBunker': +prelim[utils.getDatasetKey('ghgBunker')],
+              'sulfurContent': +info[utils.getDatasetKey('sulfurContent')] * 100,
+              'yearsProduction': +info[utils.getDatasetKey('yearsProduction')],
               'type': info['Overall Crude Emissions Category'].trim()
             };
             chartData.push(obj);
@@ -418,8 +493,9 @@ Oci.Views = Oci.Views || {};
           var xMax =
             self.addExtentBuffer(d3.max(chartData, function(d) { return d[xProperty]; }));
           xScale.domain([0, xMax]);
-          var yExtent =
-            self.addExtentBuffer(d3.extent(chartData, function(d) { return d[yProperty]; }));
+          var yMin = utils.getGlobalExtent(sortRatio, 'min', yProperty);
+          var yMax = utils.getGlobalExtent(sortRatio, 'max', yProperty);
+          var yExtent = self.addExtentBuffer([yMin, yMax]);
           yScale.domain(yExtent);
           // var rExtent =
           //   self.addExtentBuffer(d3.extent(chartData, function(d) { return d.productionVolume; }));
@@ -436,7 +512,7 @@ Oci.Views = Oci.Views || {};
 
             // Update x title
             $('.x.axis.title').fadeOut(transitionDuration/2, function () {
-              svg.select('.x.axis.pop').text(utils.getUnits(xProperty, sortRatio));
+              svg.select('.x.axis.subtitle').text(utils.getUnits(xProperty, sortRatio));
               svg.select('.x.axis.title').text(utils.getDatasetName(xProperty));
               $(this).fadeIn(transitionDuration/2);
             });
@@ -452,8 +528,8 @@ Oci.Views = Oci.Views || {};
             // Update y title
 
             $('.y.axis.title').fadeOut(transitionDuration/2, function () {
-              svg.select('.y.axis.pop').text(utils.getUnits(yProperty, sortRatio));
-              svg.select('.y.axis.title').text(utils.getDatasetName(yProperty, sortRatio));
+              svg.select('.y.axis.subtitle').text(utils.getUnits(yProperty, sortRatio));
+              svg.select('.y.axis.title').text(utils.getDatasetName(yProperty, sortRatio, true));
               $(this).fadeIn(transitionDuration/2);
             });
           }
@@ -527,6 +603,10 @@ Oci.Views = Oci.Views || {};
         handleParametersChange: function () {
           self.createChartData();
           self.updateChart();
+        },
+
+        handleParametersToggle: function () {
+          $('#model-parameters').toggleClass('open');
         },
 
         shareOpen: function () {

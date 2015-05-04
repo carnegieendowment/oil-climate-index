@@ -8,7 +8,7 @@ Oci.Views = Oci.Views || {};
     var self;
     var chartElement = '#compare-oils';
     var transitionDuration = 1500;
-    var margin = {top: 52, right: 12, bottom: 0, left: 8};
+    var margin = {top: 72, right: 12, bottom: 0, left: 8};
     var container;
     var width;
     var height;
@@ -28,6 +28,9 @@ Oci.Views = Oci.Views || {};
     var svg;
     var dataset;
     var chartData;
+    var groups;
+    var groupInfo;
+    var groupOrder;
 
     Oci.Views.CompareOils = Backbone.View.extend({
 
@@ -40,7 +43,8 @@ Oci.Views = Oci.Views || {};
           'click #price-button': 'showPrices',
           'change #toggle-petcoke': 'handleParametersChange',
           'change .slider': 'handleParametersChange',
-          'change .config-dropdown': 'handleDropdown'
+          'change .config-dropdown': 'handleDropdown',
+          'click .mp-summary': 'handleParametersToggle'
         },
 
         initialize: function () {
@@ -58,10 +62,14 @@ Oci.Views = Oci.Views || {};
                 var match = _.find(step, function(oil){
                   return oil.y === d.y;
                 });
-                return { name: utils.capitalize(match.step), value: match.x.toFixed(0) };
+                return {
+                  name: utils.capitalize(match.step),
+                  value: match.x < 1 ? match.x.toFixed(2) : match.x.toFixed(0),
+                  units: ''
+                };
               });
               // Add total value to tooltip
-              values.push({ name: 'Total', value: utils.numberWithCommas(d.ghgTotal) });
+              values.unshift({ name: 'Total', value: utils.numberWithCommas(d.ghgTotal), units: utils.getUnits('ghgTotal', sortRatio) });
               return utils.createTooltipHtml(d.y, d.type, values, utils.makeId(d.y));
             })
             .offset([0,0]);
@@ -72,6 +80,9 @@ Oci.Views = Oci.Views || {};
           $('#sort-select').change(this.handleSortSelect);
           $('#step-select').change(this.handleStepSelect);
           $('#ratio-select').change(this.handleRatioSelect);
+
+          $(window).on('load', self.checkDataControlsPosition);
+          $(window).on('scroll', self.checkDataControlsPosition);
         },
 
         parseURLAndSetState: function () {
@@ -136,6 +147,34 @@ Oci.Views = Oci.Views || {};
           this.chartInit();
           this.linkShareButton();
           utils.initDropdown();
+          this.checkDataControlsPosition();
+        },
+
+        checkDataControlsPosition: function() {
+          var $element = $('#compare-oils-view .data-controls');
+          if (!$element.length) { return; }
+
+          var wrapperOffset = $('.panel-aside').offset();
+
+          var parentSection = $('#co-chart-cont');
+          var parentSectionHeight = parentSection.outerHeight();
+          var bottomLimit = parentSectionHeight + parentSection.offset().top;
+          var h = bottomLimit - $(window).scrollTop();
+          // Element height can never be higher than the parent's height.
+          h = h > parentSectionHeight ? parentSectionHeight : h;
+
+          if ($(window).scrollTop() >= wrapperOffset.top) {
+            $element
+              .addClass('sticky')
+              .width($('.panel-aside').outerWidth())
+              .outerHeight(h);
+          }
+          else {
+            $element
+              .removeClass('sticky')
+              .width('')
+              .outerHeight('');
+          }
         },
 
         createChartData: function() {
@@ -162,10 +201,10 @@ Oci.Views = Oci.Views || {};
             var combustion = utils.getCombustionTotal(prelim, params.showCoke);
 
             // Adjust for any ratio
-            upstream = +utils.getValueForRatio(upstream, sortRatio, prelim);
-            midstream = +utils.getValueForRatio(midstream, sortRatio, prelim);
-            transport = +utils.getValueForRatio(transport, sortRatio, prelim);
-            combustion = +utils.getValueForRatio(combustion, sortRatio, prelim);
+            upstream = +utils.getValueForRatio(upstream, sortRatio, prelim, params.showCoke);
+            midstream = +utils.getValueForRatio(midstream, sortRatio, prelim, params.showCoke);
+            transport = +utils.getValueForRatio(transport, sortRatio, prelim, params.showCoke);
+            combustion = +utils.getValueForRatio(combustion, sortRatio, prelim, params.showCoke);
 
             // Sum up for total
             var ghgTotal = d3.sum([upstream, midstream, transport, combustion]);
@@ -213,24 +252,35 @@ Oci.Views = Oci.Views || {};
         },
 
         sortByField: function(data, field, descending) {
-          if (descending) {
-            data.sort(function(a, b) {
-              return b[field] - a[field];
-            });
-          } else {
-            data.sort(function(a, b) {
-              return a[field] - b[field];
-            });
-          }
+
+          groups = _.groupBy(data, 'type');
+          groupInfo = [];
+          _.each(groups, function(group, key){
+            var obj = {}
+            obj.name = key
+            obj.avgGhgTotal = _.pluck(group,'ghgTotal').reduce(function(a,b){ return a + b; }) / (group.length)
+            groupInfo.push(obj)
+          })
+          groupInfo.sort(function(a, b) {
+            return a.avgGhgTotal - b.avgGhgTotal;
+          });
+          groupOrder = groupInfo.map(function(group){ return group.name; });
+          data.sort(function(a, b) {
+            if (field === 'type') {
+
+              // first sort by index of type (it's sorted by group average ghgTotal) then individual ghgTotal
+              // switch sign if descending
+              return ((groupOrder.indexOf(a.type) * 1000000 + a.ghgTotal) - (groupOrder.indexOf(b.type) * 1000000 + b.ghgTotal)) * (1 - 2 * Number(descending))
+            } else {
+              // switch sign if descending
+              return (a[field] - b[field]) * (1 - 2 * Number(descending));
+            }
+          });
         },
 
         chartInit: function () {
           var createScales = function() {
-            var xMax = d3.max(chartData, function (group) {
-              return d3.max(group, function (d) {
-                return d.x + d.x0;
-              });
-            });
+            var xMax = utils.getGlobalExtent(sortRatio, 'max');
             xScale = d3.scale.linear()
                        .domain([0, xMax])
                        .range([0, width])
@@ -330,15 +380,18 @@ Oci.Views = Oci.Views || {};
 
             // X axis title
             var g = svg.append('g');
-            g.append('title')
-              .text(utils.getUnits('ghgTotal', sortRatio))
-              .attr('class', 'x axis pop');
+            g.append('text')
+              .attr('transform', 'translate(' + (width / 2) + ',' +
+                -60 + ')')
+              .style('text-anchor', 'middle')
+              .attr('class', 'x axis title')
+              .text(self.getXAxisTitle());
             g.append('text')
               .attr('transform', 'translate(' + (width / 2) + ',' +
                 -40 + ')')
               .style('text-anchor', 'middle')
-              .attr('class', 'x axis title')
-              .text(self.getXAxisTitle());
+              .attr('class', 'x axis title subtitle')
+              .text(utils.getUnits('ghgTotal', sortRatio));
           };
 
           // For responsiveness
@@ -372,7 +425,7 @@ Oci.Views = Oci.Views || {};
         handleSortSelect: function () {
           sortOrderDescending = !sortOrderDescending;
           self.createChartData();
-          self.updateChart();
+          self.updateChart(false, false);
         },
 
         handleStepSelect: function () {
@@ -386,7 +439,7 @@ Oci.Views = Oci.Views || {};
             }
           }
           self.createChartData();
-          self.updateChart();
+          self.updateChart(false, false);
         },
 
         handleRatioSelect: function () {
@@ -400,12 +453,12 @@ Oci.Views = Oci.Views || {};
             }
           }
           self.createChartData();
-          self.updateChart();
+          self.updateChart(true, true);
         },
 
-        updateChart: function () {
-          self.updateScales();
-          self.updateAxes();
+        updateChart: function (updateMax, animate) {
+          self.updateScales(updateMax);
+          self.updateAxes(animate);
           self.updateData();
         },
 
@@ -438,14 +491,12 @@ Oci.Views = Oci.Views || {};
             });
         },
 
-        updateScales: function () {
-          var xMax = d3.max(chartData, function (group) {
-            return d3.max(group, function (d) {
-              return d.x + d.x0;
-            });
-          });
-          xScale.domain([0, xMax])
-            .nice();
+        updateScales: function (updateMax) {
+          if (updateMax !== false) {
+            var xMax = utils.getGlobalExtent(sortRatio, 'max');
+            xScale.domain([0, xMax])
+              .nice();
+          }
 
           var oilNames = chartData[0].map(function (d) {
                 return d.y;
@@ -453,7 +504,7 @@ Oci.Views = Oci.Views || {};
           yScale.domain(oilNames);
         },
 
-        updateAxes: function () {
+        updateAxes: function (animate) {
           svg.select('.y.axis')
             .transition()
             .duration(transitionDuration)
@@ -464,12 +515,14 @@ Oci.Views = Oci.Views || {};
             .duration(transitionDuration)
             .call(xAxis);
 
-          // Update x title
-          $('.x.axis.title').fadeOut(transitionDuration/2, function () {
-            svg.select('.x.axis.pop').text(utils.getUnits(sortStep, sortRatio));
-            svg.select('.x.axis.title').text(self.getXAxisTitle());
-            $(this).fadeIn(transitionDuration/2);
-          });
+          // Update x title with animation if called for
+          if (animate) {
+            $('.x.axis.title').fadeOut(transitionDuration/2, function () {
+              svg.select('.x.axis.subtitle').text(utils.getUnits(sortStep, sortRatio));
+              svg.select('.x.axis.title').text(self.getXAxisTitle());
+              $(this).fadeIn(transitionDuration/2);
+            });
+          }
         },
 
         handleShare: function (e) {
@@ -484,7 +537,7 @@ Oci.Views = Oci.Views || {};
         updatePrices: function () {
           // We have new prices, recreate dataset and update chart
           self.createChartData();
-          self.updateChart();
+          self.updateChart(true, false);
         },
 
         handleResize: function () {
@@ -505,7 +558,11 @@ Oci.Views = Oci.Views || {};
 
         handleParametersChange: function () {
           self.createChartData();
-          self.updateChart();
+          self.updateChart(false, false);
+        },
+
+        handleParametersToggle: function () {
+          $('#model-parameters').toggleClass('open');
         },
 
         shareOpen: function () {

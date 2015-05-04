@@ -2,6 +2,9 @@
 @charset "UTF-8";
 @import "compass";
 
+@import "normalize";
+@import "reset";
+
 // Import Jeet grid - a grid system for humans: jeet.gs
 @import "jeet/index";
 
@@ -20,12 +23,13 @@
 @import "buttons";
 @import "forms";
 @import "overlays";
+@import "tooltip"; // Bootstrap tooltip
 @import "modals";
 @import "base";
 @import "data-controls";
-@import "prices";
 @import "compare-oils-view";
 @import "supply-curve-view";
 @import "emissions-drivers-view";
 @import "oil-details-view";
+@import "static-pages";
 @import "helpers";

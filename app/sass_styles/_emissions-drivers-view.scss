@@ -12,6 +12,15 @@
     stroke-width: 1;
     stroke-dasharray: 8 4;
   }
+  .circle-legend,
+  .circle-text {
+    @extend .hd-label;
+    font-size: 14px;
+    @include opacity(0.80);
+    @include bp(tablet-long) {
+      display: none;
+    }
+  }
 }
 
 .trend {

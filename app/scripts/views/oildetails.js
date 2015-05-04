@@ -52,17 +52,20 @@ Oci.Views = Oci.Views || {};
           self.tip = d3.tip()
             .attr('class', 'd3-tip')
             .html(function(d, svg) {
+              var unitsString = utils.getUnits('ghgTotal', 'perBarrel');
               var valuesString = '';
-              var values = d.components[svg[0][0].parentNode.parentNode.id.split('-')[0]]
+              var values = d.components[self.getStepName(svg)];
               for (var i = 0; i < values.length; i++) {
                 valuesString += '<dt style="width:80%;">' + values[i].name + '</dt>';
-                valuesString += '<dd style="width:20%;">' + Number(values[i].value).toFixed(2) + '</dd>';
+                var value = Number(values[i].value);
+                value = Math.abs(value) < 1 ? value.toFixed(1) : value.toFixed(0);
+                valuesString += '<dd style="width:20%;">' + value + '</dd>';
               }
               return '<div class="popover in">' +
                 '<div class="popover-inner">' +
                   '<div class="popover-header">' +
                     '<dl class="stats-list">' +
-                      '<dt>' + svg[0][0].parentNode.parentNode.id.split('-')[0] + '</dt><dd>' + self.dataForSvg(svg, d).toFixed(2) + '</dd>' +
+                      '<dt>' + self.getStepName(svg) + ' emissions<small class="units">' + unitsString + '</small></dt><dd>' + self.dataForSvg(svg, d).toFixed(0) + '</dd>' +
                     '</dl>' +
                   '</div>' +
                   '<div class="popover-body">' +
@@ -100,17 +103,21 @@ Oci.Views = Oci.Views || {};
         },
 
         render: function () {
-          this.$el.html(this.template({oil: this.oil}));
+          this.$el.html(this.template({oil: this.oil, totalUnits: utils.getUnits('ghgTotal', 'perBarrel')}));
+          this.$('[data-toggle="tooltip"]').tooltip();
 
           this.modelParametersView = new Oci.Views.ModelParameters();
           this.$('#model-parameters').html(this.modelParametersView.render());
+          // special handling of refinery dropdown for oil details view
+          $('#dropdown-refinery').prop('selectedIndex', utils.refineryNameToDropdown(Oci.data.info[oilKey]['Default Refinery']));
+          $('#dropdown-refinery option[value="0 = Default"]').hide()
 
           // Determine bar heights
           defaultModelHeight = height * (1/3) - barBuffer;
           modelHeight = height - defaultModelHeight;
 
-          // TODO stop faking this
-          $('#oil-details-description').html('A shallow, heavy, and sweet oil located off the California shore.');
+          // Set oil description
+          $('#oil-details-description').html(Oci.blurbs[oilKey].description);
 
           L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJnUi1mbkVvIn0.018aLhX0Mb0tdtaT2QNe2Q';
 
@@ -125,7 +132,7 @@ Oci.Views = Oci.Views || {};
             scrollWheelZoom: false,
             doubleClickZoom: false,
             boxZoom: false
-          })
+          });
 
           // add marker for each oil field, make one active
           _.each(Oci.data.info, function(oil){
@@ -146,6 +153,10 @@ Oci.Views = Oci.Views || {};
           this.chartInit();
           this.linkShareButton();
           utils.initDropdown();
+        },
+
+        getStepName: function (svg) {
+          return svg[0][0].parentNode.parentNode.id.split('-')[0];
         },
 
         generateOilInfo: function () {
@@ -170,15 +181,15 @@ Oci.Views = Oci.Views || {};
             name: utils.prettyOilName(oil),
             keyStats: [
               {
-                key: 'Type',
+                key: 'Oil-Climate Category',
                 value: oil['Overall Crude Emissions Category']
               },
               {
                 key: 'Location',
-                value: oil.Country + ' ' + oil['Onshore/Offshore']
+                value: oil['Onshore/Offshore']
               },
               {
-                key: 'Category',
+                key: 'Sulfur Content',
                 value: oil['Sulfur Category'],
                 title: makeCategoryTitle(oil.API, oil['Sulfur %wt'])
               },
@@ -201,11 +212,7 @@ Oci.Views = Oci.Views || {};
                 key: 'Gas Content',
                 value: oil['Gassy Oil']
               },{
-                key: '*Refinery Distance*',
-                value: '1,000 miles',
-                title: '1609 kilometers'
-              },{
-                key: 'Refinery Type',
+                key: 'Default Refinery Configuration',
                 value: oil['Default Refinery']
               },
             ],
@@ -253,6 +260,18 @@ Oci.Views = Oci.Views || {};
              .duration(1000)
              .attr('width', function(d) {
                 return xScale(self.dataForSvg(svg, d));
+             });
+
+          // Create small bars to indicate components
+          var x0 = 0;
+          var components = chartData[1].components[self.getStepName(svg)];
+          svg.selectAll('.component')
+             .data(components)
+             .transition()
+             .duration(1000)
+             .attr('x', function(d) {
+                x0 += +d.value;
+                return xScale(x0);
              });
         },
 
@@ -340,8 +359,9 @@ Oci.Views = Oci.Views || {};
             xScale = d3.scale.linear()
                             .domain([0, d3.max(chartData,
                               function (d) {
-                                return d3.max([d.upstream, d.midstream,
-                                               d.downstream]);
+                                return d3.max([utils.getGlobalExtent('perBarrel', 'max', 'downstream', oilKey),
+                                               utils.getGlobalExtent('perBarrel', 'max', 'midstream', oilKey),
+                                               utils.getGlobalExtent('perBarrel', 'max', 'upstream', oilKey)]);
                               })])
                             .range([0, width]);
 
@@ -411,6 +431,32 @@ Oci.Views = Oci.Views || {};
                   }
                 }
                });
+
+            // Create small bars to indicate components if everything is positive
+            var x0 = 0;
+            var components = chartData[1].components[self.getStepName(svg)];
+            var allPositive = _.every(components,
+              function (component) {
+                return +component.value >= 0;
+              });
+            if (allPositive) {
+              svg.selectAll('.component')
+                 .data(components)
+                 .enter()
+                 .append('rect')
+                 .attr('class', 'component')
+                 .attr('pointer-events', 'none')
+                 .attr('x', function(d) {
+                    x0 += +d.value;
+                    return xScale(x0);
+                 })
+                 .attr('y', 0)
+                 .attr('width', xScale(0.25))
+                 .attr('height', modelHeight)
+                 .attr('rx', 2)
+                 .attr('ry', 2)
+                 .attr('fill', '#fff');
+            }
           };
 
           // For responsiveness

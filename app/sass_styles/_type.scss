@@ -1,5 +1,4 @@
-.d3-tip,
-.page {
+
   .hd-label {
     font-family: $secondary-font-family;
     font-stretch: $secondary-font-stretch;
@@ -11,7 +10,6 @@
     padding: 0;
     dt, dd {
       float: left;
-      width: 50%;
       margin: 0;
       padding: 4px 0;
       border-top: 1px solid tint($base-color, 92%);
@@ -23,15 +21,17 @@
       @extend .hd-label;
       clear: left;
       padding-right: 8px;
+      width: 60%;
     }
     dd {
       text-align: right;
       padding-left: 8px;
+      width: 40%;
     }
   }
-}
 
-.page {
+
+
 
   h1, h2, h3, h4 {
     margin: 24px 0 16px 0;
@@ -59,9 +59,19 @@
   }
 
   .prose {
-    *:first-child {
+    > *:first-child {
       margin-top: 0;
     }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: $base-color;
+      opacity: 0.08;
+      width: 100%;
+      margin: 32px auto;
+    }
+
     p, ul, ol, dl, img {
       margin-bottom: 16px;
     }
@@ -73,7 +83,7 @@
     }
     ul, ol {
       list-style-position: outside;
-      margin-left: 32px; 
+      margin-left: 32px;
     }
     blockquote {
       margin: 0 0 0 8px;
@@ -121,4 +131,4 @@
     margin-top: -16px;
   }
 
-}
+
