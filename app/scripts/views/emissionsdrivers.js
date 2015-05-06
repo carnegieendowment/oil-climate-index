@@ -59,7 +59,7 @@ Oci.Views = Oci.Views || {};
           self.tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
             var values = [{
               name: utils.getDatasetName(xProperty),
-              value: utils.numberWithCommas(+d[xProperty], sortRatio),
+              value: utils.numberWithCommas(+d[xProperty]),
               units: utils.getUnits(xProperty, sortRatio)
             },
             {
@@ -69,7 +69,7 @@ Oci.Views = Oci.Views || {};
             },
             {
               name: utils.getDatasetName('productionVolume'),
-              value: utils.numberWithCommas(d.productionVolume, sortRatio),
+              value: utils.numberWithCommas(d.productionVolume),
               units: utils.getUnits('productionVolume', sortRatio)
             }];
             return utils.createTooltipHtml(d.name, d.type, values, d.id);
