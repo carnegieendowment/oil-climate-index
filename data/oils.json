@@ -23,6 +23,7 @@
       "Location Description": "Off coast of Nigeria, 220 miles SouthEast of Lagos",
       "Latitude": "3.439677",
       "Longitude": "5.67083",
+      "Field Age": "5",
       "Field Depth": "13000",
       "Oil Production Volume": "233000",
       "Default Refinery": "Hydroskimming Configuration",
@@ -52,6 +53,7 @@
       "Location Description": "Northern Alaska",
       "Latitude": "70.306667",
       "Longitude": "-148.7325",
+      "Field Age": "45",
       "Field Depth": "7700",
       "Oil Production Volume": "507770",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -81,6 +83,7 @@
       "Location Description": "Caspian Sea",
       "Latitude": "40.168",
       "Longitude": "51.331199",
+      "Field Age": "17",
       "Field Depth": "9075",
       "Oil Production Volume": "655700",
       "Default Refinery": "Hydroskimming Configuration",
@@ -110,6 +113,7 @@
       "Location Description": "West of Akabuka, North-West of Port Harcourt",
       "Latitude": "5.237778",
       "Longitude": "6.629444",
+      "Field Age": "40",
       "Field Depth": "11500",
       "Oil Production Volume": "2234",
       "Default Refinery": "Hydroskimming Configuration",
@@ -139,6 +143,7 @@
       "Location Description": "Bohai Bay, off the coast from Tianjin",
       "Latitude": "38.332815",
       "Longitude": "119.433498",
+      "Field Age": "23",
       "Field Depth": "10500",
       "Oil Production Volume": "90000",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
@@ -168,6 +173,7 @@
       "Location Description": "North Sea West of Bergen",
       "Latitude": "60.9",
       "Longitude": "1.8",
+      "Field Age": "37",
       "Field Depth": "8100",
       "Oil Production Volume": "1030",
       "Default Refinery": "Hydroskimming Configuration",
@@ -197,6 +203,7 @@
       "Location Description": "Near Duri town, Central sumatra",
       "Latitude": "1.262754",
       "Longitude": "101.132226",
+      "Field Age": "55",
       "Field Depth": "600",
       "Oil Production Volume": "165057",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
@@ -226,6 +233,7 @@
       "Location Description": "Norwegian Sector of North Sea",
       "Latitude": "56.549197",
       "Longitude": "3.209986",
+      "Field Age": "42",
       "Field Depth": "10000",
       "Oil Production Volume": "102000",
       "Default Refinery": "Hydroskimming Configuration",
@@ -255,6 +263,7 @@
       "Location Description": "Northeasteast of Rio, http://www.chevron.com/articledocuments/latest/news_203789/1457697f-c289-4781-abce-5b3792c645e1/FradeFieldFactSheet.pdf.cvxn",
       "Latitude": "-21.563559",
       "Longitude": "-39.328097",
+      "Field Age": "4",
       "Field Depth": "6730",
       "Oil Production Volume": "16912",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
@@ -284,6 +293,7 @@
       "Location Description": "Approximate Coordinates",
       "Latitude": "-7.887021",
       "Longitude": "12.144488",
+      "Field Age": "12",
       "Field Depth": "3937",
       "Oil Production Volume": "175000",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -313,6 +323,7 @@
       "Location Description": "Coords approximate",
       "Latitude": "8",
       "Longitude": "-65",
+      "Field Age": "13",
       "Field Depth": "2200",
       "Oil Production Volume": "190000",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -342,6 +353,7 @@
       "Location Description": "ESE of St. Johns, Newfoundland",
       "Latitude": "46.750433",
       "Longitude": "-48.782933",
+      "Field Age": "15",
       "Field Depth": "10065",
       "Oil Production Volume": "135483",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -371,6 +383,7 @@
       "Location Description": "West of Cabinda, North Angola",
       "Latitude": "-5.462175",
       "Longitude": "11.676737",
+      "Field Age": "15",
       "Field Depth": "7240",
       "Oil Production Volume": "50000",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -400,6 +413,7 @@
       "Location Description": "Santos basin, 250km from Rio de Janeiro",
       "Latitude": "-25.5",
       "Longitude": "-43.5",
+      "Field Age": "3",
       "Field Depth": "19737",
       "Oil Production Volume": "100000",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -429,6 +443,7 @@
       "Location Description": "Mississipi canyon in US Gulf ",
       "Latitude": "28.169525",
       "Longitude": "-89.222875",
+      "Field Age": "17",
       "Field Depth": "16000",
       "Oil Production Volume": "60000",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -458,6 +473,7 @@
       "Location Description": "Southern Saskatchewan (check coordinates)",
       "Latitude": "49.377257",
       "Longitude": "-103.340248",
+      "Field Age": "60",
       "Field Depth": "4600",
       "Oil Production Volume": "5000",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -487,6 +503,7 @@
       "Location Description": "California ",
       "Latitude": "35.247285",
       "Longitude": "-119.601295",
+      "Field Age": "120",
       "Field Depth": "2698",
       "Oil Production Volume": "78918",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
@@ -516,6 +533,7 @@
       "Location Description": "West of Akabuka, North-West of Port Harcourt",
       "Latitude": "5.237778",
       "Longitude": "6.629444",
+      "Field Age": "47",
       "Field Depth": "2050",
       "Oil Production Volume": "9910",
       "Default Refinery": "Hydroskimming Configuration",
@@ -545,6 +563,7 @@
       "Location Description": "Partitioned zone between Kuwait and Saudi Arabia, Ratawi produced from Wafra, South Umm Gudair and South Fuwaris fields, coords link to Wafra field",
       "Latitude": "28.620338",
       "Longitude": "47.901383",
+      "Field Age": "57",
       "Field Depth": "6500",
       "Oil Production Volume": "90000",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -574,6 +593,7 @@
       "Location Description": "California",
       "Latitude": "35.474795",
       "Longitude": "-119.742125",
+      "Field Age": "103",
       "Field Depth": "779",
       "Oil Production Volume": "64245",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
@@ -603,6 +623,7 @@
       "Location Description": "low-lying wetlands along the northeast shores of the Caspian Sea.",
       "Latitude": "46.152778",
       "Longitude": "53.383333",
+      "Field Age": "22",
       "Field Depth": "11843",
       "Oil Production Volume": "528767",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -632,6 +653,7 @@
       "Location Description": "Gulf Coast",
       "Latitude": "28.1091",
       "Longitude": "-88.4944",
+      "Field Age": "5",
       "Field Depth": "16000",
       "Oil Production Volume": "30098",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -661,6 +683,7 @@
       "Location Description": "South Los Angeles",
       "Latitude": "33.763843",
       "Longitude": "-118.225059",
+      "Field Age": "82",
       "Field Depth": "2824",
       "Oil Production Volume": "36344.51781",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
@@ -690,6 +713,7 @@
       "Location Description": "West of Basrah",
       "Latitude": "30.35",
       "Longitude": "47.6",
+      "Field Age": "60",
       "Field Depth": "11000",
       "Oil Production Volume": "125130",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -719,6 +743,7 @@
       "Location Description": "East of Aberdeen",
       "Latitude": "57.716667",
       "Longitude": "1.016667",
+      "Field Age": "38",
       "Field Depth": "7311",
       "Oil Production Volume": "46410",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -748,6 +773,7 @@
       "Location Description": "East Coast, Sakhalin-1 Project",
       "Latitude": "52.121863",
       "Longitude": "143.759424",
+      "Field Age": "8",
       "Field Depth": "36000",
       "Oil Production Volume": "250000",
       "Default Refinery": "Hydroskimming Configuration",
@@ -777,6 +803,7 @@
       "Location Description": "Cold Lake Oil Sands",
       "Latitude": "54.430989",
       "Longitude": "-110.217512",
+      "Field Age": "39",
       "Field Depth": "",
       "Oil Production Volume": "154100",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
@@ -806,6 +833,7 @@
       "Location Description": "Athabasca",
       "Latitude": "56.724035",
       "Longitude": "-111.236809",
+      "Field Age": "48",
       "Field Depth": "",
       "Oil Production Volume": "144271",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
@@ -835,6 +863,7 @@
       "Location Description": "Athabasca",
       "Latitude": "56.724035",
       "Longitude": "-111.236809",
+      "Field Age": "48",
       "Field Depth": "",
       "Oil Production Volume": "144271",
       "Default Refinery": "Hydroskimming Configuration",
@@ -864,6 +893,7 @@
       "Location Description": "Athabasca",
       "Latitude": "56.724035",
       "Longitude": "-111.236809",
+      "Field Age": "37",
       "Field Depth": "",
       "Oil Production Volume": "274421",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
@@ -1382,9 +1412,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -1401,9 +1431,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -1420,9 +1450,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -1439,9 +1469,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run001": {
@@ -1954,9 +1984,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -1973,9 +2003,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -1992,9 +2022,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -2011,9 +2041,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run002": {
@@ -2526,9 +2556,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -2545,9 +2575,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -2564,9 +2594,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -2583,9 +2613,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run010": {
@@ -3098,9 +3128,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -3117,9 +3147,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -3136,9 +3166,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -3155,9 +3185,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run011": {
@@ -3670,9 +3700,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -3689,9 +3719,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -3708,9 +3738,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -3727,9 +3757,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run012": {
@@ -4242,9 +4272,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -4261,9 +4291,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -4280,9 +4310,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -4299,9 +4329,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run020": {
@@ -4814,9 +4844,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -4833,9 +4863,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -4852,9 +4882,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -4871,9 +4901,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run021": {
@@ -5386,9 +5416,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -5405,9 +5435,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -5424,9 +5454,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -5443,9 +5473,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run022": {
@@ -5958,9 +5988,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -5977,9 +6007,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -5996,9 +6026,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -6015,9 +6045,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "2.154184529"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run100": {
@@ -6530,9 +6560,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -6549,9 +6579,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -6568,9 +6598,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -6587,9 +6617,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run101": {
@@ -7102,9 +7132,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -7121,9 +7151,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -7140,9 +7170,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -7159,9 +7189,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run102": {
@@ -7674,9 +7704,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -7693,9 +7723,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -7712,9 +7742,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -7731,9 +7761,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run110": {
@@ -8246,9 +8276,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -8265,9 +8295,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -8284,9 +8314,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -8303,9 +8333,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run111": {
@@ -8818,9 +8848,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -8837,9 +8867,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -8856,9 +8886,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -8875,9 +8905,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run112": {
@@ -9390,9 +9420,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -9409,9 +9439,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -9428,9 +9458,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -9447,9 +9477,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run120": {
@@ -9962,9 +9992,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -9981,9 +10011,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -10000,9 +10030,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -10019,9 +10049,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run121": {
@@ -10534,9 +10564,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -10553,9 +10583,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -10572,9 +10602,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -10591,9 +10621,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run122": {
@@ -11106,9 +11136,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -11125,9 +11155,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -11144,9 +11174,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -11163,9 +11193,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "3.231276793"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run200": {
@@ -11678,9 +11708,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -11697,9 +11727,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -11716,9 +11746,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -11735,9 +11765,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run201": {
@@ -12250,9 +12280,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -12269,9 +12299,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -12288,9 +12318,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -12307,9 +12337,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run202": {
@@ -12822,9 +12852,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -12841,9 +12871,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -12860,9 +12890,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -12879,9 +12909,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run210": {
@@ -13394,9 +13424,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -13413,9 +13443,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -13432,9 +13462,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -13451,9 +13481,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run211": {
@@ -13966,9 +13996,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -13985,9 +14015,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -14004,9 +14034,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -14023,9 +14053,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run212": {
@@ -14538,9 +14568,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -14557,9 +14587,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -14576,9 +14606,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -14595,9 +14625,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run220": {
@@ -15110,9 +15140,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -15129,9 +15159,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -15148,9 +15178,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -15167,9 +15197,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run221": {
@@ -15682,9 +15712,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -15701,9 +15731,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -15720,9 +15750,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -15739,9 +15769,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run222": {
@@ -16254,9 +16284,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -16273,9 +16303,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -16292,9 +16322,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -16311,9 +16341,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "4.308369057"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run300": {
@@ -16826,9 +16856,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -16845,9 +16875,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -16864,9 +16894,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -16883,9 +16913,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run301": {
@@ -17398,9 +17428,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -17417,9 +17447,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -17436,9 +17466,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -17455,9 +17485,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run302": {
@@ -17970,9 +18000,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -17989,9 +18019,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -18008,9 +18038,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -18027,9 +18057,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run310": {
@@ -18542,9 +18572,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -18561,9 +18591,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -18580,9 +18610,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -18599,9 +18629,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run311": {
@@ -19114,9 +19144,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -19133,9 +19163,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -19152,9 +19182,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -19171,9 +19201,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run312": {
@@ -19686,9 +19716,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -19705,9 +19735,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -19724,9 +19754,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -19743,9 +19773,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run320": {
@@ -20258,9 +20288,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -20277,9 +20307,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -20296,9 +20326,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -20315,9 +20345,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run321": {
@@ -20830,9 +20860,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -20849,9 +20879,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -20868,9 +20898,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -20887,9 +20917,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run322": {
@@ -21402,9 +21432,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -21421,9 +21451,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -21440,9 +21470,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -21459,9 +21489,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "5.385461322"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run400": {
@@ -21974,9 +22004,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -21993,9 +22023,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -22012,9 +22042,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -22031,9 +22061,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run401": {
@@ -22546,9 +22576,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -22565,9 +22595,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -22584,9 +22614,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -22603,9 +22633,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run402": {
@@ -23118,9 +23148,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -23137,9 +23167,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -23156,9 +23186,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -23175,9 +23205,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run410": {
@@ -23690,9 +23720,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -23709,9 +23739,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -23728,9 +23758,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -23747,9 +23777,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run411": {
@@ -24262,9 +24292,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -24281,9 +24311,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -24300,9 +24330,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -24319,9 +24349,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run412": {
@@ -24834,9 +24864,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -24853,9 +24883,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -24872,9 +24902,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -24891,9 +24921,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run420": {
@@ -25406,9 +25436,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -25425,9 +25455,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -25444,9 +25474,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -25463,9 +25493,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run421": {
@@ -25978,9 +26008,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -25997,9 +26027,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -26016,9 +26046,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -26035,9 +26065,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     },
     "run422": {
@@ -26550,9 +26580,9 @@
         "Transport to Refinery": "7.31487124",
         "Offsite emissions": "27.60694333",
         "Net lifecycle emissions": "114.6767795",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "260",
+        "Water-to-Oil-Ratio": "3.421"
       },
       "Canada Suncor Synthetic H (SCO)": {
         "Unique": "Canada Suncor Synthetic H (SCO)",
@@ -26569,9 +26599,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.601037724",
         "Net lifecycle emissions": "155.429309",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -26588,9 +26618,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "3.706673402",
         "Net lifecycle emissions": "161.0845292",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -26607,9 +26637,9 @@
         "Transport to Refinery": "7.378876363",
         "Offsite emissions": "12.80765323",
         "Net lifecycle emissions": "200.2612098",
-        "API Gravity": "30",
-        "Gas-to-Oil-Ratio": "908",
-        "Water-to-Oil-Ratio": "6.462553586"
+        "API Gravity": "",
+        "Gas-to-Oil-Ratio": "0",
+        "Water-to-Oil-Ratio": "2.5"
       }
     }
   },
@@ -27009,10 +27039,10 @@
         "Jet Fuel": "86.59429686",
         "Diesel": "88.8003081",
         "Fuel Oil": "6.04481E-11",
-        "Petroleum Coke": "93.51134302",
+        "Petroleum Coke": "1.7544E-19",
         "Bunker Fuel": "101.8008888",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "93.51134302",
         "Portion Gasoline": "43512.99763",
         "Portion Jet Fuel": "21064.72533",
         "Portion Diesel": "20631.7178",
@@ -27020,7 +27050,7 @@
         "Portion Petroleum Coke": "2.71999E-17",
         "Portion Bunker Fuel": "21426.84737",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5862.711495"
+        "MJperbbl": "6724.251176"
       },
       "Canada Hibernia": {
         "Unique": "Canada Hibernia",
@@ -27638,10 +27668,10 @@
         "Jet Fuel": "28.09925422",
         "Diesel": "233.8091367",
         "Fuel Oil": "2.13199E-10",
-        "Petroleum Coke": "116.9413216",
+        "Petroleum Coke": "4.985901648",
         "Bunker Fuel": "23.38399943",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "42476.37878",
         "Portion Jet Fuel": "6835.358603",
         "Portion Diesel": "54322.83097",
@@ -27649,7 +27679,7 @@
         "Portion Petroleum Coke": "773.0080075",
         "Portion Bunker Fuel": "4921.817407",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "6012.852126"
+        "MJperbbl": "7044.32097"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -27675,10 +27705,10 @@
         "Jet Fuel": "104.7344063",
         "Diesel": "89.34325416",
         "Fuel Oil": "87.21239112",
-        "Petroleum Coke": "111.95542",
+        "Petroleum Coke": "1.30241E-20",
         "Bunker Fuel": "82.32894512",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "18301.20457",
         "Portion Jet Fuel": "25477.44576",
         "Portion Diesel": "20757.86499",
@@ -27686,7 +27716,7 @@
         "Portion Petroleum Coke": "2.01924E-18",
         "Portion Bunker Fuel": "17328.43162",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5686.923751"
+        "MJperbbl": "6718.392595"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -27712,10 +27742,10 @@
         "Jet Fuel": "114.657663",
         "Diesel": "156.2333818",
         "Fuel Oil": "9.79622E-11",
-        "Petroleum Coke": "75.06726608",
+        "Petroleum Coke": "9.81038E-21",
         "Bunker Fuel": "25.14375314",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "75.06726608",
         "Portion Gasoline": "36250.08387",
         "Portion Jet Fuel": "27891.35389",
         "Portion Diesel": "36299.00744",
@@ -27723,7 +27753,7 @@
         "Portion Petroleum Coke": "1.52099E-18",
         "Portion Bunker Fuel": "5292.206846",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5748.495486"
+        "MJperbbl": "6440.106006"
       }
     },
     "run1": {
@@ -28121,10 +28151,10 @@
         "Jet Fuel": "86.59429686",
         "Diesel": "37.35710039",
         "Fuel Oil": "51.05516367",
-        "Petroleum Coke": "93.51134302",
+        "Petroleum Coke": "1.7544E-19",
         "Bunker Fuel": "174.2836279",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "93.51134302",
         "Portion Gasoline": "24629.64923",
         "Portion Jet Fuel": "21064.72533",
         "Portion Diesel": "8679.487373",
@@ -28132,7 +28162,7 @@
         "Portion Petroleum Coke": "2.71999E-17",
         "Portion Bunker Fuel": "36682.86924",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5816.210507"
+        "MJperbbl": "6677.750189"
       },
       "Canada Hibernia": {
         "Unique": "Canada Hibernia",
@@ -28750,10 +28780,10 @@
         "Jet Fuel": "28.09925422",
         "Diesel": "66.63774091",
         "Fuel Oil": "117.7154093",
-        "Petroleum Coke": "111.95542",
+        "Petroleum Coke": "5.5977E-20",
         "Bunker Fuel": "210.9650807",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "8310.849857",
         "Portion Jet Fuel": "6835.358603",
         "Portion Diesel": "15482.50332",
@@ -28761,7 +28791,7 @@
         "Portion Petroleum Coke": "8.6786E-18",
         "Portion Bunker Fuel": "44403.50802",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5961.194535"
+        "MJperbbl": "6992.663379"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -28787,10 +28817,10 @@
         "Jet Fuel": "104.7344063",
         "Diesel": "89.34325416",
         "Fuel Oil": "87.21239112",
-        "Petroleum Coke": "111.95542",
+        "Petroleum Coke": "1.30241E-20",
         "Bunker Fuel": "82.32894512",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "18301.20457",
         "Portion Jet Fuel": "25477.44576",
         "Portion Diesel": "20757.86499",
@@ -28798,7 +28828,7 @@
         "Portion Petroleum Coke": "2.01924E-18",
         "Portion Bunker Fuel": "17328.43162",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5686.923751"
+        "MJperbbl": "6718.392595"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -28824,10 +28854,10 @@
         "Jet Fuel": "114.657663",
         "Diesel": "76.68075549",
         "Fuel Oil": "74.88382915",
-        "Petroleum Coke": "75.06726608",
+        "Petroleum Coke": "9.81038E-21",
         "Bunker Fuel": "113.5161465",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "75.06726608",
         "Portion Gasoline": "15121.7649",
         "Portion Jet Fuel": "27891.35389",
         "Portion Diesel": "17815.88084",
@@ -28835,7 +28865,7 @@
         "Portion Petroleum Coke": "1.52099E-18",
         "Portion Bunker Fuel": "23892.65137",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5729.084828"
+        "MJperbbl": "6420.695347"
       }
     },
     "run2": {
@@ -29233,10 +29263,10 @@
         "Jet Fuel": "86.59429686",
         "Diesel": "88.8003081",
         "Fuel Oil": "6.04481E-11",
-        "Petroleum Coke": "93.51134302",
+        "Petroleum Coke": "1.7544E-19",
         "Bunker Fuel": "101.8008888",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "93.51134302",
         "Portion Gasoline": "43512.99763",
         "Portion Jet Fuel": "21064.72533",
         "Portion Diesel": "20631.7178",
@@ -29244,7 +29274,7 @@
         "Portion Petroleum Coke": "2.71999E-17",
         "Portion Bunker Fuel": "21426.84737",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5862.711495"
+        "MJperbbl": "6724.251176"
       },
       "Canada Hibernia": {
         "Unique": "Canada Hibernia",
@@ -29862,10 +29892,10 @@
         "Jet Fuel": "28.09925422",
         "Diesel": "225.5812538",
         "Fuel Oil": "2.02851E-10",
-        "Petroleum Coke": "111.95542",
+        "Petroleum Coke": "5.5977E-20",
         "Bunker Fuel": "47.92324271",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "39437.02529",
         "Portion Jet Fuel": "6835.358603",
         "Portion Diesel": "52411.17816",
@@ -29873,7 +29903,7 @@
         "Portion Petroleum Coke": "8.6786E-18",
         "Portion Bunker Fuel": "10086.78823",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "6021.325646"
+        "MJperbbl": "7052.794489"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -29899,10 +29929,10 @@
         "Jet Fuel": "104.7344063",
         "Diesel": "162.5050296",
         "Fuel Oil": "8.96012E-11",
-        "Petroleum Coke": "111.95542",
+        "Petroleum Coke": "1.30241E-20",
         "Bunker Fuel": "16.00538442",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "38559.1586",
         "Portion Jet Fuel": "25477.44576",
         "Portion Diesel": "37756.1518",
@@ -29910,7 +29940,7 @@
         "Portion Petroleum Coke": "2.01924E-18",
         "Portion Bunker Fuel": "3368.781284",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5703.927792"
+        "MJperbbl": "6735.396636"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -29936,10 +29966,10 @@
         "Jet Fuel": "114.657663",
         "Diesel": "156.2333818",
         "Fuel Oil": "9.79622E-11",
-        "Petroleum Coke": "75.06726608",
+        "Petroleum Coke": "9.81038E-21",
         "Bunker Fuel": "25.14375314",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "75.06726608",
         "Portion Gasoline": "36250.08387",
         "Portion Jet Fuel": "27891.35389",
         "Portion Diesel": "36299.00744",
@@ -29947,7 +29977,7 @@
         "Portion Petroleum Coke": "1.52099E-18",
         "Portion Bunker Fuel": "5292.206846",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5748.495486"
+        "MJperbbl": "6440.106006"
       }
     },
     "run3": {
@@ -30345,10 +30375,10 @@
         "Jet Fuel": "86.59429686",
         "Diesel": "95.81391379",
         "Fuel Oil": "6.9229E-11",
-        "Petroleum Coke": "151.1511242",
+        "Petroleum Coke": "57.63978118",
         "Bunker Fuel": "10.75517864",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "93.51134302",
         "Portion Gasoline": "51572.36598",
         "Portion Jet Fuel": "21064.72533",
         "Portion Diesel": "22261.24743",
@@ -30356,7 +30386,7 @@
         "Portion Petroleum Coke": "8936.400182",
         "Portion Bunker Fuel": "2263.728479",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5713.042593"
+        "MJperbbl": "6574.582275"
       },
       "Canada Hibernia": {
         "Unique": "Canada Hibernia",
@@ -30974,10 +31004,10 @@
         "Jet Fuel": "28.09925422",
         "Diesel": "233.8091367",
         "Fuel Oil": "2.13199E-10",
-        "Petroleum Coke": "116.9413216",
+        "Petroleum Coke": "4.985901648",
         "Bunker Fuel": "23.38399943",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "42476.37878",
         "Portion Jet Fuel": "6835.358603",
         "Portion Diesel": "54322.83097",
@@ -30985,7 +31015,7 @@
         "Portion Petroleum Coke": "773.0080075",
         "Portion Bunker Fuel": "4921.817407",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "6012.852126"
+        "MJperbbl": "7044.32097"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -31011,10 +31041,10 @@
         "Jet Fuel": "104.7344063",
         "Diesel": "164.0942183",
         "Fuel Oil": "9.15847E-11",
-        "Petroleum Coke": "112.1332571",
+        "Petroleum Coke": "0.177837169",
         "Bunker Fuel": "12.06681959",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "39091.63994",
         "Portion Jet Fuel": "25477.44576",
         "Portion Diesel": "38125.38128",
@@ -31022,7 +31052,7 @@
         "Portion Petroleum Coke": "27.57165417",
         "Portion Bunker Fuel": "2539.800041",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5702.710179"
+        "MJperbbl": "6734.179023"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -31048,10 +31078,10 @@
         "Jet Fuel": "114.657663",
         "Diesel": "161.1135438",
         "Fuel Oil": "1.04053E-10",
-        "Petroleum Coke": "75.47303088",
+        "Petroleum Coke": "0.405764796",
         "Bunker Fuel": "13.3241725",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "75.06726608",
         "Portion Gasoline": "37872.61805",
         "Portion Jet Fuel": "27891.35389",
         "Portion Diesel": "37432.85627",
@@ -31059,7 +31089,7 @@
         "Portion Petroleum Coke": "62.90927067",
         "Portion Bunker Fuel": "2804.445165",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5746.405724"
+        "MJperbbl": "6438.016243"
       }
     },
     "run4": {
@@ -31457,10 +31487,10 @@
         "Jet Fuel": "86.59429686",
         "Diesel": "127.1099512",
         "Fuel Oil": "7.5312E-11",
-        "Petroleum Coke": "123.475448",
+        "Petroleum Coke": "29.96410495",
         "Bunker Fuel": "11.57895534",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "93.51134302",
         "Portion Gasoline": "51679.06349",
         "Portion Jet Fuel": "21064.72533",
         "Portion Diesel": "29532.51737",
@@ -31468,7 +31498,7 @@
         "Portion Petroleum Coke": "4645.597667",
         "Portion Bunker Fuel": "2437.115349",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5891.519753"
+        "MJperbbl": "6753.059434"
       },
       "Canada Hibernia": {
         "Unique": "Canada Hibernia",
@@ -32086,10 +32116,10 @@
         "Jet Fuel": "28.09925422",
         "Diesel": "236.3853011",
         "Fuel Oil": "2.07287E-10",
-        "Petroleum Coke": "120.134763",
+        "Petroleum Coke": "8.179343002",
         "Bunker Fuel": "22.70237144",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "41638.82654",
         "Portion Jet Fuel": "6835.358603",
         "Portion Diesel": "54921.37276",
@@ -32097,7 +32127,7 @@
         "Portion Petroleum Coke": "1268.115194",
         "Portion Bunker Fuel": "4778.349711",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "6024.667827"
+        "MJperbbl": "7056.136671"
       },
       "Canada Suncor Synthetic A (SCO)": {
         "Unique": "Canada Suncor Synthetic A (SCO)",
@@ -32123,10 +32153,10 @@
         "Jet Fuel": "104.7344063",
         "Diesel": "164.1905906",
         "Fuel Oil": "9.02577E-11",
-        "Petroleum Coke": "113.2257009",
+        "Petroleum Coke": "1.270280907",
         "Bunker Fuel": "11.91094097",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "111.95542",
         "Portion Gasoline": "38915.38277",
         "Portion Jet Fuel": "25477.44576",
         "Portion Diesel": "38147.77226",
@@ -32134,7 +32164,7 @@
         "Portion Petroleum Coke": "196.9427763",
         "Portion Bunker Fuel": "2506.99102",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5702.965007"
+        "MJperbbl": "6734.433851"
       },
       "Canada Syncrude Synthetic (SCO)": {
         "Unique": "Canada Syncrude Synthetic (SCO)",
@@ -32160,10 +32190,10 @@
         "Jet Fuel": "114.657663",
         "Diesel": "161.32673",
         "Fuel Oil": "9.99451E-11",
-        "Petroleum Coke": "78.91175899",
+        "Petroleum Coke": "3.844492907",
         "Bunker Fuel": "12.84125443",
         "Light Ends (RFG)": "0",
-        "Net Upstream Petcoke": "0",
+        "Net Upstream Petcoke": "75.06726608",
         "Portion Gasoline": "37327.09664",
         "Portion Jet Fuel": "27891.35389",
         "Portion Diesel": "37482.38759",
@@ -32171,13 +32201,13 @@
         "Portion Petroleum Coke": "596.045412",
         "Portion Bunker Fuel": "2702.801535",
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
-        "MJperbbl": "5746.58445"
+        "MJperbbl": "6438.194969"
       }
     }
   },
   "metadata": {
-    "water": "0.5, 0.75, 1, 1.25, 1.5",
-    "steam": "0.75, 1, 1.25",
+    "water": ".5, .75, 1, 1.25, 1.5",
+    "steam": ".75, 1, 1.25",
     "flare": ".1, .75, 1",
     "refinery": "0 = Default, 1 = Hydroskimming, 2 = Medium Conversion, 3 = Deep Conversion (Coking), 4 = Deep Conversion (Hydrotreating)"
   }
