@@ -123,6 +123,9 @@ $popover-arr-size: 16px;
     font-size: 12px;
     line-height: 16px;
     color: tint($base-color, 56%);
+    a, a:visited {
+      color: inherit;
+    }
     &.oil-type {
       padding-left: 16px;
       .swatch {

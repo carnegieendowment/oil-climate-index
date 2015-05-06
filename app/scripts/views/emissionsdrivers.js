@@ -59,17 +59,17 @@ Oci.Views = Oci.Views || {};
           self.tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
             var values = [{
               name: utils.getDatasetName(xProperty),
-              value: utils.numberWithCommas(+d[xProperty]),
+              value: utils.numberWithCommas(+d[xProperty], sortRatio),
               units: utils.getUnits(xProperty, sortRatio)
             },
             {
               name: utils.getDatasetName(yProperty).split(' ').pop(),
-              value: utils.numberWithCommas(+d[yProperty]),
+              value: utils.numberWithCommas(+d[yProperty], sortRatio),
               units: utils.getUnits(yProperty, sortRatio)
             },
             {
               name: utils.getDatasetName('productionVolume'),
-              value: utils.numberWithCommas(d.productionVolume),
+              value: utils.numberWithCommas(d.productionVolume, sortRatio),
               units: utils.getUnits('productionVolume', sortRatio)
             }];
             return utils.createTooltipHtml(d.name, d.type, values, d.id);
@@ -419,11 +419,6 @@ Oci.Views = Oci.Views || {};
             // Sum up for total
             var ghgTotal = d3.sum([upstream, midstream, transport, combustion]);
 
-            // Other sums
-            var ghgElectricity = +prelim.Electricity;
-
-            var ghgHeat = utils.aggregatePrelim(prelim, 'Heat');
-
             // Create oil object
             var obj = {
               'id': utils.makeId(info.Unique),
@@ -437,9 +432,9 @@ Oci.Views = Oci.Views || {};
               'downstream': combustion + transport,
               'waterToOilRatio': +opgee[utils.getDatasetKey('waterToOilRatio')],
               'gasToOilRatio': +opgee[utils.getDatasetKey('gasToOilRatio')],
-              'ghgGasoline': +prelim[utils.getDatasetKey('ghgGasoline')],
-              'ghgDiesel': +prelim[utils.getDatasetKey('ghgDiesel')],
-              'ghgBunker': +prelim[utils.getDatasetKey('ghgBunker')],
+              'prodGasoline': +prelim[utils.getDatasetKey('prodGasoline')],
+              'prodDiesel': +prelim[utils.getDatasetKey('prodDiesel')],
+              'prodBunker': +prelim[utils.getDatasetKey('prodBunker')],
               'sulfurContent': +info[utils.getDatasetKey('sulfurContent')] * 100,
               'yearsProduction': +info[utils.getDatasetKey('yearsProduction')],
               'type': info['Overall Crude Emissions Category'].trim()

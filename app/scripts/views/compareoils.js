@@ -69,7 +69,7 @@ Oci.Views = Oci.Views || {};
                 };
               });
               // Add total value to tooltip
-              values.unshift({ name: 'Total', value: utils.numberWithCommas(d.ghgTotal), units: utils.getUnits('ghgTotal', sortRatio) });
+              values.unshift({ name: 'Total', value: utils.numberWithCommas(d.ghgTotal, sortRatio), units: utils.getUnits('ghgTotal', sortRatio) });
               return utils.createTooltipHtml(d.y, d.type, values, utils.makeId(d.y));
             })
             .offset([0,0]);

@@ -108,10 +108,10 @@ Oci.Views = Oci.Views || {};
             case '2 = Medium Conversion':
               refinery = 'Medium';
               break;
-            case '3 = Deep Coking':
+            case '3 = Deep Conversion (Coking)':
               refinery = 'Deep Coke';
               break;
-            case '4 = Deep Hydrotreating':
+            case '4 = Deep Conversion (Hydrotreating)':
               refinery = 'Deep Hydro';
               break;
           }

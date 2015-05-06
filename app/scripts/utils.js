@@ -285,7 +285,9 @@ var utils;
 
     // Add commas to a number string
     // If it's greater than one, round to int
-    numberWithCommas: function (x) {
+    // sortRatio is a secondary optional parameter to allow custom handling
+    numberWithCommas: function (x, sortRatio) {
+      if (sortRatio === 'perMJ') return x.toFixed(2);
       x = x > 1 ? x.toFixed(0) : x.toFixed(1);
       return x.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     },
@@ -320,14 +322,14 @@ var utils;
           return 'Oil Production Volume';
         case 'sulfurContent':
           return 'Sulfur %wt';
-        case 'ghgBunker':
-          return 'Bunker Fuel';
-        case 'ghgGasoline':
-          return 'Gasoline';
-        case 'ghgDiesel':
-          return 'Diesel';
+        case 'prodBunker':
+          return 'Portion Bunker Fuel';
+        case 'prodGasoline':
+          return 'Portion Gasoline';
+        case 'prodDiesel':
+          return 'Portion Diesel';
         case 'yearsProduction':
-          return 'Years';
+          return 'Field Age';
         default:
           return console.warn('Unknown key');
       }
@@ -366,12 +368,11 @@ var utils;
           return 'Years';
         case 'sulfurContent':
           return '% weight';
+        case 'prodGasoline':
+        case 'prodDiesel':
+        case 'prodBunker':
+          return 'bbl product/100,000 bbl crude';
         case 'type':
-        case 'ghgHeat':
-        case 'ghgElectricity':
-        case 'ghgGasoline':
-        case 'ghgDiesel':
-        case 'ghgBunker':
         case 'ghgTotal':
         case 'upstream':
         case 'midstream':
@@ -410,16 +411,12 @@ var utils;
           return 'Gas-to-Oil Ratio';
         case 'productionVolume':
           return 'Current Estimated Oil Production';
-        case 'ghgElectricity':
-          return 'GHGs from Electricity';
-        case 'ghgHeat':
-          return 'GHGs from Heat';
-        case 'ghgGasoline':
-          return 'GHGs from Gasoline Consumption';
-        case 'ghgDiesel':
-          return 'GHGs from Diesel Consumption';
-        case 'ghgBunker':
-          return 'GHGs from Bunker Fuel Consumption';
+        case 'prodGasoline':
+          return 'Gasoline Production';
+        case 'prodDiesel':
+          return 'Diesel Production';
+        case 'prodBunker':
+          return 'Bunker Fuel Production';
         case 'yearsProduction':
           return 'Years in Production';
         case 'sulfurContent':
@@ -603,7 +600,7 @@ var utils;
       var html = '<div class="popover top in">' +
         '<div class="popover-inner">' +
           '<div class="popover-header">' +
-            '<p class="popover-meta oil-type"><span class="swatch"></span>' + type + '</p>' +
+            '<p class="popover-meta oil-type"><a href="methodology.html#oiltype-legend"><span class="swatch"></span>' + type + '</a></p>' +
             '<h3 class="popover-title">' + title + '</h3>' +
             (text ? '<p class="description">' + text + '</p>' : '') +
           '</div>' +
