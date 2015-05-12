@@ -17,7 +17,7 @@ Oci.Routers = Oci.Routers || {};
       routes: {
         '' : 'supplyCurve',
         'compare' : 'compareOils',
-        'emissions' : 'emissionsDrivers',
+        'drivers' : 'emissionsDrivers',
         'oil/:id' : 'oilDetails',
         'demo' : 'playDemo'
       },
