@@ -78,7 +78,7 @@ var utils;
             }
 
             // Handle ratio
-            total = utils.getValueForRatio(total, ratio, prelim);
+            total = utils.getValueForRatio(total, ratio, prelim, showCoke, data.info[key]);
 
             // Check which is bigger (or smaller)
             if (!opgeeExtent || (extraction * minMaxMultiplier > opgeeExtent * minMaxMultiplier)) {
@@ -154,7 +154,7 @@ var utils;
     },
 
     // Convert the original value to a new value based on desired ratio type
-    getValueForRatio: function (originalValue, ratio, prelim, showCoke) {
+    getValueForRatio: function (originalValue, ratio, prelim, showCoke, info) {
       switch(ratio) {
         case 'perBarrel':
           return originalValue;
@@ -163,14 +163,14 @@ var utils;
           return originalValue * (1 / prelim.MJperbbl);
         case 'perDollar':
           // GHG / barrel * barrel / $
-          return originalValue * (1.0 / this.getPricePerBarrel(prelim, showCoke));
+          return originalValue * (1.0 / this.getPricePerBarrel(prelim, showCoke, info));
         default:
           return originalValue;
       }
     },
 
     // Use prelim data and pricing info to determing blended price per barrel
-    getPricePerBarrel: function (prelim, showCoke) {
+    getPricePerBarrel: function (prelim, showCoke, info) {
       // Sum up price * portion in barrel
       var sum = prelim['Portion Gasoline'] * Oci.prices.gasoline.price +
         prelim['Portion Jet Fuel'] * Oci.prices.jetFuel.price +
@@ -184,7 +184,7 @@ var utils;
       // Add extra if we're including petcoke, formulas are provided by Carnegie
       if (showCoke) {
        sum += (((prelim['Portion Petroleum Coke'] / 5) * Oci.prices.coke.price) / 100000);
-       sum += prelim['Net Upstream Petcoke'] * Oci.prices.coke.price;
+       sum += info['Portion Net Upstream Petcoke'] * Oci.prices.coke.price;
       }
 
       return sum;

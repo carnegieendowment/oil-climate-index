@@ -1,4 +1,4 @@
-﻿' Module level variables (for scoping purposes)
+' Module level variables (for scoping purposes)
 Private Oils As Integer
 Private NonSpecialOils As Integer
 Private OCICS As Workbook
@@ -72,24 +72,30 @@ Sub Info()
   InfoBook.Sheets("Sheet1").Range("X1").Value = "Field Age"
   InfoBook.Sheets("Sheet1").Range("Y1").Value = "Field Depth"
   InfoBook.Sheets("Sheet1").Range("Z1").Value = "Oil Production Volume"
+        
+  ' Portion Net Upstream Petcoke, row 444
+  Range(StartCell.Offset(439, 0), StartCell.Offset(439, Oils - 1)).Copy
+  InfoBook.Sheets("Sheet1").Range("AA2").PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, _
+     SkipBlanks:=False, Transpose:=True
+  InfoBook.Sheets("Sheet1").Range("AA1").Value = "Portion Net Upstream Petcoke"
   
   ' Copy row 453 (default refinery) for all oils, paste transposed into info.csv
   Range(StartCell.Offset(448, 0), StartCell.Offset(448, Oils - 1)).Copy
-  InfoBook.Sheets("Sheet1").Range("AA2").PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, _
+  InfoBook.Sheets("Sheet1").Range("AB2").PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, _
      SkipBlanks:=False, Transpose:=True
-  InfoBook.Sheets("Sheet1").Range("AA1").Value = "Default Refinery"
+  InfoBook.Sheets("Sheet1").Range("AB1").Value = "Default Refinery"
   
   ' Copy row 1065 (transport emissions) for all oils, paste transposed into info.csv
   Range(StartCell.Offset(1060, 0), StartCell.Offset(1060, Oils - 1)).Copy
-  InfoBook.Sheets("Sheet1").Range("AB2").PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, _
+  InfoBook.Sheets("Sheet1").Range("AC2").PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, _
      SkipBlanks:=False, Transpose:=True
-  InfoBook.Sheets("Sheet1").Range("AB1").Value = "Transport Emissions"
+  InfoBook.Sheets("Sheet1").Range("AC1").Value = "Transport Emissions"
   
   ' Copy row 1091 (total emissions) for all oils, paste transposed into info.csv
   Range(StartCell.Offset(1086, 0), StartCell.Offset(1086, Oils - 1)).Copy
-  InfoBook.Sheets("Sheet1").Range("AC2").PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, _
+  InfoBook.Sheets("Sheet1").Range("AD2").PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, _
      SkipBlanks:=False, Transpose:=True
-  InfoBook.Sheets("Sheet1").Range("AC1").Value = "Total Emissions"
+  InfoBook.Sheets("Sheet1").Range("AD1").Value = "Total Emissions"
   
   ' Save and close info.csv
   Application.DisplayAlerts = False
@@ -233,7 +239,7 @@ Sub OPGEE()
               Range(StartCell.Offset(290, 0), StartCell.Offset(291, Oils - 1)).Copy
               OPGEEBook.Sheets("Sheet1").Range("Q2").PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, _
                   SkipBlanks:=False, Transpose:=True
-                  
+                    
               ' Save and close .csv
               Application.DisplayAlerts = False
               OPGEEBook.SaveAs Filename:=OCICS.Path & "\opgee_run" & w & s & f & ".csv", FileFormat:=xlCSV
@@ -358,4 +364,3 @@ Sub PRELIM()
   Next i
 
 End Sub
-

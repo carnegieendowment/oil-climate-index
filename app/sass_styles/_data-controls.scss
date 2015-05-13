@@ -120,15 +120,17 @@
         top: 0;
         left: 50%;
         margin-left: -16px;
+        width: 32px;
+        height: 32px;
         font-size: 32px;
-        line-height: 32px;
+        line-height: 1;
+        display: block;
       }
       span {
         width: 100%;
         @extend .truncated;
         line-height: 20px;
         font-size: 14px;
-
       }
       &.flare:before { @extend .icon-element-flame; }
       &.steam:before { @extend .icon-element-steam; }

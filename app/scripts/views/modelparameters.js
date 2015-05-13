@@ -194,9 +194,6 @@ Oci.Views = Oci.Views || {};
           var tempArray = array.map(function(val){
             return ((val - min) / ((max - min) / 100)).toFixed(0) + '%';
           });
-          tempArray.sort(function(a, b) {
-            return a - b;
-          });
           tempArray[0] = 'min';
           tempArray[tempArray.length - 1] = 'max';
           return tempArray;

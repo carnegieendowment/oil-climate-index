@@ -201,10 +201,10 @@ Oci.Views = Oci.Views || {};
             var combustion = utils.getCombustionTotal(prelim, params.showCoke);
 
             // Adjust for any ratio
-            upstream = +utils.getValueForRatio(upstream, sortRatio, prelim, params.showCoke);
-            midstream = +utils.getValueForRatio(midstream, sortRatio, prelim, params.showCoke);
-            transport = +utils.getValueForRatio(transport, sortRatio, prelim, params.showCoke);
-            combustion = +utils.getValueForRatio(combustion, sortRatio, prelim, params.showCoke);
+            upstream = +utils.getValueForRatio(upstream, sortRatio, prelim, params.showCoke, info);
+            midstream = +utils.getValueForRatio(midstream, sortRatio, prelim, params.showCoke, info);
+            transport = +utils.getValueForRatio(transport, sortRatio, prelim, params.showCoke, info);
+            combustion = +utils.getValueForRatio(combustion, sortRatio, prelim, params.showCoke, info);
 
             // Sum up for total
             var ghgTotal = d3.sum([upstream, midstream, transport, combustion]);
