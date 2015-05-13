@@ -31,7 +31,7 @@ Perform these steps on the OCI Consolidated Sheet to prepare it for data updatin
 - Close without saving
 - Perform any special processing (see below)
 - Run processing script (`process.bat`)
-- Final data will be named `oils.json`; replace the old file with this name on the website (in `/dist` folder)
+- Final data will be named `oils.json`; replace the old file with this name on the website ([on the gh-pages branch in `/data` folder](https://github.com/carnegieendowment/oil-climate-index/tree/gh-pages/data))
 
 ## Special processing
 
