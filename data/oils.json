@@ -26,6 +26,7 @@
       "Field Age": "5",
       "Field Depth": "13000",
       "Oil Production Volume": "233000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Hydroskimming Configuration",
       "Transport Emissions": "9.812375005",
       "Total Emissions": "471.3895952"
@@ -56,6 +57,7 @@
       "Field Age": "45",
       "Field Depth": "7700",
       "Oil Production Volume": "507770",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.73217326",
       "Total Emissions": "556.0732236"
@@ -86,6 +88,7 @@
       "Field Age": "17",
       "Field Depth": "9075",
       "Oil Production Volume": "655700",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Hydroskimming Configuration",
       "Transport Emissions": "10.5216938",
       "Total Emissions": "485.2846199"
@@ -116,6 +119,7 @@
       "Field Age": "40",
       "Field Depth": "11500",
       "Oil Production Volume": "2234",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Hydroskimming Configuration",
       "Transport Emissions": "10.79055222",
       "Total Emissions": "651.2570836"
@@ -146,6 +150,7 @@
       "Field Age": "23",
       "Field Depth": "10500",
       "Oil Production Volume": "90000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
       "Transport Emissions": "11.32671783",
       "Total Emissions": "812.0797291"
@@ -176,6 +181,7 @@
       "Field Age": "37",
       "Field Depth": "8100",
       "Oil Production Volume": "1030",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Hydroskimming Configuration",
       "Transport Emissions": "10.30466092",
       "Total Emissions": "558.6641632"
@@ -206,6 +212,7 @@
       "Field Age": "55",
       "Field Depth": "600",
       "Oil Production Volume": "165057",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
       "Transport Emissions": "10.91677799",
       "Total Emissions": "732.0623179"
@@ -236,6 +243,7 @@
       "Field Age": "42",
       "Field Depth": "10000",
       "Oil Production Volume": "102000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Hydroskimming Configuration",
       "Transport Emissions": "10.3734147",
       "Total Emissions": "466.2399316"
@@ -266,6 +274,7 @@
       "Field Age": "4",
       "Field Depth": "6730",
       "Oil Production Volume": "16912",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
       "Transport Emissions": "11.010077",
       "Total Emissions": "576.5681629"
@@ -296,6 +305,7 @@
       "Field Age": "12",
       "Field Depth": "3937",
       "Oil Production Volume": "175000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.90127048",
       "Total Emissions": "518.9615276"
@@ -326,6 +336,7 @@
       "Field Age": "13",
       "Field Depth": "2200",
       "Oil Production Volume": "190000",
+      "Portion Net Upstream Petcoke": "0.028995765",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "13.23012211",
       "Total Emissions": "742.228054"
@@ -356,6 +367,7 @@
       "Field Age": "15",
       "Field Depth": "10065",
       "Oil Production Volume": "135483",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.56238944",
       "Total Emissions": "492.2372815"
@@ -386,6 +398,7 @@
       "Field Age": "15",
       "Field Depth": "7240",
       "Oil Production Volume": "50000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "11.51975379",
       "Total Emissions": "515.0481157"
@@ -416,6 +429,7 @@
       "Field Age": "3",
       "Field Depth": "19737",
       "Oil Production Volume": "100000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.78071881",
       "Total Emissions": "539.1577569"
@@ -446,6 +460,7 @@
       "Field Age": "17",
       "Field Depth": "16000",
       "Oil Production Volume": "60000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.85885306",
       "Total Emissions": "505.0083024"
@@ -476,6 +491,7 @@
       "Field Age": "60",
       "Field Depth": "4600",
       "Oil Production Volume": "5000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.74283181",
       "Total Emissions": "522.9675175"
@@ -506,6 +522,7 @@
       "Field Age": "120",
       "Field Depth": "2698",
       "Oil Production Volume": "78918",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
       "Transport Emissions": "10.85679593",
       "Total Emissions": "738.9666064"
@@ -536,6 +553,7 @@
       "Field Age": "47",
       "Field Depth": "2050",
       "Oil Production Volume": "9910",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Hydroskimming Configuration",
       "Transport Emissions": "10.79055222",
       "Total Emissions": "719.7480279"
@@ -566,6 +584,7 @@
       "Field Age": "57",
       "Field Depth": "6500",
       "Oil Production Volume": "90000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "11.20116792",
       "Total Emissions": "494.3553755"
@@ -596,6 +615,7 @@
       "Field Age": "103",
       "Field Depth": "779",
       "Oil Production Volume": "64245",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
       "Transport Emissions": "11.4043477",
       "Total Emissions": "685.0541972"
@@ -626,6 +646,7 @@
       "Field Age": "22",
       "Field Depth": "11843",
       "Oil Production Volume": "528767",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "9.702903497",
       "Total Emissions": "456.2771227"
@@ -656,6 +677,7 @@
       "Field Age": "5",
       "Field Depth": "16000",
       "Oil Production Volume": "30098",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.60120236",
       "Total Emissions": "486.8337891"
@@ -686,6 +708,7 @@
       "Field Age": "82",
       "Field Depth": "2824",
       "Oil Production Volume": "36344.51781",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
       "Transport Emissions": "11.11026211",
       "Total Emissions": "608.644769"
@@ -716,6 +739,7 @@
       "Field Age": "60",
       "Field Depth": "11000",
       "Oil Production Volume": "125130",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.70725601",
       "Total Emissions": "539.993875"
@@ -746,6 +770,7 @@
       "Field Age": "38",
       "Field Depth": "7311",
       "Oil Production Volume": "46410",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "10.18165804",
       "Total Emissions": "502.4344548"
@@ -776,6 +801,7 @@
       "Field Age": "8",
       "Field Depth": "36000",
       "Oil Production Volume": "250000",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Hydroskimming Configuration",
       "Transport Emissions": "10.49089036",
       "Total Emissions": "529.1228826"
@@ -806,6 +832,7 @@
       "Field Age": "39",
       "Field Depth": "",
       "Oil Production Volume": "154100",
+      "Portion Net Upstream Petcoke": "",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
       "Transport Emissions": "10.82297823",
       "Total Emissions": "637.7641111"
@@ -836,6 +863,7 @@
       "Field Age": "48",
       "Field Depth": "",
       "Oil Production Volume": "144271",
+      "Portion Net Upstream Petcoke": "0.034714859",
       "Default Refinery": "Deep Conversion: FCC & GO-HC",
       "Transport Emissions": "13.74247844",
       "Total Emissions": "825.2109887"
@@ -866,6 +894,7 @@
       "Field Age": "48",
       "Field Depth": "",
       "Oil Production Volume": "144271",
+      "Portion Net Upstream Petcoke": "0.034714859",
       "Default Refinery": "Hydroskimming Configuration",
       "Transport Emissions": "13.30353593",
       "Total Emissions": "733.2474882"
@@ -896,6 +925,7 @@
       "Field Age": "37",
       "Field Depth": "",
       "Oil Production Volume": "274421",
+      "Portion Net Upstream Petcoke": "0.023276672",
       "Default Refinery": "Medium Conversion: FCC & GO-HC ",
       "Transport Emissions": "12.45108351",
       "Total Emissions": "766.9550831"
