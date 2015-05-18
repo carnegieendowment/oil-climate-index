@@ -4,9 +4,10 @@
 
 .doc-nav {
 	display:table;
-	margin-left:0;
 	width:100%;
 }
+
+.prose ul.doc-nav {margin-left:0;}
 
 .doc-nav li {
 	font-size:.8em;
