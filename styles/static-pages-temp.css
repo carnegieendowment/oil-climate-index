@@ -32,6 +32,6 @@
 #livingston {background-image:url(/images/content/livingston.jpg);}
 #tan {background-image:url(/images/content/tan.jpg);}
 
-#opgee-model-schematic {background-image:url(/images/content/OPGEE-schematic.png); height:34em; padding-top:70%;}
-#prelim-model-schematic {background-image:url(/images/content/PRELIM-schematic.png);}
-#opem-model-schematic {background-image:url(/images/content/OPEM-Schematic-updated.png);}
+#opgee-model-schematic {background-image:url(/images/content/OPGEE-schematic.png); padding-top:70%;}
+#prelim-model-schematic {background-image:url(/images/content/PRELIM-schematic.png); padding-top:132%;}
+#opem-model-schematic {background-image:url(/images/content/OPEM-Schematic-updated.png); padding-top:66%;}
