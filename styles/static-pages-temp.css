@@ -1,5 +1,24 @@
 /* temporary css for static pages */
 
+.page-nav, .page-nav li {margin:0;padding:0; list-style:non;}
+
+.page-nav {
+	display:table;
+	width:100%;
+}
+
+.page-nav li {
+	font-size:.9em;
+	float:left;
+	margin-left:2em;
+	text-transform:uppercase;
+}
+
+.page-nav li a {
+	color:#3d71b7;
+	text-decoration: underline;
+}
+
 .prose.prose-content .contentImg {
 	background-size:cover;
 	background-repeat:no-repeat;
