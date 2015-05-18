@@ -71,6 +71,16 @@
             <div class="row">
               <div class="prose prose-content">
                 <h1>Oil-Climate Index Methodology</h1>
+
+                <ul class="page-nav">
+                  <li>OCI Input Data</li>
+                  <li><a href="#oci-modeling-methods">OCI Modeling Methods</a></li>
+                  <li><a href="#oci-phase-1-special-cases">OCI Phase 1 Special Cases</a></li>
+                  <li><a href="#converting-emission-outputs">Converting Emission Outputs to Other Metrics</a></li>
+                  <li><a href="#oil-types">Oil Types</a></li>
+                  <li><a href="#change-log">Change Log</a></li>
+                </ul>
+
                 <h2>OCI Input Data</h2>
                 <p>The models that underpin the Oil-Climate Index (OCI) require consistent, comparable, and verifiable open-source data on crude oils. This includes oil assays (analyses of predetermined data measuring a crude oil’s chemical and physical characteristics) that are reported out in a specified format, upstream field-level operating specifications, midstream refining process input requirements, and downstream transport and end-use data.</p>
                 <p>The creators of the Oil-Climate Index went through an intensive process to obtain data on the 30 Phase 1 test oils. Hundreds of academic sources, technical documents, and reports from industry news were used to identify data. Oils were selected based on data availability, and the number of oils chosen for Phase 1 was limited by lack of data transparency.</p>
@@ -175,6 +185,7 @@
                   <li>Market prices for all oil products <em>(including petrochemical feedstocks, condensates, petroleum coke, bunker fuel, fuel oil #4, and asphalt)</em></li>
                 </ol>
 
+                <a name="oci-modeling-methods"></a>
                 <h2>OCI Modeling Methods</h2>
                 <p>Each model&mdash;OPGEE, PRELIM, and OPEM&mdash;is run separately, and the outputs of each model are converted into the same functional units (that is, per barrel of crude produced, per megajoule of petroleum products, and per dollar value of petroleum products). The results are then summed to estimate the total GHG emissions associated with each individual oil’s supply chain. Exceptions are made when emissions take place across multiple parts of the supply chain (for example, upstream and downstream transport and petroleum coke production).</p>
 
@@ -206,6 +217,7 @@
                 <p>Petcoke production (both upstream in OPGEE and midstream in PRELIM) is included in total petroleum product emissions. It defaults to “on” and can be turned “off” in the OCI web tool.</p>
 
 
+                <a name="oci-phase-1-special-cases"></a>
                 <h2>OCI Phase 1 Special Cases</h2>
                 <p><strong>California Midway Sunset</strong> is modeled using a different PRELIM configuration than the model’s categorization scheme calls for. The Midway Sunset oil field contains very complex oil. The API gravity is highly variable, ranging from the teens to the low twenties. The oil assay obtained for OCI Phase 1 indicates a gravity of 22.6, which suggests that the oil, according the PRELIM rules, should be run through a medium conversion refinery. But because Midway Sunset’s oil tends to be below 22 API, the oil is instead run through a deep conversion refinery in the default run. This default operating assumption can be changed in the web tool.</p>
                 <p>The default OPGEE model tends to overestimate emissions for <strong>Russia Chayvo</strong> because highly deviated (diagonal) wells are needed to access oil in this field. Drilling energy increases with well depth for three reasons: to overcome increased friction confronted by mud and cuttings in a longer drill stem and annulus return; to circulate more mud and remove more cuttings due to the increased friction; and to lift rock chips to the surface in the opposite direction of high, in situ well pressure. Each of these factors scales differently with true vertical depth and driller’s total distance. The high-end assumption (the OPGEE default) indicates that a deviated well (36,000 feet long, 10,000 feet deep) requires the same energy as a well that is vertical but 36,000 feet deep. The low-end assumption is that a deviated well requires as much energy per unit length as a well that is 10,000 feet deep. Given that a deviated well is in fact a mix of these two cases, in reality the energy involved to lift Chayvo oil is somewhere in between. Details of the modification used for this oil in the OPGEE model are documented in the OPGEE bulk assessment tool for Chayvo. The OCI Phase 1 Chayvo-specific model assumes low-end energy requirements that result in GHG estimates that can be viewed on worksheet 2-OPGEE in the OCI Authors’ Calculations <a href="http://carnegieendowment.org/2015/03/11/know-your-oil-creating-global-oil-climate-index" target="_blank">workbook</a>, available for download under “Resources.”</p>
@@ -218,11 +230,15 @@
                 <p>The use of different methane GWPs in the index introduces a small underestimation of total GHG emissions. This will be corrected by using the same GWPs in OPGEE, PRELIM, and OPEM in Phase 2 of the OCI.</p>
                 
 
+                <a name="converting-emissions-outputs"></a>
                 <h2>Converting Emission Outputs to Other Metrics</h2>
                 <p>The default functional unit or metric in the OCI web tool is GHG emissions per barrel of oil input. The OCI web tool also converts emissions to other metrics, including emissions per megajoule (MJ) of petroleum products and emissions per U.S. dollar of petroleum products. These conversions are calculated by multiplying default results by reported lower heating values (in megajoule per barrel) and product sales prices (in dollars per barrel, excluding all taxes).</p>
                 <p>The OCI web tool permits users to adjust petroleum product prices for both updating and forecasting purposes. These results will show when the user selects GHG emission results based on the metric of emissions per dollar of petroleum products.</p>
                 <hr>
-                <h2 class="hd-label">Oil types</h2>
+
+
+                <a name="oil-types"></a>
+                <h2>Oil types</h2>
                 <a id="oiltype-legend"></a>
                 <ul class="oiltype-legend">
                   <li><span class="ot-ultra-deep"></span> Ultra-Deep</li>
@@ -235,6 +251,35 @@
                   <li><span class="ot-light"></span> Light</li>
                   <li><span class="ot-depleted-oil"></span> Depleted Oil</li>
                 </ul>
+                <hr>
+
+
+                <a name="change-log"></a>
+                <h2>Change Log</h2>
+                <p>As we find new data and as our models improve, we can find increasingly better estimates for the life-cycle emissions of an oil. This log details those changes.</p>
+                <table id="change-log" class="data-table full-width">
+                  <thead>
+                    <tr>
+                      <td>Date</td>
+                      <td>Change Description</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>05/04/15</td>
+                      <td>Updated to better take into account upstream petcoke in /MJ and /$ calculations.</td>
+                    </tr>
+                    <tr>
+                      <td>03/01/15</td>
+                      <td>Bozhong had a data inconsistency where the API gravity used in OPGEE did not match with API gravity used in PRELIM. Upstream extraction literature checked and the API gravity corrected. New data for Alaskan North Slope field properties and production practices (OPGEE Inputs) from the Alaskan Oil and Gas Conservation Commission. Know Your Oil report updated to take into account these changes.</td>
+                    </tr>
+                    <tr>
+                      <td>02/15/15</td>
+                      <td>Web-tool beta release, all numbers match up with Know Your Oil report.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
               </div>
             </div>
 
