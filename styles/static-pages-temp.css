@@ -44,13 +44,14 @@
 	float:right;
 	margin-left:2em;
 	margin-right:0;
-	width:30%;
+	margin-top:.5em;
+	width:50%;
 }
 
 .data-table td {
 	background-color:white;
 	padding:.5em 1em;
-	text-align:center;
+	text-align:left;
 }
 
 .data-table thead td {
