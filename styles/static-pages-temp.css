@@ -1,13 +1,13 @@
 /* temporary css for static pages */
 
-.page-nav, .page-nav li {margin:0;padding:0; list-style:none;}
+.doc-nav, .doc-nav li {margin:0;padding:0; list-style:none;}
 
-.page-nav {
+.doc-nav {
 	display:table;
 	width:100%;
 }
 
-.page-nav li {
+.doc-nav li {
 	font-size:.9em;
 	font-weight:bold;
 	float:left;
@@ -16,7 +16,7 @@
 	text-transform:uppercase;
 }
 
-.page-nav li a {
+.doc-nav li a {
 	color:#3d71b7;
 	text-decoration: underline;
 	line-height:normal;
