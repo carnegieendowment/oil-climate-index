@@ -9,7 +9,9 @@
 
 .page-nav li {
 	font-size:.9em;
+	font-weight:bold;
 	float:left;
+	line-height:normal;
 	margin-left:2em;
 	text-transform:uppercase;
 }
@@ -17,6 +19,7 @@
 .page-nav li a {
 	color:#3d71b7;
 	text-decoration: underline;
+	line-height:normal;
 }
 
 .prose.prose-content .contentImg {
