@@ -4,15 +4,16 @@
 
 .doc-nav {
 	display:table;
+	margin-left:0;
 	width:100%;
 }
 
 .doc-nav li {
-	font-size:.9em;
+	font-size:.8em;
 	font-weight:bold;
 	float:left;
 	line-height:normal;
-	margin-left:2em;
+	margin-right:2em;
 	text-transform:uppercase;
 }
 
