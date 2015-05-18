@@ -1,6 +1,6 @@
 /* temporary css for static pages */
 
-.page-nav, .page-nav li {margin:0;padding:0; list-style:non;}
+.page-nav, .page-nav li {margin:0;padding:0; list-style:none;}
 
 .page-nav {
 	display:table;
