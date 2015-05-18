@@ -20,6 +20,11 @@
 	width:100%;
 }
 
+.prose.prose-content .contentImg.headshot {
+	width:126px;
+	height:auto;
+}
+
 #gordon {background-image:url(/images/content/gordon.jpg);}
 #bergerson {background-image:url(/images/content/bergerson.jpg);}
 #brandt {background-image:url(/images/content/brandt.jpg);}
