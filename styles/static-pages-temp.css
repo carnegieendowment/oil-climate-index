@@ -35,3 +35,26 @@
 #opgee-model-schematic {background-image:url(/images/content/OPGEE-schematic.png); padding-top:70%;}
 #prelim-model-schematic {background-image:url(/images/content/PRELIM-schematic.png); padding-top:132%;}
 #opem-model-schematic {background-image:url(/images/content/OPEM-Schematic-updated.png); padding-top:66%;}
+
+.data-table {
+	margin-bottom:1em;
+}
+
+.data-table.float-right {
+	float:right;
+	margin-left:2em;
+	margin-right:0;
+	width:30%;
+}
+
+.data-table td {
+	background-color:white;
+	padding:.5em 1em;
+	text-align:center;
+}
+
+.data-table thead td {
+	font-weight: bold;
+	font-size:.9em;
+	text-transform: uppercase;
+}
