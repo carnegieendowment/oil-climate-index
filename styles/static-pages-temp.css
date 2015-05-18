@@ -3,26 +3,26 @@
 .prose.prose-content .contentImg {
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-position:top left;
+	background-position:top center;
 	display:block;
 }
 
 .prose.prose-content .contentImg.float-left {
 	float:left;
-	margin-left:0;
-	width:20%;
+	margin: 0.3em 2% 0.5em 0;
 }
 
 .prose.prose-content .contentImg.full-width {
 	float:none;
 	margin-left:0;
 	margin-right:0;
+	margin-bottom:2em;
 	width:100%;
 }
 
 .prose.prose-content .contentImg.headshot {
 	width:126px;
-	height:auto;
+	height:162px;
 }
 
 #gordon {background-image:url(/images/content/gordon.jpg);}
@@ -32,6 +32,6 @@
 #livingston {background-image:url(/images/content/livingston.jpg);}
 #tan {background-image:url(/images/content/tan.jpg);}
 
-#opgee-model-schematic {background-image:url(/images/content/OPGEE-schematic.png);}
+#opgee-model-schematic {background-image:url(/images/content/OPGEE-schematic.png); height:34em; padding-top:70%;}
 #prelim-model-schematic {background-image:url(/images/content/PRELIM-schematic.png);}
 #opem-model-schematic {background-image:url(/images/content/OPEM-Schematic-updated.png);}
