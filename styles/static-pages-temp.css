@@ -1,3 +1,32 @@
 /* temporary css for static pages */
 
-.prose.prose-content h1 {color:red;}
+.prose.prose-content .contentImg {
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:top left;
+	display:block;
+}
+
+.prose.prose-content .contentImg.float-left {
+	float:left;
+	margin-left:0;
+	width:20%;
+}
+
+.prose.prose-content .contentImg.full-width {
+	float:none;
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+}
+
+#gordon {background-image:url(/images/content/gordon.jpg);}
+#bergerson {background-image:url(/images/content/bergerson.jpg);}
+#brandt {background-image:url(/images/content/brandt.jpg);}
+#koomey {background-image:url(/images/content/koomey.jpg);}
+#livingston {background-image:url(/images/content/livingston.jpg);}
+#tan {background-image:url(/images/content/tan.jpg);}
+
+#opgee-model-schematic {background-image:url(/images/content/OPGEE-schematic.png);}
+#prelim-model-schematic {background-image:url(/images/content/PRELIM-schematic.png);}
+#opem-model-schematic {background-image:url(/images/content/OPEM-Schematic-updated.png);}
