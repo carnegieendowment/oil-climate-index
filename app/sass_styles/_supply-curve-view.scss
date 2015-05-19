@@ -33,3 +33,15 @@
     display: none;
   }
 }
+
+.y.axis.title, .x.axis.title {
+  @include bp(tablet-slim) {
+    font-size: 10px;
+  }
+}
+
+.y.axis.subtitle, .x.axis.subtitle {
+  @include bp(tablet-slim) {
+    font-size: 8px;
+  }
+}

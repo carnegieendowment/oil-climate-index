@@ -512,7 +512,11 @@ Oci.Views = Oci.Views || {};
 
         handleResize: function () {
           width = container.width() - margin.left - margin.right;
-          self.render();
+          // Clear anything in the svg element since we're going to rewrite
+          d3.select('#upstream-bar').html('');
+          d3.select('#midstream-bar').html('');
+          d3.select('#downstream-bar').html('');
+          self.chartInit();
         },
 
         handleShare: function (e) {

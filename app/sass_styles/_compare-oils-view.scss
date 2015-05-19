@@ -25,6 +25,15 @@
     &:hover {
       @include opacity(0.64);
     }
+    @include bp(tablet-slim) {
+      font-size: 14px;
+    }
+    @include bp(mobile-long) {
+      font-size: 12px;
+    }
+    @include bp(mobile) {
+      font-size: 10px;
+    }
   }
   .y.axis text {
     &:after {
