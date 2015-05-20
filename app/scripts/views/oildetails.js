@@ -99,7 +99,14 @@ Oci.Views = Oci.Views || {};
 
           this.render();
 
-          $(window).on('resize', self.handleResize);
+          $(window).on('resize', function(){
+            if (window.orientation === undefined) { self.handleResize(); }
+          });
+          $(window).on('orientationchange', function(){
+            setTimeout(function(){
+              self.handleResize();
+            },500);
+          });
         },
 
         render: function () {

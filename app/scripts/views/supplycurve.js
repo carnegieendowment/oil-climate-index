@@ -38,7 +38,14 @@ Oci.Views = Oci.Views || {};
         initialize: function () {
           self = this;
 
-          $(window).on('resize', self.handleResize);
+          $(window).on('resize', function(){
+            if (window.orientation === undefined) { self.handleResize(); }
+          });
+          $(window).on('orientationchange', function(){
+            setTimeout(function(){
+              self.handleResize();
+            },500);
+          });
           $('body').keyup(self.handleKeyUp);
 
           // Init the tooltip
