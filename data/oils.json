@@ -806,11 +806,11 @@
       "Transport Emissions": "10.49089036",
       "Total Emissions": "529.1228826"
     },
-    "Canada Cold Lake Diluted Bitumen (Dilbit)": {
+    "Canada Cold Lake Dilbit": {
       "Region": "North America",
-      "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Unique": "Canada Cold Lake Dilbit",
       "Country": "Canada",
-      "Oil Field Name (OPGEE)": "Cold Lake Diluted Bitumen (Dilbit)",
+      "Oil Field Name (OPGEE)": "Cold Lake Dilbit",
       "Assay Name (PRELIM)": "Cold Lake_Crude Monitor",
       "Oil Type": "Oil Sands",
       "API": "10.2",
@@ -837,11 +837,11 @@
       "Transport Emissions": "10.82297823",
       "Total Emissions": "637.7641111"
     },
-    "Canada Suncor Synthetic H (SCO)": {
+    "Canada Heavy Sour SCO": {
       "Region": "North America",
-      "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Unique": "Canada Heavy Sour SCO",
       "Country": "Canada",
-      "Oil Field Name (OPGEE)": "Suncor Synthetic H (SCO)",
+      "Oil Field Name (OPGEE)": "Heavy Sour SCO",
       "Assay Name (PRELIM)": "Suncor Synthetic H_Crude Monitor",
       "Oil Type": "Oil Sands",
       "API": "8",
@@ -868,11 +868,11 @@
       "Transport Emissions": "13.74247844",
       "Total Emissions": "825.2109887"
     },
-    "Canada Suncor Synthetic A (SCO)": {
+    "Canada Light Sweet SCO": {
       "Region": "North America",
-      "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Unique": "Canada Light Sweet SCO",
       "Country": "Canada",
-      "Oil Field Name (OPGEE)": "Suncor Synthetic A (SCO)",
+      "Oil Field Name (OPGEE)": "Light Sweet SCO",
       "Assay Name (PRELIM)": "Suncor Synthetic A_Crude Monitor",
       "Oil Type": "Oil Sands",
       "API": "8",
@@ -899,11 +899,11 @@
       "Transport Emissions": "13.30353593",
       "Total Emissions": "733.2474882"
     },
-    "Canada Syncrude Synthetic (SCO)": {
+    "Canada Medium Sweet SCO": {
       "Region": "North America",
-      "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Unique": "Canada Medium Sweet SCO",
       "Country": "Canada",
-      "Oil Field Name (OPGEE)": "Syncrude Synthetic (SCO)",
+      "Oil Field Name (OPGEE)": "Medium Sweet SCO",
       "Assay Name (PRELIM)": "Syncrude Synthetic_Crude Monitor",
       "Oil Type": "Oil Sands",
       "API": "8",
@@ -1427,8 +1427,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -1446,8 +1446,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -1465,8 +1465,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -1484,8 +1484,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -1999,8 +1999,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -2018,8 +2018,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -2037,8 +2037,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -2056,8 +2056,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -2571,8 +2571,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -2590,8 +2590,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -2609,8 +2609,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -2628,8 +2628,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -3143,8 +3143,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -3162,8 +3162,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -3181,8 +3181,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -3200,8 +3200,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -3715,8 +3715,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -3734,8 +3734,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -3753,8 +3753,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -3772,8 +3772,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -4287,8 +4287,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -4306,8 +4306,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -4325,8 +4325,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -4344,8 +4344,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -4859,8 +4859,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -4878,8 +4878,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -4897,8 +4897,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -4916,8 +4916,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -5431,8 +5431,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -5450,8 +5450,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -5469,8 +5469,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -5488,8 +5488,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -6003,8 +6003,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.28469498"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -6022,8 +6022,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -6041,8 +6041,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -6060,8 +6060,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -6575,8 +6575,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -6594,8 +6594,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -6613,8 +6613,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -6632,8 +6632,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -7147,8 +7147,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -7166,8 +7166,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -7185,8 +7185,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -7204,8 +7204,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -7719,8 +7719,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -7738,8 +7738,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -7757,8 +7757,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -7776,8 +7776,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -8291,8 +8291,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -8310,8 +8310,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -8329,8 +8329,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -8348,8 +8348,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -8863,8 +8863,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -8882,8 +8882,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -8901,8 +8901,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -8920,8 +8920,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -9435,8 +9435,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -9454,8 +9454,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -9473,8 +9473,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -9492,8 +9492,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -10007,8 +10007,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -10026,8 +10026,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -10045,8 +10045,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -10064,8 +10064,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -10579,8 +10579,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -10598,8 +10598,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -10617,8 +10617,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -10636,8 +10636,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -11151,8 +11151,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.427042471"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -11170,8 +11170,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -11189,8 +11189,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -11208,8 +11208,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -11723,8 +11723,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -11742,8 +11742,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -11761,8 +11761,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -11780,8 +11780,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -12295,8 +12295,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -12314,8 +12314,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -12333,8 +12333,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -12352,8 +12352,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -12867,8 +12867,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -12886,8 +12886,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -12905,8 +12905,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -12924,8 +12924,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -13439,8 +13439,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -13458,8 +13458,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -13477,8 +13477,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -13496,8 +13496,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -14011,8 +14011,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -14030,8 +14030,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -14049,8 +14049,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -14068,8 +14068,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -14583,8 +14583,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -14602,8 +14602,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -14621,8 +14621,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -14640,8 +14640,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -15155,8 +15155,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -15174,8 +15174,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -15193,8 +15193,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -15212,8 +15212,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -15727,8 +15727,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -15746,8 +15746,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -15765,8 +15765,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -15784,8 +15784,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -16299,8 +16299,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -16318,8 +16318,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -16337,8 +16337,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -16356,8 +16356,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -16871,8 +16871,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.711737451"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -16890,8 +16890,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -16909,8 +16909,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -16928,8 +16928,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -17443,8 +17443,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.711737451"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -17462,8 +17462,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -17481,8 +17481,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -17500,8 +17500,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -18015,8 +18015,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.711737451"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -18034,8 +18034,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -18053,8 +18053,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -18072,8 +18072,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -18587,8 +18587,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.711737451"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -18606,8 +18606,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -18625,8 +18625,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -18644,8 +18644,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -19159,8 +19159,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.711737451"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -19178,8 +19178,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -19197,8 +19197,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -19216,8 +19216,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -19731,8 +19731,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.711737451"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -19750,8 +19750,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -19769,8 +19769,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -19788,8 +19788,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -20288,23 +20288,23 @@
         "Unique": "Russia Chayvo",
         "Exploration": "0",
         "Drilling": "3.556244167",
-        "Production": "10.61603701",
-        "Processing": "13.38599691",
+        "Production": "9.709395025",
+        "Processing": "12.49581451",
         "Upgrading": "0",
         "Maintenance": "0",
         "Waste": "0",
-        "Venting, Flaring, and Fugitive Emissions": "31.37436475",
+        "Venting, Flaring, and Fugitive Emissions": "55.93325674",
         "Diluent": "0",
         "Miscellaneous": "2.826414359",
         "Transport to Refinery": "7.202885108",
-        "Offsite emissions": "-17.73594031",
-        "Net lifecycle emissions": "51.22600198",
+        "Offsite emissions": "-16.129895",
+        "Net lifecycle emissions": "75.5941149",
         "API Gravity": "36.4",
         "Gas-to-Oil-Ratio": "4000",
-        "Water-to-Oil-Ratio": "0.711737451"
+        "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -20322,8 +20322,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -20341,8 +20341,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -20360,8 +20360,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -20875,8 +20875,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.711737451"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -20894,8 +20894,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -20913,8 +20913,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -20932,8 +20932,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -21447,8 +21447,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.711737451"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -21466,8 +21466,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -21485,8 +21485,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -21504,8 +21504,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -22019,8 +22019,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.854084941"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -22038,8 +22038,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -22057,8 +22057,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -22076,8 +22076,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -22591,8 +22591,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.854084941"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -22610,8 +22610,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -22629,8 +22629,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -22648,8 +22648,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -23163,8 +23163,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.854084941"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -23182,8 +23182,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -23201,8 +23201,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -23220,8 +23220,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -23735,8 +23735,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.854084941"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -23754,8 +23754,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -23773,8 +23773,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -23792,8 +23792,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -24307,8 +24307,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.854084941"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -24326,8 +24326,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -24345,8 +24345,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -24364,8 +24364,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -24879,8 +24879,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.854084941"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -24898,8 +24898,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -24917,8 +24917,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -24936,8 +24936,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -25436,23 +25436,23 @@
         "Unique": "Russia Chayvo",
         "Exploration": "0",
         "Drilling": "3.556244167",
-        "Production": "11.4253113",
-        "Processing": "13.37335656",
+        "Production": "9.709395025",
+        "Processing": "12.49581451",
         "Upgrading": "0",
         "Maintenance": "0",
         "Waste": "0",
-        "Venting, Flaring, and Fugitive Emissions": "31.37436475",
+        "Venting, Flaring, and Fugitive Emissions": "55.93325674",
         "Diluent": "0",
         "Miscellaneous": "2.826414359",
         "Transport to Refinery": "7.202885108",
-        "Offsite emissions": "-17.63956295",
-        "Net lifecycle emissions": "52.1190133",
+        "Offsite emissions": "-16.129895",
+        "Net lifecycle emissions": "75.5941149",
         "API Gravity": "36.4",
         "Gas-to-Oil-Ratio": "4000",
-        "Water-to-Oil-Ratio": "0.854084941"
+        "Water-to-Oil-Ratio": "0.569389961"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -25470,8 +25470,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -25489,8 +25489,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -25508,8 +25508,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -26023,8 +26023,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.854084941"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -26042,8 +26042,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -26061,8 +26061,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -26080,8 +26080,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -26595,8 +26595,8 @@
         "Gas-to-Oil-Ratio": "4000",
         "Water-to-Oil-Ratio": "0.854084941"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Exploration": "0",
         "Drilling": "21.76046577",
         "Production": "54.74585389",
@@ -26614,8 +26614,8 @@
         "Gas-to-Oil-Ratio": "260",
         "Water-to-Oil-Ratio": "3.421"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.99547058",
@@ -26633,8 +26633,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.08546884",
@@ -26652,8 +26652,8 @@
         "Gas-to-Oil-Ratio": "0",
         "Water-to-Oil-Ratio": "2.5"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Exploration": "0",
         "Drilling": "18.47477902",
         "Production": "37.22139603",
@@ -27637,8 +27637,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5620.981897"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Crude": "0",
         "Electricity": "9.591680421",
         "Heat RFG": "21.61220141",
@@ -27674,8 +27674,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5643.151155"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Crude": "0",
         "Electricity": "12.266764",
         "Heat RFG": "11.06707564",
@@ -27711,8 +27711,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "7044.32097"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Crude": "0",
         "Electricity": "2.83982913",
         "Heat RFG": "5.324790143",
@@ -27748,8 +27748,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "6718.392595"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Crude": "0",
         "Electricity": "6.537385119",
         "Heat RFG": "8.575107685",
@@ -28749,8 +28749,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5620.981897"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Crude": "0",
         "Electricity": "2.12724255",
         "Heat RFG": "3.200443917",
@@ -28786,8 +28786,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5848.088554"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Crude": "0",
         "Electricity": "2.236103507",
         "Heat RFG": "2.271788663",
@@ -28823,8 +28823,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "6992.663379"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Crude": "0",
         "Electricity": "2.83982913",
         "Heat RFG": "5.324790143",
@@ -28860,8 +28860,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "6718.392595"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Crude": "0",
         "Electricity": "2.5800977",
         "Heat RFG": "4.586683911",
@@ -29861,8 +29861,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5557.038195"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Crude": "0",
         "Electricity": "5.276428935",
         "Heat RFG": "5.901358989",
@@ -29898,8 +29898,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5892.488346"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Crude": "0",
         "Electricity": "9.615676472",
         "Heat RFG": "8.788676755",
@@ -29935,8 +29935,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "7052.794489"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Crude": "0",
         "Electricity": "6.5997702",
         "Heat RFG": "9.102016182",
@@ -29972,8 +29972,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "6735.396636"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Crude": "0",
         "Electricity": "6.537385119",
         "Heat RFG": "8.575107685",
@@ -30973,8 +30973,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5469.231736"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Crude": "0",
         "Electricity": "9.591680421",
         "Heat RFG": "21.61220141",
@@ -31010,8 +31010,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5643.151155"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Crude": "0",
         "Electricity": "12.266764",
         "Heat RFG": "11.06707564",
@@ -31047,8 +31047,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "7044.32097"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Crude": "0",
         "Electricity": "6.684781445",
         "Heat RFG": "9.471395503",
@@ -31084,8 +31084,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "6734.179023"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Crude": "0",
         "Electricity": "7.546504864",
         "Heat RFG": "9.680499074",
@@ -32085,8 +32085,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5487.611395"
       },
-      "Canada Cold Lake Diluted Bitumen (Dilbit)": {
-        "Unique": "Canada Cold Lake Diluted Bitumen (Dilbit)",
+      "Canada Cold Lake Dilbit": {
+        "Unique": "Canada Cold Lake Dilbit",
         "Crude": "0",
         "Electricity": "10.43837787",
         "Heat RFG": "18.569994",
@@ -32122,8 +32122,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "5907.330633"
       },
-      "Canada Suncor Synthetic H (SCO)": {
-        "Unique": "Canada Suncor Synthetic H (SCO)",
+      "Canada Heavy Sour SCO": {
+        "Unique": "Canada Heavy Sour SCO",
         "Crude": "0",
         "Electricity": "12.40165775",
         "Heat RFG": "10.79939406",
@@ -32159,8 +32159,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "7056.136671"
       },
-      "Canada Suncor Synthetic A (SCO)": {
-        "Unique": "Canada Suncor Synthetic A (SCO)",
+      "Canada Light Sweet SCO": {
+        "Unique": "Canada Light Sweet SCO",
         "Crude": "0",
         "Electricity": "6.700810193",
         "Heat RFG": "9.425813323",
@@ -32196,8 +32196,8 @@
         "Portion Surplus Refinery Fuel Gas (RFG)": "0",
         "MJperbbl": "6734.433851"
       },
-      "Canada Syncrude Synthetic (SCO)": {
-        "Unique": "Canada Syncrude Synthetic (SCO)",
+      "Canada Medium Sweet SCO": {
+        "Unique": "Canada Medium Sweet SCO",
         "Crude": "0",
         "Electricity": "7.615277341",
         "Heat RFG": "9.556287795",
@@ -32234,11 +32234,5 @@
         "MJperbbl": "6438.194969"
       }
     }
-  },
-  "metadata": {
-    "water": ".5, .75, 1, 1.25, 1.5",
-    "steam": ".75, 1, 1.25",
-    "flare": ".1, .75, 1",
-    "refinery": "0 = Default, 1 = Hydroskimming, 2 = Medium Conversion, 3 = Deep Conversion (Coking), 4 = Deep Conversion (Hydrotreating)"
   }
 }
