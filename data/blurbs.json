@@ -1,4 +1,4 @@
-{
+﻿{
   "Nigeria Agbami": {
     "description": "A light, sweet, deepwater oil produced off the coast of West Africa. Agbami’s GHG emissions are low compared to other oils in the index because its moderate levels of gas are not highly flared like Nigeria Obagi or Bonny. OCI assay source: Chevron"
   },
@@ -80,13 +80,13 @@
   "Canada Cold Lake Diluted Bitumen (Dilbit)": {
     "description": "An extra-heavy, high-sulfur bitumen produced from Alberta’s Cold Lake region that is not upgraded before transport to the refinery and is modeled as dilbit (75 percent bitumen and 25 percent diluent). That means Cold Lake’s GHG emissions are not based on an equivalent barrel of oil. If this dilbit’s emissions were calculated per equivalent barrel of oil (considering bitumen only), Cold Lake’s GHG emissions would be far greater than what is reported in the OCI. OCI assay source: Crude Monitor"
   },
-  "Canada Suncor Synthetic H (SCO)": {
-    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a medium, sour synthetic crude oil (SCO) before transport to the refinery. Suncor Synthetic H SCO’s API gravity of 19.5 results in higher total GHG emissions than Synthetic A SCO. OCI assay source: Crude Monitor"
+  "Canada Heavy Sour SCO": {
+    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a heavy, sour synthetic crude oil (SCO) before transport to the refinery. This oil’s API gravity of 19.5 results in higher total GHG emissions than Light Sweet SCO. This oil's modeled emissions is based on Suncor Synthetic H. OCI assay source: Crude Monitor"
   },
-  "Canada Suncor Synthetic A (SCO)": {
-    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a light, sweet synthetic crude oil (SCO) before transport to the refinery. Suncor Synthetic A SCO is upgraded to 32.8 API, compared to 19.5 for Synthetic H SCO. As such, Synthetic A SCO emits more GHG emissions in upgrading, but fewer emissions in refining and end use compared to Synthetic H SCO. OCI assay source: Crude Monitor"
+  "Canada Light Sweet SCO": {
+    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a light, sweet synthetic crude oil (SCO) before transport to the refinery. This oil is upgraded to 32.8 API, compared to 19.5 for the Heavy Sour SCO. As such, Light Sweet SCO emits more GHG emissions in upgrading, but fewer emissions in refining and end use compared to Heavy Sour SCO.  This oil's modeled emissions is based on Suncor Synthetic A. OCI assay source: Crude Monitor"
   },
-  "Canada Syncrude Synthetic (SCO)": {
-    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a light, sweet synthetic crude oil (SCO) before transport to the refinery. Syncrude Synthetic SCO yields less petcoke with lower downstream emissions than both Suncor Synthetic A SCO and Suncor Synthetic H SCO. OCI assay source: Crude Monitor"
+  "Canada Medium Sweet SCO": {
+    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a medium, sweet synthetic crude oil (SCO) before transport to the refinery. This Medium Sweet SCO yields less petcoke with lower downstream emissions than both other SCOs. This oil's modeled emissions is based on Syncrude Synthetic. OCI assay source: Crude Monitor"
   }
 }
