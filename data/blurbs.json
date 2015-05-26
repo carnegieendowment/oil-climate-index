@@ -81,12 +81,12 @@
     "description": "An extra-heavy, high-sulfur bitumen produced from Alberta’s Cold Lake region that is not upgraded before transport to the refinery and is modeled as dilbit (75 percent bitumen and 25 percent diluent). That means Cold Lake’s GHG emissions are not based on an equivalent barrel of oil. If this dilbit’s emissions were calculated per equivalent barrel of oil (considering bitumen only), Cold Lake’s GHG emissions would be far greater than what is reported in the OCI. OCI assay source: Crude Monitor"
   },
   "Canada Heavy Sour SCO": {
-    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a heavy, sour synthetic crude oil (SCO) before transport to the refinery. This oil’s API gravity of 19.5 results in higher total GHG emissions than Light Sweet SCO. This oil's modeled emissions is based on Suncor Synthetic H. OCI assay source: Crude Monitor"
+    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a heavy, sour synthetic crude oil (SCO) before transport to the refinery. This oil’s API gravity of 19.5 results in higher total GHG emissions than Light Sweet SCO. This oil's modeled emissions are based on Suncor Synthetic H. OCI assay source: Crude Monitor"
   },
   "Canada Light Sweet SCO": {
-    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a light, sweet synthetic crude oil (SCO) before transport to the refinery. This oil is upgraded to 32.8 API, compared to 19.5 for the Heavy Sour SCO. As such, Light Sweet SCO emits more GHG emissions in upgrading, but fewer emissions in refining and end use compared to Heavy Sour SCO.  This oil's modeled emissions is based on Suncor Synthetic A. OCI assay source: Crude Monitor"
+    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a light, sweet synthetic crude oil (SCO) before transport to the refinery. This oil is upgraded to 32.8 API, compared to 19.5 for the Heavy Sour SCO. As such, Light Sweet SCO emits more GHG emissions in upgrading, but fewer emissions in refining and end use compared to Heavy Sour SCO.  This oil's modeled emissions are based on Suncor Synthetic A. OCI assay source: Crude Monitor"
   },
   "Canada Medium Sweet SCO": {
-    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a medium, sweet synthetic crude oil (SCO) before transport to the refinery. This Medium Sweet SCO yields less petcoke with lower downstream emissions than both other SCOs. This oil's modeled emissions is based on Syncrude Synthetic. OCI assay source: Crude Monitor"
+    "description": "An extra-heavy, high-sulfur bitumen mined from Alberta’s Athabasca oil sands and upgraded into a medium, sweet synthetic crude oil (SCO) before transport to the refinery. This Medium Sweet SCO yields less petcoke with lower downstream emissions than both other SCOs. This oil's modeled emissions are based on Syncrude Synthetic. OCI assay source: Crude Monitor"
   }
 }
