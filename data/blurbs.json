@@ -77,7 +77,7 @@
   "Russia Chayvo": {
     "description": "A light, sweet oil located off Sakhalin Island in eastern Russia (also named Sokol). Chayvo’s GHG emissions are currently estimated to be average, compared to the other OCI test oils. Further research is needed, however, to fully assess the effects of the record-setting depth of Chayvo’s directionally drilled wells. OCI assay source: ExxonMobil"
   },
-  "Canada Cold Lake Diluted Bitumen (Dilbit)": {
+  "Canada Cold Lake Dilbit": {
     "description": "An extra-heavy, high-sulfur bitumen produced from Alberta’s Cold Lake region that is not upgraded before transport to the refinery and is modeled as dilbit (75 percent bitumen and 25 percent diluent). That means Cold Lake’s GHG emissions are not based on an equivalent barrel of oil. If this dilbit’s emissions were calculated per equivalent barrel of oil (considering bitumen only), Cold Lake’s GHG emissions would be far greater than what is reported in the OCI. OCI assay source: Crude Monitor"
   },
   "Canada Heavy Sour SCO": {
