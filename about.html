@@ -52,22 +52,22 @@
         <div class="inner">
           <div class="page-headline">
             <h1 class="page-title">
-              <a href="http://carnegieendowment.org/oci" title="More Oil-Climate Index resources from the Carnegie Endowment for International Peace" target="_blank" class="brand-title"><img src="./images/layout/60dc153d.ceip-logo-symbol-neg.svg" width="128" height="128" alt="Carnegie Endowment for International Peace logo"></a>
-              <a href="/" title="Main" data-proofer-ignore="" class="project-title">Assessing Global Oils</a>
+              <a href="http://carnegieendowment.org/oci" title="More Oil-Climate Index resources from the Carnegie Endowment for International Peace" target="_blank" class="brand-title" onclick="ga('send', 'event', 'Header', 'navigation', 'CEIP');"><img src="./images/layout/60dc153d.ceip-logo-symbol-neg.svg" width="128" height="128" alt="Carnegie Endowment for International Peace logo"></a>
+              <a href="/" title="Main" data-proofer-ignore="" class="project-title" onclick="ga('send', 'event', 'Header', 'navigation', 'Home');">Assessing Global Oils</a>
             </h1>
           </div>
           <nav class="page-nav">
             <h2 class="toggle-menu-wrapper"><a href="#menu-block" title="Show menu" data-dropdown-nav=""><span>Browse</span></a></h2>
             <div id="menu-block" class="menu-wrapper">
               <ul class="global-menu">
-                <li id="menu-supply"><a href="./" title="Total Emissions by Production Volume" data-proofer-ignore="">Emissions</a></li>
-                <li id="menu-compare"><a href="./#compare" title="Compare Oils across Supply Chain" data-proofer-ignore="">Compare</a></li>
-                <li id="menu-emissions"><a href="./#drivers" title="Explore Emissions Drivers" data-proofer-ignore="">Drivers</a></li>
+                <li id="menu-supply"><a href="./" title="Total Emissions by Production Volume" data-proofer-ignore="" onclick="ga('send', 'event', 'Header', 'navigation', 'Emissions');">Emissions</a></li>
+                <li id="menu-compare"><a href="./#compare" title="Compare Oils across Supply Chain" data-proofer-ignore="" onclick="ga('send', 'event', 'Header', 'navigation', 'Compare');">Compare</a></li>
+                <li id="menu-emissions"><a href="./#drivers" title="Explore Emissions Drivers" data-proofer-ignore="" onclick="ga('send', 'event', 'Header', 'navigation', 'Drivers');">Drivers</a></li>
               </ul>
               <ul class="meta-menu">
-                <li id="menu-about" class="active"><a href="about.html" title="About" data-proofer-ignore="">About</a></li>
-                <li id="menu-methodology"><a href="methodology.html" title="Methodology" data-proofer-ignore="">Methodology</a></li>
-                <li id="menu-glossary"><a href="glossary.html" title="Glossary" data-proofer-ignore="">Glossary</a></li>
+                <li id="menu-about" class="active"><a href="about.html" title="About" data-proofer-ignore="" onclick="ga('send', 'event', 'Header', 'navigation', 'About');">About</a></li>
+                <li id="menu-methodology"><a href="methodology.html" title="Methodology" data-proofer-ignore="" onclick="ga('send', 'event', 'Header', 'navigation', 'Methodology');">Methodology</a></li>
+                <li id="menu-glossary"><a href="glossary.html" title="Glossary" data-proofer-ignore="" onclick="ga('send', 'event', 'Header', 'navigation', 'Glossary');">Glossary</a></li>
               </ul>
             </div>
           </nav>
@@ -169,14 +169,14 @@
     <!--/ site-canvas -->
 
     <!-- Google Analytics -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-88478-49');ga('send','pageview');
-    </script>
+     <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-31877-31', 'auto');
+ga('send', 'pageview');
+</script>
     <!--/ Google Analytics -->
 
     <script src="scripts/1cb7f4b6.vendor.js"></script>
