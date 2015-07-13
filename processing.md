@@ -35,7 +35,7 @@ Perform these steps on the OCI Consolidated Sheet to prepare it for data updatin
 
 ## Special processing
 
-- Add the unique oil name into cell D3 (used for matching with the rest of the data)
+- Add the unique oil name into cell D2 (used for matching with the rest of the data)
 - Copy in special processing macro (`special_macro.txt')
 - Run macro for each special oil
   - Select OCI Consolidated Sheet when prompted
